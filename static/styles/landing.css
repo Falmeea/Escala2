@@ -1,0 +1,184 @@
+/*  */
+
+:root {
+  --dark-forest-green: #0B3D20;
+  --mystic-purple: #473854;
+  --ethereal-gold: #C9A678;
+  --dusky-rose: #986C6A;
+  --parchment-white: #F4EDE4;
+}
+
+:root {
+  --deep-sapphire: #0A3A4A;
+  --emerald-green: #087830;
+  --antique-gold: #DAA520;
+  --burgundy-: #800020;
+  --twilight-mist: #8A9597;
+}
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
+    
+  }
+}
+html, body {
+  scroll-padding-top: calc(4.5rem - 1px);
+  height: 100%;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: black;
+}
+
+/* Nav */ 
+.social-nav {
+  position: fixed; /* This ensures the nav is stuck at the top */
+  top: 0;          /* Align top edge to the top of the viewport */
+  left: 0;         /* Align left edge to the left of the viewport */
+  width: 100%;     /* Full width to stretch across the screen */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 1000;   /* High z-index to keep it above other content */
+  padding: 10px 0; /* Padding for aesthetic spacing */
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  margin-left: 25px;
+  padding: 0;
+}
+
+.list-inline-item {
+  margin-right: 30px; /* Space between items */
+}
+
+.list-inline-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s ease; /* Transition for size and background */
+}
+
+.nav-link:hover {
+  background-color: var(--ethereal-gold); /* Change background on hover */
+  transform: scale(1.1); /* Increase the size of the link area */
+  transition: all 0.5s ease; /* Longer transition for smoother effect */
+  padding: 10px;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+  .social-links {
+    justify-content: center; /* Center social links on smaller screens */
+  }
+
+  .list-inline-item {
+    margin-right: 10px; /* Smaller margin on smaller screens */
+  }
+}
+
+.list-inline-item a {
+  margin-right: 15px;
+}
+
+.list-inline-item:last-child a {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .list-inline-item a {
+    margin-right: 10px; /* Smaller margin on smaller screens */
+  }
+}
+/* Nav */ 
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: black;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.bg-image {
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; /* Stack items vertically */
+}
+
+
+.landing-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.landing-link:hover{
+  color: var(--ethereal-gold);
+}
+
+.landing-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 6s linear;
+  font-size: 3rem; /* Large font size */
+  font-family: 'Playfair Display', serif;
+  margin: 20px 0;
+  /* Spacing between text and image */
+  /* Customize further as needed */
+}
+
+.bg-image:hover .landing-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+  .landing-text {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    bottom: 100%; /* Position above the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+    white-space: nowrap;
+    /* Additional styling for mobile here */
+  }
+  .bg-image {
+    flex-direction: column-reverse; /* Changes the order: image on top, text below */
+  }
+  }
+
+
+
+#Footer { /* Make sure the ID matches your HTML */
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Adjust the background color as needed */
+  color: white; /* Adjust the text color as needed */
+  text-align: center;
+}
+
