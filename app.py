@@ -8,8 +8,8 @@ app.register_blueprint(landing, url_prefix="/")
 # Define the route for the index page
 # Define the route for the index page
 @app.route('/')
-def landing():
-    return render_template('landing.html')
+def index():
+    return render_template('index.html')
 
 # Define the route for the homepage
 @app.route('/homepage')
