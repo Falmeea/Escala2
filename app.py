@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
 @app.route('/')
 def index():
-    return '/'
+    return 'Hello, this is my Flask app converted to a static site!'
 
 freezer = Freezer(app)
 
