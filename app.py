@@ -6,6 +6,7 @@ app = Flask(__name__)
 app.register_blueprint(landing, url_prefix="/")
 
 # Define the route for the index page
+# Define the route for the index page
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -39,4 +40,9 @@ def tienaexplore():
 freezer = Freezer(app)
 
 if __name__ == '__main__':
+<<<<<<< HEAD
+    # Choose between running the server or freezing the app based on your need
+     app.run(debug=True)
+    # freezer.freeze()
+=======
     freezer.freeze()
