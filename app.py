@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
 @app.route('/')
 def index():
-    return 'index.html'
+    return '/'
 
 freezer = Freezer(app)
 
