@@ -39,6 +39,4 @@ def tienaexplore():
 freezer = Freezer(app)
 
 if __name__ == '__main__':
-    # Choose between running the server or freezing the app based on your need
-     app.run(debug=True)
-    # freezer.freeze()
+    freezer.freeze()
