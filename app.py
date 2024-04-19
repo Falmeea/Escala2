@@ -5,15 +5,40 @@ from flask_frozen import Freezer
 app = Flask(__name__)
 app.register_blueprint(landing, url_prefix="/")
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
+# Define the route for the index page
 @app.route('/')
 def index():
-    return 'index.html'
+    return render_template('index.html')
 
+# Define the route for the homepage
+@app.route('/homepage')
+def homepage():
+    return render_template('homepage.html')
+
+@app.route('/myservices')
+def myservices():
+    return render_template('myservices.html')
+
+@app.route('/shop')
+def shop():
+    return render_template('shop.html')
+
+@app.route('/thewriter')
+def thewriter():
+    return render_template('thewriter.html')
+
+@app.route('/tienaread')
+def tienaread():
+    return render_template('tienaread.html')
+
+@app.route('/tienaexplore')
+def tienaexplore():
+    return render_template('tienaexplore.html')
+
+# Create an instance of Freezer
 freezer = Freezer(app)
 
 if __name__ == '__main__':
-    freezer.freeze()
+    # Choose between running the server or freezing the app based on your need
+     app.run(debug=True)
+    # freezer.freeze()
