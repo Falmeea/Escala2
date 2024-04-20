@@ -3,7 +3,7 @@
 <head>
     <!-- Removed Django-specific tags for loading static and bootstrap components -->
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+    <link rel="stylesheet" href="static/css/homepage.css">
     <!-- Using CDN for Bootstrap which is common in Flask as well -->
    <!-- Bootstrap CSS -->
 <!-- Latest compiled and minified Bootstrap CSS -->
@@ -63,7 +63,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ url_for('static', filename='Tiena Alchemy.PNG') }}" class="d-block w-100" alt="...">
+                <img src="/static/Tiena%20Alchemy.PNG" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Tiena De Tolyver - Interactive Series</h5>
                     <a href="/Tienaread" class="btn btn-primary">Read</a>
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ url_for('static', filename='Eave Cave.png') }}" class="d-block w-100" alt="...">
+                <img src="/static/Eave%20Cave.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>The Midsummer Wood - Standalone</h5>
                     <a href="/Midsummerwoodexplore" class="btn btn-primary">Explore</a>
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ url_for('static', filename='Chaian and Salis.png') }}" class="d-block w-100" alt="...">
+                <img src="/static/Chaian%20and%20Salis.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>A Most Dreadful Beginning - Interactive Series</h5>
                     <a href="/AMDBread" class="btn btn-primary">Read</a>
