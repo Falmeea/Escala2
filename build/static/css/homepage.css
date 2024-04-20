@@ -147,19 +147,33 @@
       height: 80%; /* Smaller height on smaller screens */
     }
   }
+
+  .carousel-item {
+    position: relative;  /* This makes sure that caption is positioned relative to item */
+    height: 100%;        /* Ensure this is set so the caption can be properly centered */
+}
+
   
+.carousel-caption {
+  position: absolute;
+  width: 70%;  /* Consider setting max-width if it appears too large */
+  text-align: center;
+  background-color: rgba(71, 56, 84, 0.75);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--parchment-white);
+}
+
+@media (max-width: 768px) {
   .carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px; /* Adjust padding to suit your design */
-    border-radius: 5px; /* Optional: adds rounded corners */
-    width: fit-content; /* Adjust width as needed */
-    text-align: center; /* Center align the text */
-    background-color: rgba(71, 56, 84, 0.5); /* Replace 71, 56, 84 with the RGB values of --mystic-purple */
+    display: block;
+    width: auto;
+    margin: 10px auto;  /* Ensures the button remains centered on smaller screens */
+    padding: 8px 16px;  /* Adjust padding to better fit smaller screens */
   }
-  
+}
+
+
   .carousel-caption .btn {
     visibility: visible;
     margin: 5px 0; /* Adjust spacing around buttons */ 

@@ -55,11 +55,13 @@
 
 
     <!-- Example of a carousel item referencing a static image in Flask -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+    <div class="carousel-container-large">
+        <div id="carouselLarge" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselLarge" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselLarge" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselLarge" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -89,59 +91,46 @@
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+  
+    </div>
     </div>
     <!-- Carousel for smaller screens -->
-<div class="carousel-container-small">
-    <div id="carouselSmall" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselSmall" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselSmall" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselSmall" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
+    <div class="carousel-container-small">
+        <div id="carouselSmall" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselSmall" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselSmall" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselSmall" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/static/Chaian%20and%20Salis.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block w-100">
+          <img src="/static/Tiena%20Alchemy.PNG" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
             <h5>Tiena De Tolyver - Interactive Series</h5>
-            <a href="{{ url_for('tienaread') }}" class="btn btn-primary">Read</a>
-            <a href="{{ url_for('tienaexplore') }}" class="btn btn-primary">Explore</a>
+            <a href="tienaread.html" class="btn btn-primary">Read</a>
+            <a href="tienaexplore.html" class="btn btn-primary">Explore</a>
             <p>A Dark story</p>
           </div>
         </div>
         <div class="carousel-item">
-            <img src="/static/Chaian%20and%20Salis.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block w-100">
+            <img src="/static/Eave%20Cave.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
             <h5>A Most Dreadful Beginning - Interactive Series</h5>
-            <a href="{{ url_for('AMDBread') }}" class="btn btn-primary">Read</a>
-            <a href="{{ url_for('AMDBexplore') }}" class="btn btn-primary">Explore</a>
+            <a href="amdbread.html" class="btn btn-primary">Read</a>
+            <a href="amdbexplore.html" class="btn btn-primary">Explore</a>
             <p>A story from <u>a Broken World</u></p>
           </div>
         </div>
         <div class="carousel-item">
             <img src="/static/Chaian%20and%20Salis.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block w-100">
+          <div class="carousel-caption d-none d-md-block">
             <h5>The Midsummer Wood - Standalone</h5>
-            <a href="{{ url_for('Midsummerwoodexplore') }}" class="btn btn-primary">Explore</a>
+            <a href="midsummerwoodexplore.html" class="btn btn-primary">Explore</a>
             <p>Currently working on the First Draft</p>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSmall" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselSmall" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+     
     </div>
   </div>
   
@@ -250,7 +239,7 @@
   </script>
   
    <script>
-    document.addEventListener("DOMContentLoaded", function() {
+     document.addEventListener("DOMContentLoaded", function() {
       var carouselLarge = document.querySelector('#carouselLarge');
       var carouselSmall = document.querySelector('#carouselSmall');
     

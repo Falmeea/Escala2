@@ -150,16 +150,16 @@
   
   .carousel-caption {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Keep horizontal centering */
-    transform: translate(-50%, -50%); /* Adjust for both axes */
-    padding: 20px;
-    border-radius: 5px;
-    width: 80%; /* Adjustable based on preference */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Responsive width */
     text-align: center;
-    background-color: rgba(71, 56, 84, 0.7); /* Slightly darker for better readability */
+    background-color: rgba(71, 56, 84, 0.75); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
     color: var(--parchment-white);
-}
+  }
 
   
   .carousel-caption .btn {
