@@ -1,0 +1,56 @@
+html {
+    scroll-behavior: smooth;
+  }
+    /*nav*/
+
+    .breadcrumb {
+      background-color: #f8f9fa; /* Light grey background */
+      padding: 10px 15px; /* Adjust padding as needed */
+      border-radius: 5px; /* Rounded corners */
+    }
+
+  .author-name{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:50px;
+    color: black;
+  }
+  
+  .nav-item{
+    font-size: 20px;
+  }
+    
+    /*nav*/
+  
+  body {
+  
+      font-family: "Space Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+
+    .review-navigation ul {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* Center the navigation */
+        padding: 0;
+      }
+      
+      .review-navigation li {
+        margin: 0 10px; /* Spacing between links */
+      }
+      
+      .review-navigation a {
+        text-decoration: none;
+        color: #007bff; /* Bootstrap primary link color */
+        padding: 5px;
+        border-radius: 5px;
+      }
+      
+      .review-navigation a:hover {
+        background-color: #e7e7e7; /* Light grey background on hover */
+      }
+      
+      

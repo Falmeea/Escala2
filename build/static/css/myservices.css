@@ -1,0 +1,300 @@
+:root {
+  --dark-forest-green: #0B3D20;
+  --mystic-purple: #473854;
+  --ethereal-gold: #C9A678;
+  --dusky-rose: #986C6A;
+  --parchment-white: #F4EDE4;
+}
+
+:root {
+  --deep-sapphire: #0A3A4A;
+  --emerald-green: #087830;
+  --antique-gold: #DAA520;
+  --burgundy-: #800020;
+  --twilight-mist: #8A9597;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+    /*nav*/
+
+    .breadcrumb {
+      padding: 10px 15px; /* Adjust padding as needed */
+      border-radius: 5px; /* Rounded corners */
+      color: var(--parchment-white);
+  }
+    .breadcrumb a {
+      color: var(--ethereal-gold);
+    }
+    
+  .author-name{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:90px;
+    color: var(--parchment-white);
+  }
+
+  .git-button{
+    background: var(--ethereal-gold) !important;
+    display: flex;
+  }
+
+  .git-button:hover{
+    background-color: var(--mystic-purple) !important;
+   
+  }
+  
+  
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Increases space between nav items */
+  margin-bottom: 20px;
+}
+
+.nav-item{
+  font-size: 30px;
+  color: var(--ethereal-gold);
+  }
+
+  .nav {
+  padding-left: 0; /* Removes padding for list */
+  list-style: none; /* Removes list style */
+  padding: 15px;
+}
+
+.nav-link {
+  color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+  text-decoration: none; /* Optional: Removes the underline on hover */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
+  text-decoration: none; /* Optional: Removes the underline on hover */
+}
+
+
+
+a, .nav-link {
+  color: var(--parchment-white);
+}
+a:hover, .nav-link:hover {
+  color: var(--parchment-white);
+}
+
+.gold{
+  color: var(--ethereal-gold);
+  padding-left: 30%;
+  padding-right: 30%;
+}
+    
+    /*nav*/
+  
+  body {
+  
+      font-family: "Space Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      background-color: black;
+    }
+
+    .my-container {
+      text-align: center; /* Center-aligns the footer content */
+    }
+    
+    footer {
+      display: flex;
+      flex-direction: column; /* Stacks items vertically */
+      align-items: center; /* Center-aligns the items */
+    }
+    
+    .nav {
+      padding-left: 0; /* Removes padding for list */
+      list-style: none; /* Removes list style */
+    }
+    
+    .list-inline-item + .list-inline-item {
+      margin-left: 0; /* Removes default margin between inline items for custom spacing */
+      margin-top: 15px; /* Adds vertical spacing between items */
+    }
+    
+    @media (min-width: 768px) {
+      .list-inline-item + .list-inline-item {
+        margin-left: 15px; /* Restores horizontal spacing for larger screens */
+        margin-top: 0; /* Removes vertical spacing for larger screens */
+      }
+    }
+
+    .highlight-link a {
+      background-color: var(--mystic-purple); /* Light blue background */
+      border: 2px solid var(--ethereal-gold) /* Light blue border */
+    }
+         
+    .list-inline-item a:hover {
+      transform: scale(1.2); /* Slightly enlarge on hover */
+      background-color: var(--ethereal-gold);
+    }
+/* Container for cards to ensure they are centered and managed properly */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Row of cards to handle the layout of each row */
+.card-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Margin between rows */
+  width: 100%;
+}
+
+/* Styling for each card */
+.card {
+  flex-basis: calc(33% - 40px); /* For desktops and larger screens */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%; /* Ensure the image covers the card width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 20px;
+  color: #333; /* Adjusted for better readability on light background */
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lift" effect */
+  transform: scale(1.05); /* Slightly scale up on hover */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Larger font size for titles */
+  color: var(--ethereal-gold); /* Gold color for titles */
+}
+
+.card-text {
+  color: #E6E6FA; /* Light text color for readability */
+  margin-bottom: 1rem; /* Space between paragraphs */
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 40px); /* For tablets - 2 cards per row */
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .card-row {
+    flex-direction: column;
+    align-items: center; /* Align cards vertically in the center */
+  }
+
+  .card {
+    flex-basis: 100%; /* Use full width for mobile devices */
+    margin: 10px 0; /* Adjust margins for mobile */
+    max-width: 300px; /* Optional: max width can be set for aesthetic purposes */
+  }
+}
+
+    
+/* Styling for buttons */
+.btn-primary {
+  background-color: var(--mystic-purple); /* Indigo background color */
+  border: none; /* Remove default border */
+}
+
+.btn-primary:hover {
+  background-color: var(--mystic-purple); /* Lighter purple on hover */
+}
+
+/* Hidden content styling */
+.hidden-content {
+  display: none; /* Hide content by default */
+  padding: 20px; /* Padding for content */
+  background-color: #4B0082; /* Background color matching the button */
+  color: #E6E6FA; /* Text color for hidden content */
+}
+
+
+.hidden-content a.btn-primary {
+  background-color: black; /* Ethereal Gold background for buttons */
+  border-color: #C9A678; /* Ethereal Gold border for buttons */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.hidden-content a.btn-primary:hover {
+  border-color: darken(#C9A678, 10%); /* Consistent with hover background */
+}
+
+
+
+.newsletter-subscribe form {
+  margin-top: 20px;
+}
+
+.modal-content {
+    background-size: cover; /* Cover the entire area of the modal content */
+    background-position: center; /* Center the background image */
+     background-color: var(--mystic-purple); /* Mystic Purple background */
+    color: var(--parchment-white); /* Parchment White text */
+    }
+.modal-content .btn-primary {
+    background-color: var(--mystic-purple); /* Ethereal Gold background */
+    border-color: var(--ethereal-gold); /* Ethereal Gold border */
+    color: var(--etheral-gold); /* Dark Forest Green text */
+  }
+    
+.modal-content .btn-primary:hover {
+      background-color: darken(var(--ethereal-gold), 10%); /* Darken on hover */
+    }
+.modal-content a {
+      color: var(--ethereal-gold); /* Ethereal Gold links */
+      text-decoration: underline; /* Underline for emphasis */
+    }
+
+.modal-header {
+  background-color: black;
+  border-bottom: 1px solid var(--ethereal-gold); /* Ethereal Gold border for a subtle contrast */
+}
+
+.modal-title {
+  color: var(--parchment-white); /* Parchment White for the title */
+}
+
+
+#textInput{
+  padding: 30px;
+}
+
+.btn-close {
+   color: var(--parchment-white);
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center; /* Vertically center the modal */
+  justify-content: center;
+  min-height: calc(100% - (.5rem * 2)); /* Adjust based on your modal's margin */
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Removed Django-specific tags for loading static and bootstrap components -->
+
+    <link rel="stylesheet" href="static/css/myservices.css">
+    <!-- Using CDN for Bootstrap which is common in Flask as well -->
+   <!-- Bootstrap CSS -->
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled and minified Bootstrap JavaScript with Popper.js (Bundle) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Whisper&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escala</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Welcome</a></li>
+          <li class="breadcrumb-item"><a href="homepage.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">My Services</li>
+      </ol>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid flex-column align-items-center">
+          <!-- Navbar brand / title -->
+          <a class="text-center author-name" href="homepage.html">Danny Crow</a>
+          <hr class="gold">
+          <!-- Toggler button for mobile view -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse text-center" id="navbarContent">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="thewriter.html">The Writer</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="myservices.html">My Services</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="shop.html">Shop</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <hr class="gold">
+
+ 
+<div class="container my-container">
+  <section class="py-3 my-4">
+    <div class="d-flex justify-content-center align-items-center mb-3">
+      <a href="/" class="me-2 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><!-- SVG content --></svg>
+      </a>
+    </div>
+    <button type="button" class="btn btn-primary git-button list-inline" data-bs-toggle="modal" data-bs-target="#timedModal">
+      Get in Touch!
+    </button>
+    <ul class="nav justify-content-center list-inline">
+      <li class="list-inline-item">
+        <a class="nav-link" href="mailto:connordhanson@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+            <path fill="white" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
+        </svg>
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+        <a class="nav-link" href="https://www.instagram.com/crowslibraryofthings">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 
+                      0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555
+                      15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99
+                      10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 
+                      10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047
+                       3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478
+                        0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988
+                         1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+        </a>
+      </li>
+
+</li>
+
+         <li class="list-inline-item">
+            <a class="nav-link" href="https://substack.com/crowslibraryofthings">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-substack" viewBox="0 0 16 16">
+                <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
+              </svg>
+            </a>
+          </li> 
+      <!--  <li class="list-inline-item">
+        <a class="nav-link" href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-substack" viewBox="0 0 16 16">
+            <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
+          </svg>
+        </a>
+      </li>!-->
+
+      <li class="list-inline-item">
+        <a class="nav-link" href="https://www.wattpad.com/dannycrowslibrary?utm_source=web&utm_medium=email&utm_content=share_profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" id="wattpad" fill="white" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path  d="M.5 2.5V10A4.5 4.5 0 0 0 5 14.5h10.5v-12h-3v9h-3v-9h-3v9H5A1.5 1.5 0 0 1 3.5 10V2.5h-3z"></path></svg>
+          </svg>
+        </a>
+      </li>
+
+      <li class="list-inline-item highlight-link">
+        <a class="nav-link" href="https://www.patreon.com/Escala">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 16 16" fill ="white"version="1.1">
+            <g id="surface1">
+            <path  d="M 15.304688 4.808594 C 15.300781 2.765625 13.710938 1.089844 11.84375 0.484375 C 9.527344 -0.265625 6.46875 -0.15625 4.253906 0.886719 C 1.570312 2.152344 0.730469 4.925781 0.695312 7.695312 C 0.671875 9.96875 0.898438 15.957031 4.277344 16 C 6.785156 16.03125 7.160156 12.796875 8.320312 11.238281 C 9.148438 10.132812 10.210938 9.816406 11.523438 9.492188 C 13.773438 8.9375 15.308594 7.160156 15.304688 4.808594 Z M 15.304688 4.808594 "/>
+            </g>
+            </svg>
+            </a>
+      </li>
+    </ul>
+  </section>
+ 
+</div>
+
+<div class="cards-container">
+  <!-- First Row of 3 Cards -->
+  <div class="card-row">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="card-image-background">
+        <img src="static/mapunsplash.png" class="card-img-top" alt="Worldbuilding Services">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"><u>Worldbuilding Services</u></h5>
+        <p class="card-text">I can provide an expert consultation, or friendly second eye on your world.</p>
+        <p class="card-text">Or I can help you with something more specific, like creating a language, forming a religion or delving into your worlds creation mythology.</p>
+        <p class="card-text">Whatever you need, I would be happy to support you. Simply send me an email, or a message via one of my social channels!</p>
+        <!-- Modified button with data-target attribute -->
+        <a href="javascript:void(0);" class="btn btn-primary" data-target="expandableContent1">Learn More</a>
+      </div>
+      <!-- Hidden content to show on button click -->
+      <div id="expandableContent1" class="hidden-content">
+        <p>To read about my commitment to your work, & see what others thought about working with me<br><a href="Reviews" class="btn btn-primary">Reviews and Commitments</a></p>
+        <p>For Priority access to my Services<br><a href="https://www.patreon.com/Escala" class="btn btn-primary">Support me on Patreon</a></p>
+      
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="card-image-background">
+        <img src="static/networkunsplash.png" class="card-img-top" alt="Networking Services">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"><u>Networking Services</u></h5>
+        <p class="card-text">I have been working on my world for over half my life, and have met an array of creative masterminds along my journey.</p>
+        <p class="card-text">Need an Editor? I'd be happy to get you in touch with someone verified as <i>excellent</i>.</p>
+        <p class="card-text">Need an Artist? Look no further! I only work with the best and can support several price ranges.</p>
+        <p class="card-text">Want a map to showe off your beautiful world? I, my friend, am a member of the <u>Cartographers of Dinaf</u> who provide a range of services, tailored to your needs.</p>
+        <!-- Modified button with data-target attribute -->
+        <a href="javascript:void(0);" class="btn btn-primary" data-target="expandableContent2">Learn More</a>
+      </div>
+      <!-- Hidden content to show on button click -->
+      <div id="expandableContent2" class="hidden-content">
+        <p>To read about my commitment to your work, & see what others thought about working with me<br><a href="Reviews" class="btn btn-primary">Reviews and Commitments</a></p>
+        <p>For Priority access to my Services<br><a href="https://www.patreon.com/Escala" class="btn btn-primary">Support me on Patreon</a></p>
+      </div>
+    </div>
+    <!-- Card 3 (Repeat similar structure for the third card) -->
+    <div class="card">
+      <div class="card-image-background">
+        <img src="static/betaunsplash.png" class="card-img-top" alt="Networking Services">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"><u>Beta Reading Services</u></h5>
+        <p class="card-text">I read metric tons of Fantasy and Science Fiction. I know what works, and I <i>LOVE supporting other writers as they chase their dreams.</i></p>
+        <!-- Modified button with data-target attribute -->
+        <a href="javascript:void(0);" class="btn btn-primary" data-target="expandableContent3">Learn More</a>
+      </div>
+      <!-- Hidden content to show on button click -->
+      <div id="expandableContent3" class="hidden-content">
+        <p>To read about my commitment to your work, & see what others thought about working with me<br><a href="Reviews" class="btn btn-primary">Reviews and Commitments</a></p>
+        <p>For Priority access to my Services<br><a href="https://www.patreon.com/Escala" class="btn btn-primary">Support me on Patreon</a></p>
+      </div>
+    </div>
+  </div>
+    <!-- First Row of 3 Cards -->
+    <div class="card-row">
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-image-background">
+          <img src="static/coachunsplash.png" class="card-img-top" alt="Worldbuilding Services">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><u>Book Coaching Services</u></h5>
+          <p class="card-text">13 Years is a long time to be writing novels. I confess that not all of those years were professional, but I have learnt a thing or two about writing a novel and have experience coaching friends in such an undertaking.</p>
+          <p class="card-text">I can tailor a writing tracker specific to your needs, hold scheduled meetings to discuss your progress and give you helpful tips and tricks along the way. Who said writing had to be a lonely journey!?</p>
+          <!-- Modified button with data-target attribute -->
+          <a href="javascript:void(0);" class="btn btn-primary" data-target="expandableContent4">Learn More</a>
+        </div>
+        <!-- Hidden content to show on button click -->
+        <div id="expandableContent4" class="hidden-content">
+          <p>To read about my commitment to your work, & see what others thought about working with me<br><a href="Reviews" class="btn btn-primary">Reviews and Commitments</a></p>
+          <p>For Priority access to my Services<br><a href="https://www.patreon.com/Escala" class="btn btn-primary">Support me on Patreon</a></p>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="card-image-background">
+          <img src="static/webdevunsplash.png" class="card-img-top" alt="Networking Services">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><u>Web Building Services</u></h5>
+          <p class="card-text">You might also be interested to know that I build this website myself <u>from scratch</u>, and I would be happy to provide you with one</p>
+          <p class="card-text">This to, can be tailored to your needs and, used effectively, can really show off your experience and personality as a writer to that agent, artist, or Netflix Talent Acquisitioner</p>
+          <!-- Modified button with data-target attribute -->
+          <a href="javascript:void(0);" class="btn btn-primary" data-target="expandableContent5">Learn More</a>
+        </div>
+        <!-- Hidden content to show on button click -->
+        <div id="expandableContent5" class="hidden-content">
+          <p>To read about my commitment to your work, & see what others thought about working with me<br><a href="Reviews" class="btn btn-primary">Reviews and Commitments</a></p>
+          <p>For Priority access to my Services<br><a href="https://www.patreon.com/Escala" class="btn btn-primary">Support me on Patreon</a></p>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="card-image-background">
+          <img src="static/otherunsplash.png" class="card-img-top" alt="Networking Services">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><u>Other Services</u></h5>
+          <p class="card-text">Looking for something that isn't here? Get in touch! I'm happy to talk about how I can help you with your book, world, project or idea x</i></p>
+          <!-- Modified button with data-target attribute -->
+          <a href="javascript:void(0);" class="btn btn-primary" data-target="expandableContent3">Learn More</a>
+        </div>
+        <!-- Hidden content to show on button click -->
+        <div id="expandableContent3" class="hidden-content">
+          <p>To read about my commitment to your work, & see what others thought about working with me<br><a href="Reviews" class="btn btn-primary">Reviews and Commitments</a></p>
+          <p>For Priority access to my Services<br><a href="https://www.patreon.com/Escala" class="btn btn-primary">Support me on Patreon</a></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="timedModal" tabindex="-1" aria-labelledby="timedModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="timedModalLabel">My Services</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Top half for Patreon -->
+        <div class="patreon-support">
+          <p>If you have any questions, or want more information on how I can help you -feel free to get in touch using the form below.
+            <hr class ="gold">
+            For priortiy access to my services - sign up to my <a href="https://www.patreon.com/Escala" target="_blank">Patreon!</a></p>
+        </div>
+        <hr> <!-- Break line between two halves -->
+        <!-- Bottom half for Newsletter Subscription -->
+        <div class="newsletter-subscribe">
+          <p>Get in Touch - </p>
+          <form id="newsletterForm" method = "post">
+            {% csrf_token %}
+            {{ form.as_p }} 
+            <div class="mb-3">
+              <input type="name" class="form-control" id="nameInput" placeholder="Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="emailInput" placeholder="Email Address" required>
+            </div>
+            <div class="mb-3">
+              <input type="textbox" class="form-control" id="textInput" placeholder="Text">
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>                 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet"></link>
+
+<!-- Optional: Bootstrap Bundle with Popper -->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      var timedModal = new bootstrap.Modal(document.getElementById('timedModal'));
+      timedModal.show();
+    }, 50000); // 20000 milliseconds = 20 seconds
+  });
+</script>
+
+
+ 
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Listen for a click on the "Learn More" button
+    document.querySelectorAll('.btn-primary[data-target]').forEach(item => {
+      item.addEventListener('click', function() {
+        // Get the target from the data-target attribute
+        var targetId = this.getAttribute('data-target');
+        var targetElement = document.getElementById(targetId);
+
+        // Toggle the display of the target element
+        if (targetElement.style.display === "none") {
+          targetElement.style.display = "block";
+        } else {
+          targetElement.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+:root {
+  --dark-forest-green: #0B3D20;
+  --mystic-purple: #473854;
+  --ethereal-gold: #C9A678;
+  --dusky-rose: #986C6A;
+  --parchment-white: #F4EDE4;
+}
+
+:root {
+  --deep-sapphire: #0A3A4A;
+  --emerald-green: #087830;
+  --antique-gold: #DAA520;
+  --burgundy-: #800020;
+  --twilight-mist: #8A9597;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+    /*nav*/
+
+    .breadcrumb {
+      padding: 10px 15px; /* Adjust padding as needed */
+      border-radius: 5px; /* Rounded corners */
+      color: var(--parchment-white);
+  }
+    .breadcrumb a {
+      color: var(--ethereal-gold);
+    }
+    
+  .author-name{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:90px;
+    color: var(--parchment-white);
+  }
+  
+  
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Increases space between nav items */
+  margin-bottom: 20px;
+}
+
+.nav-item{
+  font-size: 30px;
+  color: var(--ethereal-gold);
+  }
+
+.nav {
+  padding-left: 0; /* Removes padding for list */
+  list-style: none; /* Removes list style */
+ 
+}
+
+.nav-link {
+  color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+  text-decoration: none; /* Optional: Removes the underline on hover */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
+  text-decoration: none; /* Optional: Removes the underline on hover */
+}
+
+
+
+a, .nav-link {
+  color: var(--parchment-white);
+}
+a:hover, .nav-link:hover {
+  color: var(--parchment-white);
+}
+
+.gold{
+  color: var(--ethereal-gold);
+  padding-left: 30%;
+  padding-right: 30%;
+}
+    
+    /*nav*/
+  
+  body {
+  
+      font-family: "Space Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      background-color: black;
+      
+  }
+  
+  .title-box {
+    width: 50%;
+    margin-bottom: 20px;
+    background-color: var(--mystic-purple); 
+    color: var(--ethereal-gold);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: adds a shadow for depth */
+    border-radius: 8px; /* Optional: rounds the corners */
+  }
+  
+  .text-box {
+    background-color: black;
+    color: var(--ethereal-gold);
+    font-size: 20px;
+    height: 100%; /* Full height of the parent element */
+    width: 85%; /* Full width of the parent element */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  /* Ensures the image covers the full half of the screen */
+  .img-fluid.h-100 {
+    object-fit: scale-down;
+    height: 100%;
+  }
+
+  .footer {
+    bottom: 0; /* Adjusted to stick to the bottom of the viewport */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem; /* Adjust as needed */
+    width: 100%; /* Ensure it spans the full width */
+    padding-left: 50px;
+   }
+
+.highlight-link a {
+  background-color: var(--mystic-purple); /* Light blue background */
+  border: 2px solid var(--ethereal-gold) /* Light blue border */
+}
+
+.list-inline-item a:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: var(--ethereal-gold);
+}
+.get-in-touch-button {
+  background-color: var(--mystic-purple);
+  border-color: var(--ethereal-gold);
+  color: var(--parchment-white); 
+  
+}
+
+.get-in-touch-button:hover {
+  background-color: var(--ethereal-gold) ;
+}
+
+.modal-content {
+  background-size: cover; /* Cover the entire area of the modal content */
+  background-position: center; /* Center the background image */
+   background-color: var(--mystic-purple); /* Mystic Purple background */
+  color: var(--parchment-white); /* Parchment White text */
+  }
+.modal-content .btn-primary {
+  background-color: var(--mystic-purple); /* Ethereal Gold background */
+  border-color: var(--ethereal-gold); /* Ethereal Gold border */
+  color: var(--etheral-gold); /* Dark Forest Green text */
+}
+  
+.modal-content .btn-primary:hover {
+    background-color: darken(var(--ethereal-gold), 10%); /* Darken on hover */
+  }
+.modal-content a {
+    color: var(--ethereal-gold); /* Ethereal Gold links */
+    text-decoration: underline; /* Underline for emphasis */
+  }
+
+.modal-header {
+background-color: black;
+border-bottom: 1px solid var(--ethereal-gold); /* Ethereal Gold border for a subtle contrast */
+}
+
+.modal-title {
+color: var(--parchment-white); /* Parchment White for the title */
+}
+
+.btn-close {
+ color: var(--parchment-white);
+}
+
+.modal-dialog {
+display: flex;
+align-items: center; /* Vertically center the modal */
+justify-content: center;
+min-height: calc(100% - (.5rem * 2)); /* Adjust based on your modal's margin */
+}
+
+
+    

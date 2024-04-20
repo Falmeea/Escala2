@@ -1,0 +1,94 @@
+:root {
+  --dark-forest-green: #0B3D20;
+  --mystic-purple: #473854;
+  --ethereal-gold: #C9A678;
+  --dusky-rose: #986C6A;
+  --parchment-white: #F4EDE4;
+}
+
+:root {
+  --deep-sapphire: #0A3A4A;
+  --emerald-green: #087830;
+  --antique-gold: #DAA520;
+  --burgundy-: #800020;
+  --twilight-mist: #8A9597;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+  /*nav*/
+
+  .breadcrumb {
+    padding: 10px 15px; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners */
+    color: var(--parchment-white);
+}
+  .breadcrumb a {
+    color: var(--ethereal-gold);
+  }
+  
+.author-name{
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:90px;
+  color: var(--parchment-white);
+}
+
+
+.navbar-nav .nav-item {
+margin-right: 30px; /* Increases space between nav items */
+margin-bottom: 20px;
+}
+
+.nav-item{
+font-size: 30px;
+color: var(--ethereal-gold);
+}
+
+.nav {
+padding-left: 0; /* Removes padding for list */
+list-style: none; /* Removes list style */
+
+}
+
+.nav-link {
+color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+}
+
+.nav-link:hover, .nav-link:focus {
+color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+text-decoration: none; /* Optional: Removes the underline on hover */
+}
+
+.nav-link:hover, .nav-link:focus {
+color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
+text-decoration: none; /* Optional: Removes the underline on hover */
+}
+
+
+
+a, .nav-link {
+color: var(--parchment-white);
+}
+a:hover, .nav-link:hover {
+color: var(--parchment-white);
+}
+
+.gold{
+color: var(--ethereal-gold);
+padding-left: 30%;
+padding-right: 30%;
+}
+  
+  /*nav*/
+
+body {
+
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: black;
+  }
