@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from views import landing
+from views import landing, homepage
 from flask_frozen import Freezer
 
 app = Flask(__name__)
@@ -43,4 +43,5 @@ freezer = Freezer(app)
 
 if __name__ == '__main__':
     
-    freezer.freeze()
+    #freezer.freeze()
+    (app.run(debug=True))
