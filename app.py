@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from views import landing, homepage
+from views import landing
 from flask_frozen import Freezer
 
 app = Flask(__name__)
