@@ -1,5 +1,0 @@
-[[headers]]
-  # Define which paths this rule applies to
-  for = "/*.html"
-  [headers.values]
-    Content-Type = "text/html; charset=utf-8"
