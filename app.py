@@ -5,6 +5,8 @@ from flask_frozen import Freezer
 app = Flask(__name__)
 app.register_blueprint(landing, url_prefix="/")
 
+app.config['FREEZER_RELATIVE_URLS'] = True
+
 # Define the route for the index page
 # Define the route for the index page
 @app.route('/')
