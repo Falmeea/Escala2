@@ -14,9 +14,15 @@
   --twilight-mist: #8A9597;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+html, body {
+  scroll-behavior: smooth;
+  background-color: black; /* Sets the background of the entire page */
+  color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
+  font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
+  html, body {
+    background: black none !important; /* No image, just a color, with important */
+}
+}
     /*nav*/
     .breadcrumb {
       padding: 10px 15px; /* Adjust padding as needed */
@@ -134,6 +140,7 @@ body::before {
     transition: transform 0.2s ease-in-out;
     text-align: center;
     margin-bottom: 30%;
+    background-color: black!important;
   }
   
   .card:hover {

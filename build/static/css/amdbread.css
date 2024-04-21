@@ -169,6 +169,9 @@ body::before {
     color: #007bff; /* Bootstrap primary color */
 }
 
+h3{
+  color: var(--parchment-white)
+}
 
 #myBtn {
   display: none; /* Hidden by default */
