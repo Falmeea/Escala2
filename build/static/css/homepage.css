@@ -1,29 +1,27 @@
 :root {
-    --dark-forest-green: #0B3D20;
-    --mystic-purple: #473854;
-    --ethereal-gold: #C9A678;
-    --dusky-rose: #986C6A;
-    --parchment-white: #F4EDE4;
-  }
-  
-  :root {
-    --deep-sapphire: #0A3A4A;
-    --emerald-green: #087830;
-    --antique-gold: #DAA520;
-    --burgundy-: #800020;
-    --twilight-mist: #8A9597;
-  }
-  
-  
-  html, body {
-    scroll-behavior: smooth;
-    background-color: black; /* Sets the background of the entire page */
-    color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
-    font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
-    html, body {
-      background: black none !important; /* No image, just a color, with important */
-  }
+  --dark-forest-green: #0B3D20;
+  --mystic-purple: #473854;
+  --ethereal-gold: #C9A678;
+  --dusky-rose: #986C6A;
+  --parchment-white: #F4EDE4;
+  --deep-sapphire: #0A3A4A;
+  --emerald-green: #087830;
+  --antique-gold: #DAA520;
+  --burgundy: #800020;
+  --twilight-mist: #8A9597;
 }
+  
+html {
+  scroll-behavior: smooth;
+}
+ 
+.body {
+  background-color: black !important; /* Sets the background of the entire page */
+  color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
+  font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
+}
+
+
     /*nav*/
   
     .breadcrumb {
@@ -87,19 +85,14 @@
   
   .list-inline-item + .list-inline-item {
     margin-left: 0; /* Removes default margin between inline items for custom spacing */
-    margin-top: 15px; /* Adds vertical spacing between items */
-  }
-  
-  .list-inline-item:hover {
-    background-color: var(--ethereal-gold);
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .list-inline-item + .list-inline-item {
-      margin-left: 15px; /* Restores horizontal spacing for larger screens */
-      margin-top: 0; /* Removes vertical spacing for larger screens */
+        margin-left: 15px; /* Restores horizontal spacing for larger screens */
     }
-  }
+}
+  
   
   .list-inline-item a:hover {
     transform: scale(1.2); /* Slightly enlarge on hover */
@@ -107,18 +100,37 @@
   
     /*nav*/
  
-    body::before {
-      content: '';
-      position: fixed; /* or absolute */
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      background-position: center;
-      opacity: 0.5; /* Adjust the opacity as needed */
-      z-index: -1; /* Ensure the image stays in the background */
-    }
+   
+body::before {
+  content: '';
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure the image stays in the background */
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+      height: 80%; /* Smaller height on smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-caption {
+      display: block; /* Ensures the content is displayed on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .Maps, .ExploreEscala {
+      max-width: 100%; /* Ensures full width on smaller screens */
+  }
+}
   
   /* Adjust the carousel container */
   .carousel-container-large {
@@ -222,15 +234,6 @@
   
   .carousel-control-next {
     right: 10px; /* Adjust based on your design needs */
-  }
-  
-  @media (min-width: 768px) {
-    /* Hide small carousel controls and indicators on larger screens */
-    .carousel-container-small .carousel-control-prev,
-    .carousel-container-small .carousel-control-next,
-    .carousel-container-small .carousel-indicators {
-      display: none;
-    }
   }
   
   .gold{
