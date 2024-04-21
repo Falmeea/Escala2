@@ -21,6 +21,13 @@ html {
   font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
 }
 
+/* Force a black background on small and medium screens */
+@media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
+  html, body {
+      background-color: black !important; /* Ensures the background stays black */
+      color: white; /* Keeps text visible */
+  }
+}
 
     /*nav*/
   
