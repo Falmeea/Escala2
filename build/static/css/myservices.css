@@ -240,7 +240,7 @@ a:hover, .nav-link:hover {
 .hidden-content {
   display: none; /* Hide content by default */
   padding: 20px; /* Padding for content */
-  background-color: #4B0082; /* Background color matching the button */
+  background-color: black; /* Background color matching the button */
   color: #E6E6FA; /* Text color for hidden content */
 }
 
