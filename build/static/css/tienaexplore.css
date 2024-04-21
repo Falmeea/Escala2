@@ -1,0 +1,233 @@
+:root {
+  --dark-forest-green: #0B3D20;
+  --mystic-purple: #473854;
+  --ethereal-gold: #C9A678;
+  --dusky-rose: #986C6A;
+  --parchment-white: #F4EDE4;
+}
+
+:root {
+  --deep-sapphire: #0A3A4A;
+  --emerald-green: #087830;
+  --antique-gold: #DAA520;
+  --burgundy-: #800020;
+  --twilight-mist: #8A9597;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+    /*nav*/
+    .breadcrumb {
+      padding: 10px 15px; /* Adjust padding as needed */
+      border-radius: 5px; /* Rounded corners */
+      position: fixed;
+      width:100%;
+      z-index: 2;
+      color: var(--parchment-white);
+    }
+      .breadcrumb a {
+        color: var(--ethereal-gold);
+      }
+      
+  .author-name{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:90px;
+    z-index: 2;
+    color: var(--parchment-white);
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 30px; /* Increases space between nav items */
+  }
+  
+  .nav-item{
+    font-size: 30px;
+    color: var(--ethereal-gold);
+    }
+  
+  .nav {
+    padding-left: 0; /* Removes padding for list */
+    list-style: none; /* Removes list style */
+   
+  }
+  
+  .nav-link {
+    color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+    text-decoration: none; /* Optional: Removes the underline on hover */
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
+    text-decoration: none; /* Optional: Removes the underline on hover */
+  }
+  
+  
+  
+  a, .nav-link {
+    color: var(--parchment-white);
+  }
+  a:hover, .nav-link:hover {
+    color: var(--parchment-white);
+  }
+  
+  .list-inline-item + .list-inline-item {
+    margin-left: 0; /* Removes default margin between inline items for custom spacing */
+    margin-top: 15px; /* Adds vertical spacing between items */
+  }
+
+  
+  @media (min-width: 768px) {
+    .list-inline-item + .list-inline-item {
+      margin-left: 15px; /* Restores horizontal spacing for larger screens */
+      margin-top: 0; /* Removes vertical spacing for larger screens */
+    }
+  }
+  
+  .list-inline-item a:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    background-color: var(--ethereal-gold);
+  }
+
+  
+  .highlight-link a {
+    background-color: var(--mystic-purple); /* Light blue background */
+    border: 2px solid var(--ethereal-gold) /* Light blue border */
+  }
+  
+      /*nav*/
+  
+  body {
+  
+      font-family: "Space Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      background-color: black;
+      color: var(--parchment-white);
+      background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
+      background-size: cover; /* Cover the entire page */
+      background-repeat: no-repeat;
+      height: 100vh; /* Full viewport height */
+    }
+
+body::before {
+    content: '';
+    position: fixed; /* or absolute */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure the image stays in the background */
+  }
+
+  .card {
+    /* Adds a smooth transition effect on hover */
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    margin-bottom: 30%;
+  }
+  
+  .card:hover {
+    /* Slightly scale the card on hover for a subtle effect */
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    color: var(--parchment-white); /* A deep purple for the title for elegance */
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: var(--ethereal-gold); /* A slightly lighter shade for the text */
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2; /* Ensure it's clickable over the text */
+    padding: 0.5rem; /* Make it a bit larger for easier clicking */
+    background-color: var(--emerald-green);
+  }
+
+  .btn{
+    background-color: var(--mystic-purple);
+  }
+
+  .close{
+    background-color: var(--emerald-green);
+  }
+  
+  .patreon-promotion-box {
+    position: fixed; /* Stick the box to the bottom */
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    width: 100%; /* Span the entire width of the viewport */
+    padding: 20px; /* Spacious padding */
+    border-radius: 0px; /* Adjusted for a footer, no rounded corners needed at the bottom */
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2); /* Adjusted shadow for depth */
+    display: flex; /* Use flexbox for better alignment */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    z-index: 1000; /* Ensure the footer stays on top of other content */
+  }
+  
+  .patreon-promotion-box p {
+    margin: 0; /* Reset margin */
+    color: var(--parchment-white); /* Light text color for contrast */
+    font-size: 18px; /* Maintain font size for readability */
+    font-weight: 500; /* Medium font weight */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+  }
+
+  .patreon-promotion-box .btn {
+    display: inline-block; /* Change to inline-block for proper centering */
+    background-color: var(--ethereal-gold); /* Lighter button background for contrast */
+    color: #333; /* Dark text color for readability */
+    border-color: var(--ethereal-gold); /* Border color similar to the button but slightly darker */
+    padding: 10px 20px; /* Padding for a larger, more clickable area */
+    font-weight: bold; /* Bold font weight for the button text */
+    box-shadow: 0 2px 4px (0, 0, 0, 0.2); /* Button shadow for depth */
+    border-color: var(--ethereal-gold);
+  }
+  
+  .patreon-promotion-box .btn:hover {
+    background-color: var(--mystic-purple); /* Slightly darker background on hover */
+    color: #222; /* Slightly darker text color for contrast on hover */
+  }
+  
+/* General styles for promotion box paragraphs */
+.wattpad-promotion-box p, .card-text p {
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Styling for buttons within promotion boxes */
+.wattpad-promotion-box .btn, .card-text .btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto; /* Center the button */
+  background-color: var(--mystic-purple);
+  border-color: var(--ethereal-gold);
+  color: white; /* Ensures text color is white for contrast */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+.wattpad-promotion-box .btn:hover, .card-text .btn:hover,
+.wattpad-promotion-box .btn:focus, .card-text .btn:focus {
+  background-color: var(--ethereal-gold); /* Ethereal Gold background on hover/focus */
+  color: var(--parchment-white); /* Changes text color to Mystic Purple for contrast */
+}
+
+
+

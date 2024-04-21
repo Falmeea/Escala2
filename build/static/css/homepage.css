@@ -15,9 +15,15 @@
   }
   
   
-  html {
+  html, body {
     scroll-behavior: smooth;
+    background-color: black; /* Sets the background of the entire page */
+    color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
+    font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
+    html, body {
+      background: black none !important; /* No image, just a color, with important */
   }
+}
     /*nav*/
   
     .breadcrumb {
@@ -100,16 +106,7 @@
   }
   
     /*nav*/
-  
-  body {
-  
-      font-family: "Space Grotesk", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-      background-color: black;
-      color: var(--parchment-white);
-    }
-  
+ 
     body::before {
       content: '';
       position: fixed; /* or absolute */
@@ -391,7 +388,7 @@
   .modal-content {
       background-size: cover; /* Cover the entire area of the modal content */
       background-position: center; /* Center the background image */
-       background-color: var(--mystic-purple); /* Mystic Purple background */
+      background-color: black !important;
       color: var(--parchment-white); /* Parchment White text */
       }
   .modal-content .btn-primary {

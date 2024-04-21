@@ -15,8 +15,11 @@
 }
 
 
-html {
+html, body {
   scroll-behavior: smooth;
+  background-color: black !important; /* Sets the background of the entire page */
+  color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
+  font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
 }
   /*nav*/
 
@@ -92,3 +95,8 @@ body {
     font-style: normal;
     background-color: black;
   }
+
+h1{
+  color: var(--parchment-white);
+}
+

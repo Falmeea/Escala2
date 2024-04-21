@@ -1,0 +1,185 @@
+:root {
+  --dark-forest-green: #0B3D20;
+  --mystic-purple: #473854;
+  --ethereal-gold: #C9A678;
+  --dusky-rose: #986C6A;
+  --parchment-white: #F4EDE4;
+}
+
+:root {
+  --deep-sapphire: #0A3A4A;
+  --emerald-green: #087830;
+  --antique-gold: #DAA520;
+  --burgundy-: #800020;
+  --twilight-mist: #8A9597;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+    /*nav*/
+    .breadcrumb {
+      padding: 10px 15px; /* Adjust padding as needed */
+      border-radius: 5px; /* Rounded corners */
+      position: fixed;
+      width:100%;
+      z-index: 2;
+      color: var(--parchment-white);
+    }
+      .breadcrumb a {
+        color: var(--ethereal-gold);
+      }
+      
+  .author-name{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:90px;
+    z-index: 2;
+    color: var(--parchment-white);
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 30px; /* Increases space between nav items */
+  }
+  
+  .nav-item{
+    font-size: 30px;
+    color: var(--ethereal-gold);
+    }
+  
+  .nav {
+    padding-left: 0; /* Removes padding for list */
+    list-style: none; /* Removes list style */
+   
+  }
+  
+  .nav-link {
+    color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+    text-decoration: none; /* Optional: Removes the underline on hover */
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
+    text-decoration: none; /* Optional: Removes the underline on hover */
+  }
+  
+  
+  
+  a, .nav-link {
+    color: var(--parchment-white);
+  }
+  a:hover, .nav-link:hover {
+    color: var(--parchment-white);
+  }
+  
+  .list-inline-item + .list-inline-item {
+    margin-left: 0; /* Removes default margin between inline items for custom spacing */
+    margin-top: 15px; /* Adds vertical spacing between items */
+  }
+
+  
+  @media (min-width: 768px) {
+    .list-inline-item + .list-inline-item {
+      margin-left: 15px; /* Restores horizontal spacing for larger screens */
+      margin-top: 0; /* Removes vertical spacing for larger screens */
+    }
+  }
+  
+  .list-inline-item a:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    background-color: var(--ethereal-gold);
+  }
+
+  
+  .highlight-link a {
+    background-color: var(--mystic-purple); /* Light blue background */
+    border: 2px solid var(--ethereal-gold) /* Light blue border */
+  }
+  
+      /*nav*/
+  
+  body {
+  
+      font-family: "Space Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      background-color: black;
+      color: var(--parchment-white);
+    }
+
+body::before {
+    content: '';
+    position: fixed; /* or absolute */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure the image stays in the background */
+  }
+
+  .novel-excerpt {
+    font-family: 'Georgia', serif;
+    color: var(--ethereal-gold);
+    background-color: black;
+    max-width: 800px;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    line-height: 1.6;
+}
+
+.novel-excerpt h2 {
+    font-family: 'Arial', sans-serif;
+    color: var(--parchment-white)
+}
+
+.novel-excerpt p {
+    text-indent: 50px;
+    font-size: 20px;
+}
+
+.novel-excerpt .First-Letter:first-letter {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.novel-excerpt .dialogue {
+    font-style: italic;
+   
+}
+
+/* Specific styling for special elements like names or important items */
+.novel-excerpt .character, .novel-excerpt .item {
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button 20px from the bottom */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--mystic-purple); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: var(--ethereal-gold); /* Add a darker background on hover */
+}

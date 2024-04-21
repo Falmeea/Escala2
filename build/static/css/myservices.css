@@ -15,9 +15,15 @@
 }
 
 
-html {
-    scroll-behavior: smooth;
-  }
+html, body {
+  scroll-behavior: smooth;
+  background-color: black; /* Sets the background of the entire page */
+  color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
+  font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
+  html, body {
+    background: black none !important; /* No image, just a color, with important */
+}
+}
     /*nav*/
 
     .breadcrumb {
@@ -164,11 +170,13 @@ a:hover, .nav-link:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #fff;
+  background-color: black !important;
   border: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   overflow: hidden;
 }
+
+
 
 .card-img-top {
   width: 100%; /* Ensure the image covers the card width */

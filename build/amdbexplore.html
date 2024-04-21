@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <style>
+        :root {
+          --background-image-url: url('{% static 'Chaian and Salis.png' %}');
+        }
+        body::before {
+  /* other properties remain the same */
+  background-image: var(--background-image-url);
+}
+
+      </style>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <link rel="stylesheet" href="{% static 'base/AMDBexplore.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Whisper&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escala</title>
+  </head>
+  
+<body>
+  <!-- Navigation Bar -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="http://127.0.0.1:8000">Welcome</a></li>
+      <li class="breadcrumb-item"><a href="homepage">Home</a></li>
+      <li class="breadcrumb-item"><a href="AMDBread">Read A Most Dreadful Beginning</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Explore A Most Dreadful Beginning</li>
+      </ol>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid flex-column align-items-center">
+          <a class="text-center author-name" href="homepage">Danny Crow</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="toggler-close-icon" style="display:none;">&times;</span> <!-- 'X' icon -->
+          </button>
+          
+        <div class="collapse navbar-collapse text-center" id="navbarContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="TheWriter">The Writer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="MyServices">My Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Shop">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+  
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card shadow-sm text-center" id="textCard">
+              <div class="card-header">
+                <button type="button" class="close" aria-label="Close" onclick="closeTextbox()">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h5>Blurb</h5>
+                <p class="card-text">
+                    <p class ="card-text">
+                      A Most Dreadful Beginning is a Romance takes place during Escala: A Broken World.
+                      The Gods have abandonned the Elves, leaving them scattered and, in many places, enslaved to Mankind. 
+                      Islatuim, the very first Elven Capital of the Second Age, is their only refuge.
+                    </p>
+                   <p class = "card-text">
+                   Here we meet three Elven children, in their first, second and third centuries as war hovers 
+                   on a knife edge netween the Elven Wood and the Men of Terium. Emn, a child whose bright Blonde hair it turning a dreaded brown, Faendil, her abusive brother -who is in love with our third, quite enigmatic character, a young Elf named Eleanor.
+                   I will say no more about Eleanor here, though you will soon understand that any Elf old enough to understand is fiercely afraid of her.
+                  </p>
+                   <p class ="card-text">
+                      We also meet the young Prince Chaian, of Terium as he rides into the forest, 
+                      cursing his luck, and somehow, hoping to get rid of the Kingsman that won't let him be, 
+                      as he goes to meet with the enchanting Elf girl whose eyes are brighter than the stars themselves.
+                    </p>
+                  </p>
+                  <p class="card-text">
+                    
+                    <br>
+                    <!-- Wattpad Promotion Box -->
+                    <div class="wattpad-promotion-box card-text">
+                    <p>Get access to more of the story here:</p>  
+                        <br>
+                        <a href="https://www.wattpad.com/dannycrowslibrary?utm_source=web&utm_medium=email&utm_content=share_profile" target="_blank" class="btn btn-primary">Wattpad</a></p>
+                    </div>
+                    <div class="card-text">
+                             <br>
+                            <a href="AMDBread" target="_blank" class="btn btn-primary">Read the First Chapter</a></p>
+                        </div>
+
+                        <br>
+                  <p class="card-text">
+                    P.S There is much more to come from these 'Explore' pages, including maps, sketches from the series and a more detailed look into the projects they belong to.
+                  </p>  
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="showButton" class="btn btn-primary" style="display:none;" onclick="showTextbox()">Bring me back!</button>
+      </div>
+      
+      
+
+
+             
+<!-- Patreon Promotion Box -->
+<div class="patreon-promotion-box">
+    <p>For a deeper, more personal look into Emn, Eleanor and Faendil's, follow my <a href="https://www.patreon.com/Escala" target="_blank" class="btn btn-primary">Patreon</a></p>
+</div>
+
+
+
+  
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        var togglerIcon = document.querySelector('.navbar-toggler-icon');
+        var togglerCloseIcon = document.querySelector('.toggler-close-icon');
+    
+        // Toggle icon on showing the navbar
+        navbarToggler.addEventListener('show.bs.collapse', function () {
+          togglerIcon.style.display = 'none';
+          togglerCloseIcon.style.display = 'inline';
+        });
+    
+        // Toggle icon on hiding the navbar
+        navbarToggler.addEventListener('hide.bs.collapse', function () {
+          togglerIcon.style.display = 'inline';
+          togglerCloseIcon.style.display = 'none';
+        });
+      });
+    </script>
+    
+    <script>
+      function closeTextbox() {
+        document.getElementById('textCard').style.display = 'none'; // Hide the text card
+        document.getElementById('showButton').style.display = 'block'; // Show the "Show Text" button
+      }
+      
+      function showTextbox() {
+        document.getElementById('textCard').style.display = 'block'; // Show the text card
+        document.getElementById('showButton').style.display = 'none'; // Hide the "Show Text" button
+      }
+      </script>
+
+</body>

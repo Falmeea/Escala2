@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <style>
+        :root {
+          --background-image-url: url('{% static 'BetweenMountains.jpg' %}');
+        }
+        body::before {
+  /* other properties remain the same */
+  background-image: var(--background-image-url);
+}
+
+      </style>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <link rel="stylesheet" href="{% static 'base/AMDBread.css' %}">
+
+    <!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Whisper&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escala</title>
+</head>
+  <!-- Navigation Bar -->
+<body>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="http://127.0.0.1:8000">Welcome</a></li>
+      <li class="breadcrumb-item"><a href="homepage">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Read A Most Dreadful Beginning</li>
+      <li class="breadcrumb-item"><a href="AMDBexplore">Explore A Most Dreadful Beginning</a></li>
+    </ol>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid flex-column align-items-center">
+        <!-- Navbar brand / title -->
+        <a class="text-center author-name" href="homepage">Danny Crow</a>
+        
+        <!-- Toggler button for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse text-center" id="navbarContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="TheWriter">The Writer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="MyServices">My Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Shop">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<ul class="nav justify-content-center list-inline">
+  <li class="list-inline-item">
+    <a class="nav-link" href="mailto:connordhanson@gmail.com">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 512 512">
+        <path fill="white" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path>
+    </svg>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    <a class="nav-link" href="https://www.instagram.com/crowslibraryofthings">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 
+                  0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555
+                  15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99
+                  10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 
+                  10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047
+                   3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478
+                    0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988
+                     1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg>
+    </a>
+  </li>
+
+</li>
+
+     <li class="list-inline-item">
+        <a class="nav-link" href="https://substack.com/crowslibraryofthings">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-substack" viewBox="0 0 16 16">
+            <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
+          </svg>
+        </a>
+      </li> 
+  <!--  <li class="list-inline-item">
+    <a class="nav-link" href="">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="black" class="bi bi-substack" viewBox="0 0 16 16">
+        <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
+      </svg>
+    </a>
+  </li>!-->
+
+  <li class="list-inline-item highlight-link">
+    <a class="nav-link" href="https://www.wattpad.com/dannycrowslibrary?utm_source=web&utm_medium=email&utm_content=share_profile">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" id="wattpad" fill="white" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path  d="M.5 2.5V10A4.5 4.5 0 0 0 5 14.5h10.5v-12h-3v9h-3v-9h-3v9H5A1.5 1.5 0 0 1 3.5 10V2.5h-3z"></path></svg>
+      </svg>
+    </a>
+  </li>
+
+  <li class="list-inline-item highlight-link">
+    <a class="nav-link" href="https://www.patreon.com/Escala">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 16 16" fill ="white"version="1.1">
+        <g id="surface1">
+        <path  d="M 15.304688 4.808594 C 15.300781 2.765625 13.710938 1.089844 11.84375 0.484375 C 9.527344 -0.265625 6.46875 -0.15625 4.253906 0.886719 C 1.570312 2.152344 0.730469 4.925781 0.695312 7.695312 C 0.671875 9.96875 0.898438 15.957031 4.277344 16 C 6.785156 16.03125 7.160156 12.796875 8.320312 11.238281 C 9.148438 10.132812 10.210938 9.816406 11.523438 9.492188 C 13.773438 8.9375 15.308594 7.160156 15.304688 4.808594 Z M 15.304688 4.808594 "/>
+        </g>
+        </svg>
+        </a>
+  </li>
+</ul>
+    <div class="novel-excerpt">
+        <h2>Part One.</h2>
+        <p class = "First-Letter">Prince Chaian flinched at the scream, neck snapping toward the awful sound for fear of something monstrous bounding out of the dark toward them. His eyes only found a raven perched atop a tree; its beady eyes glared at them. He shivered nonetheless, and his snow-white mare shook beneath him as the raven screamed again.</p>
+        <p>Salis pulled up beside him, scowling as ever. “Tis’ an ill omen.” He said, his own dark eyes met the bird as it took off, no more than a silhouette under the glare of the twins. “A dark creature if there e’er was one. An’ with two full moons to boot...” The wretched man spat defiantly, and grumbled the rest under his breath, too quiet for Chaian to hear.</p>
+        <p>“I didn’t ask you to come this night, Salis. You are free to return if the dark makes you uncomfortable, I have already told you I would prefer to be alone this night.”</p>
+        <p>“Ah’ll be free the hang if yer father finds out where ye’ve gone,” Salis muttered gloomily, urging his own mount after the Prince. “An’ if I return alone, folk will think t’was I who wanders in the Dark places. Fergive me, Prince, why must yeh’ be out under the moons, of all nights? I can’ likely leave yeh alone out here. There’s evil folk in these woods. Spirits an’ such.”</p>
+        <p>“I come because its peaceful. And as for your spirits -have you ever seen one, Kingsman? I do not believe this place is evil, unless it comes from the people who enter, expecting to see that evil rear its ugly head.”</p>
+        <p>“Aye.” Salis said darkly, understanding that he could no more disagree than leave the prince’s side.</p>
+        <p>The night was supposed to be deadly quiet with the folk of An Teria hiding from the moons, it was set up perfectly for the Prince to slip out unnoticed and be back before anyone was brave enough to step outside. Father-knew why Salis had been around to see the prince leave, but the Kingsman made sure to keep up.</p>
+        <p>Chaian paused before the bank of the crossing. On a clear day woodland stretch from north to south as far as the eye could see, but tonight mist seeped from the woods, rising and falling to a rhythm as-if the forest were breathing; he had grown up on tales of the wood across Haydenswater, as had his father, and his father before him.</p>
+        <p>“I would learn about this place if I could. These lands are to be under my charge one day, are they not? Imagine a King trying to rule a court that he hasn’t grown up studying, there is no sense in it.”</p>
+        <p>(Prince Chaian twisted on his mare to look at Salis), he was no less a boy than Salis’s own son, yet he spoke with authority, “I’m going in.”</p>
+        <p>“Yeh’re not.” Salis frowned, trying to look for some sort of jest in the prince’s face.</p>
+        <p>Prince Chaian kicked across the shallows of Haydenswater, trying to make it look like he didn’t know where he was going. Salis was still behind him when he found their small clearing, with its hill beneath the light of the moons, and the shell of a tree, stark white, leaning to one side. He was not afraid of the wood, because he knew better than most: the folk inside the wood weren’t evil, like his people were taught, like he was told as a child.</p>
+        <p>But someone like Salis would never understand that it was the forest that twisted folk here, to him it seemed unending and full of frightening noises, but it had lost a great deal, and now the forest was sulking. Once these woods had been magnificent, with untold brooks and streams, babbling from morn to eve, and great rivers and roaring waterfalls too. There had been vast mountains to keep the forest company a long time ago. Now it only had hills, which Chaian was told the forest thought were childish things. He’d been taught better.</p>
+        <p>If he could just get the Elves out of the wood, his family might see what he saw, what Eleanor taught him and what he realised, despite everything, he now knew to be true.</p>
+        <p>Chaian damned his luck for not managing to sneak away sooner; he was going to need to get rid of Salis somehow, there was no question about it.</p>
+        <p>†</p>
+
+<p>Two girls were sat with a boy at the back of the Vineroom, the girls whispered furiously at one another while the boy pretended not to listen. The first girl was called Emn, quiet and curious, she was a small thing, hardly out of her first century, with blonde hair that didn’t quite shine the same as the other Elves in their village.</p>
+<p>The second girl was a fair bit older, to her kin it was easy for other Elves to see she was halfway through her second century, but she possessed bright, knowing eyes that suggested she was far older, though her kin pretended not to notice.</p>
+<p>The girls name was Eleanor, and not thirty seconds went by in which she wasn’t turning her head to look around; she didn’t like sitting so close to the door, to be honest she did not like sitting in the middle either. It would be better said that Eleanor didn’t like doors full stop, or rooms, or people.</p>
+<p>And it was that dislike of people that made Chief Tolain place her in his daughters Song.</p>
+<p>And then there was Faendil. The oldest of the bunch, with slightly greying blonde hair. Usually, he had a mean look in his eye but tonight, and with Eleanor around, it was hidden deep under the surface.</p>
+<p>The trio were a Song, a strange tradition that grouped children together to help grow and to keep them safe, (Elves did not like change, but they were forced into it, now few enough adults remained). Those Song-caste together grew together and, once upon a time, travelled together too. But no Elves travelled anymore, and there weren’t many Songs these days either, so it had caused a huge ripple in the community when Chief Tolain asked Eleanor to be a part of his children’s pod. There were some that claimed Eleanor was the reason for his daughters ailment, as a punishment from the Gods.</p>
+<p>Emn let go of her lip, now raw. “I don’t know, Eleanor, Its-“</p>
+<p>“Forbidden for a reason, I know!” Eleanor rolled her eyes. “No one is allowed out on Gathering night, even Faendil knows that. It doesn’t matter, no one will even miss us, they don’t even want us here.” She got an unhappy nudge in the ribs for her tongue, and glared at Faendil in response.</p>
+<p>“Except my father.” Emn mumbled. She didn’t want to upset him, but even more than that she didn’t want to upset the Gods more than they already had, with more Men chopping and burning at the forest every day, Emn didn’t want to be responsible for the death of any more Elves.</p>
+<p>But she knew what sort of answer that would get from Eleanor, who paused as one of the Priests apprentices swept past in stuffy robes.</p>
+<p>“He’s with the other Elders. He isn’t going to pay attention to us.”</p>
+<p>Emn wasn’t so sure, her father was very protective of them and even mentioned that they were due to be Caste together. “And what about Faendil?”</p>
+<p>“He has very little interest in whatever you two are doing.” Her older brother said snidely. “Do what you want, but I’m leaving with you. Othinel is already waiting for me with some Elves that guard the northern deadlands, we’ll be out on patrol while the men are cowing inside from the moons.” Faendil puffed his chest out proudly.</p>
+<p>“Othinel’s never been close to the border. He’s a coward, just like you. We’ll probably find you drunk in the roots of a tree in an hour.” Eleanor sneered, and Faendil went bright red, but he didn’t dare try Eleanor.</p>
+<p>Emn grinned at the floor, it was one of her favourite things about Eleanor, even though he would almost definitely take it out on her when her friend wasn’t around, it was worth it for Emn just to see Faendil squirm.</p>
+<p>Eleanor turned back to her, looking for an answer. “Please? I have to show someone. You’re the only one I think would understand!” She put on her most charming face, the one she reserved when she was in the most trouble, which Emn had only seen once before.</p>
+<p>“Alright… I’ll come.” Emn conceded quietly.</p>
+<p>Eleanor grinned, and her face returned to normal –or the face Emn saw most. There were so many the younger girl wasn’t sure which the real one was. You might not be blamed for thinking the smaller girl to be the older of the pair, as Eleanor squealed in her chair, trying and failing to not make too much noise. Emn smiled despite herself, and Eleanor was hushed as the Gathering began.</p>
+<p>The Priest of the Wood stood to greet her extended family. Her skin was bronze where everyone were pale as the moon; it was said that the Priests of old were borne from very trees that they looked after.</p>
+<p>Ulieth took a second to look at the room, then she smiled a smile that seemed to reach every single Elf in the room, grey locks spilled from her headwrap as Emn stretched to try and get a look at her eyes, that her father said shone gold. There weren’t many priests anymore.</p>
+<p>“Manos’ welcome to you, one and all.” Ulieth said, looking out to the few Elves that remained. “In years past we have sat under the grapevines to choose our fate for the year to come, but tonight is different. The grapes turn darker with each turn of the sun, in hand with the hopes of our future in this forest, and so I stand here before you for three reasons. First, we are here to celebrate and give thanks to the Gods that continue to watch over us, long since they have passed from this world. We here are alive, we are well, though we continue to mourn the loss of our brothers and sisters after the battle of Tuhnhill. Give thanks that you have survived, that you hold the fate of our kind within you. This is your charge, now more than ever it is crucial that you all understand the power that you hold.”</p>
+<p>The room was deathly quiet to Ulieth’s words, absorbed in their own thoughts of loved ones lost. Emn herself had lost her mother in the battle, nearly seventy years ago now, she was too little to remember much at all. Beside Eleanor, Faendil shivered with sobs.</p>
+<p>“The second reason, friends. We are also here to mourn those we have lost to the cruelty of Man in memory short past. My own brother was one of them, a good soul who loved the trees as much as any of us.” Ulieth’s voice shook, her eyes went dark. An angry ripple resonated through-out the room with her.</p>
+<p>“Imagine my fury when I heard that those same Men burned my brothers’ body rather than allowing him to be returned to the forest. I beg each of you hear me: you are allowed to be angry. I understand that pain as well. But the Men this new world are young, they are afraid of what they do not know, as afraid of us as we are afraid of them. Some of you will remember that it was not always like this, when the world was whole and full of light, when we lived together and without fear.</p>
+<p>And so I am brought to the third reason that we are gathered before the time of Choosing. My kin, we are here tonight to forgive the Men of this new world…” This last point was met with anger from a selection of young Elfaen in the middle of the room, a handful of whom rose started shouting. The room fell into chaos.</p>
+<p>And as the Elves argued, Eleanor tugged on Emn’s arm, the older girl was crouched between the pews, ready. Faendil was already gone. As more Elves voices joined the fray no one even noticed the girls slip out into the night. Yet the girls themselves were so concerned with moving unseen that they didn’t notice the hooded figure standing behind the door to the Vineroom, his eyes shining after them as they went, hand-in-hand into the night.</p>
+
+<p class = "Bullet-point">†</p>
+
+<p>Salis stared uneasily at the trees from the centre of the clearing; spinning every so often to protect his rear, as-if the trees might move if he wasn’t paying attention.</p>
+<p>“Peace, Salis.” Said the prince, resting upon the hill for a moment. He would have been chewing at his nails if they hadn’t already gone in the half-moments that he thought Salis wasn’t watching.</p>
+<p>“The woods cannot harm you if you aren’t standing within their reach.”</p>
+<p>“Aye, and what about the folk inside the woods?”</p>
+<p>The Prince opened his mouth to reply that such folk were too afraid to visit the edge of the wood, thanks to his family, but he paused. What good would it do to tell the Kingsman that they were winning? They would burn the whole forest down if they knew, so the prince conceded the point with a shrug, and Salis gripped his sword with pale knuckles and feverish eyes.</p>
+<p>He sat up.</p>
+<p>It didn’t look like he could scare Salis into fleeing, his life would likely be forfeit if anyone found out, but Chaian knew he couldn’t just sit here and wait. Eventually Salis would start to suspect something, the man wasn’t much of a thinker but neither was he an idiot.</p>
+<p>The idea made him feel ill. He was going to have to lose the Kingsman in the wood and double back into the clearing. Sooner or later word was going to get out that the prince was visiting the forest beyond haydenswater and he’d never be allowed back again. The Kingsman had to go, and better the Elves deal with him than he rise against his own kinsman.</p>
+<p>He stood to gather the torch and the tinderbox from his mare and handed it to Salis.</p>
+<p>“Was’ this for?”</p>
+<p>“We’re on patrol, soldiers on patrol need a torch, yes?”</p>
+<p>“Nay, Prince. Me eyes do better wi’out, a torch does you no good in the dark.”</p>
+<p>“A torch does you no good in a dark field, Salis, in the woods it can be the difference between life and death. The trees shy away from an open flame.”</p>
+<p>“Aye?”</p>
+<p>“Aye.” Chaian nodded, and Salis gripped the torch like his life depended on it. “Where be we patrolling?”</p>
+<p>“Into the woods, to explore as long as it feels right to do so.”</p>
+<p>Salis shuddered, “Fergive me for saying so, prince, but it don’t feel at all right, not from the off it don’t. Such a man that can find peace where there is so much noise, and strange noise at that. Chirping and digging…tis not natural.” The Kingsman eyed Chaian severely, as if the prince might suddenly confess to being cursed.</p>
+<p>Chaian ignored him. “Best leave your sword too, Kingsman. It will do you little good if we come across an Elf in their wood, at least without a weapon we can proclaim peace.”</p>
+<p>Salis looked aghast at the prince, before giving a sigh of resignation and with it the life left his proud shoulders. He tied the weapon to his mount and followed after the prince, along the haydenswater. With the woods to the left, they went north.</p>
+
+<p class = "Bullet-point">†</p>
+
+<div>                        
+  <br>
+    <p><b><u>Get access to more of the story here:</u></b></p>  
+      <hr>              
+  <a href="https://www.wattpad.com/dannycrowslibrary?utm_source=web&utm_medium=email&utm_content=share_profile" target="_blank" class="btn btn-primary">Wattpad</a></p>
+</div>
+       
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+    </script>
+    
+
+</body>
