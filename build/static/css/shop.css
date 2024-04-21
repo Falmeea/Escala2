@@ -21,6 +21,14 @@ html, body {
   color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
   font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
 }
+
+@media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
+  html, body {
+      background-color: black !important; /* Ensures the background stays black */
+      color: white; /* Keeps text visible */
+  }
+}
+
   /*nav*/
 
   .breadcrumb {

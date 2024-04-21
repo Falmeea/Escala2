@@ -24,6 +24,14 @@ html, body {
     background: black none !important; /* No image, just a color, with important */
 }
 }
+
+@media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
+  html, body {
+      background-color: black !important; /* Ensures the background stays black */
+      color: white; /* Keeps text visible */
+  }
+}
+
     /*nav*/
 
     .breadcrumb {

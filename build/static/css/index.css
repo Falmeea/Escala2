@@ -32,6 +32,14 @@ html, body {
   background-color: black;
 }
 
+@media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
+  html, body {
+      background-color: black !important; /* Ensures the background stays black */
+      color: white; /* Keeps text visible */
+  }
+}
+
+
 /* Nav */ 
 .social-nav {
   position: fixed; /* This ensures the nav is stuck at the top */
