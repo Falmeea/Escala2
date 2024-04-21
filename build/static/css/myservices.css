@@ -262,12 +262,14 @@ a:hover, .nav-link:hover {
   margin-top: 20px;
 }
 
+
 .modal-content {
     background-size: cover; /* Cover the entire area of the modal content */
     background-position: center; /* Center the background image */
-     background-color: var(--mystic-purple); /* Mystic Purple background */
+    background-color: #000000 !important; /* Mystic Purple background */
     color: var(--parchment-white); /* Parchment White text */
-    }
+ }
+ 
 .modal-content .btn-primary {
     background-color: var(--mystic-purple); /* Ethereal Gold background */
     border-color: var(--ethereal-gold); /* Ethereal Gold border */

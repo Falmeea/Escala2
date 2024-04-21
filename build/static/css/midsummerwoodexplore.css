@@ -116,7 +116,7 @@ html, body {
       font-style: normal;
       background-color: black;
       color: var(--parchment-white);
-        background-image: url('/static/Eave%20Cave.png'); /* Adjust the path as necessary */
+        background-image: url('/static/dragonduck.png'); /* Adjust the path as necessary */
         background-size: cover; /* Cover the entire page */
         background-repeat: no-repeat;
         height: 100vh; /* Full viewport height */
@@ -142,6 +142,10 @@ body::before {
     text-align: center;
     margin-bottom: 30%;
     background-color: black!important;
+  }
+
+  h5{
+    color: #F4EDE4;
   }
   
   .card:hover {

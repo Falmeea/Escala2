@@ -113,14 +113,18 @@ html, body {
   
       /*nav*/
   
-  body {
-  
-      font-family: "Space Grotesk", sans-serif;
+      body {
+        font-family: "Space Grotesk", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       background-color: black;
       color: var(--parchment-white);
+      background-image: url('/static/amdbbackground.png'); /* Adjust the path as necessary */
+      background-size: cover; /* Cover the entire page */
+      background-repeat: no-repeat;
+      height: 100vh; /* Full viewport height */
     }
+
 
 body::before {
     content: '';
@@ -142,7 +146,10 @@ body::before {
     margin-bottom: 30%;
     background-color: black!important;
   }
-  
+
+  h5{
+    color: #F4EDE4;
+  }
   .card:hover {
     /* Slightly scale the card on hover for a subtle effect */
     transform: scale(1.05);

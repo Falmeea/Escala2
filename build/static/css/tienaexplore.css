@@ -142,6 +142,10 @@ body::before {
     margin-bottom: 30%;
     background-color: black!important;
   }
+
+h5{
+  color: #F4EDE4;
+}
   
   .card:hover {
     /* Slightly scale the card on hover for a subtle effect */
