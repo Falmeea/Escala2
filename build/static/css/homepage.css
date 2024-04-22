@@ -29,6 +29,20 @@ html {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) { /* Covers medium to large devices */
+  html, body {
+    background-color: black !important; /* Ensures the background stays black */
+    color: var(--parchment-white); /* Ensures the color stays consistent */
+  }
+}
+
+@media (min-width: 1200px) { /* Covers extra large devices */
+  html, body {
+    background-color: black !important; /* Ensures the background stays black */
+    color: var(--parchment-white); /* Ensures the color stays consistent */
+  }
+}
+
     /*nav*/
   
     .breadcrumb {
@@ -72,7 +86,7 @@ html {
   }
   
   .nav-link:hover, .nav-link:focus {
-    color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+    color: darken(var(--ethereal-gold), 10%); /* Darken the color slightly on hover for contrast */
     text-decoration: none; /* Optional: Removes the underline on hover */
   }
   

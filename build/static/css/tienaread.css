@@ -14,22 +14,27 @@
   --twilight-mist: #8A9597;
 }
 
+/* Edge prior to version 79 and Firefox before version 36 do not support 'scroll-behavior' */
+@supports not (scroll-behavior: smooth) {
+  html, body {
+    overflow-anchor: none; /* Disables scroll anchoring as a fallback */
+  }
+}
+
 html, body {
   scroll-behavior: smooth;
-  background-color: black; /* Sets the background of the entire page */
+  background-color: black !important; /* Sets the background of the entire page */
   color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
   font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
-  html, body {
-    background: black none !important; /* No image, just a color, with important */
-}
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
   html, body {
-      background-color: black !important; /* Ensures the background stays black */
-      color: white; /* Keeps text visible */
+    background-color: black !important; /* Ensures the background stays black */
+    color: white; /* Keeps text visible */
   }
 }
+
 
     /*nav*/
     .breadcrumb {
