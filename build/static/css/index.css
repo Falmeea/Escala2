@@ -77,8 +77,6 @@ html, body {
 
 .nav-link:hover {
   background-color: var(--ethereal-gold); /* Change background on hover */
-  transform: scale(1.1); /* Increase the size of the link area */
-  transition: all 0.5s ease; /* Longer transition for smoother effect */
   padding: 10px;
 }
 
@@ -164,16 +162,14 @@ body {
     visibility: visible;
     opacity: 1;
     position: absolute;
-    bottom: 100%; /* Position above the image */
+    bottom: 20%; /* Position above the image */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
     font-size: 1.5rem; /* Smaller font size for smaller screens */
     white-space: nowrap;
     /* Additional styling for mobile here */
   }
-  .bg-image {
-    flex-direction: column-reverse; /* Changes the order: image on top, text below */
-  }
+
   }
 
 
