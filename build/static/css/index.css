@@ -6,9 +6,6 @@
   --ethereal-gold: #C9A678;
   --dusky-rose: #986C6A;
   --parchment-white: #F4EDE4;
-}
-
-:root {
   --deep-sapphire: #0A3A4A;
   --emerald-green: #087830;
   --antique-gold: #DAA520;
@@ -30,6 +27,7 @@ html, body {
   font-optical-sizing: auto;
   font-style: normal;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
@@ -190,3 +188,36 @@ body {
   text-align: center;
 }
 
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .landing-text {
+    font-size: 1.5rem;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-image img {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .landing-link {
+    font-size: 1.2rem;
+  }
+
+  #Footer {
+    position: relative;
+  }
+}
