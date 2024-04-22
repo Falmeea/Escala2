@@ -118,60 +118,24 @@ body {
   flex: 1;
 }
 
-/* Responsive image and text centering within the .bg-image container */
 .bg-image {
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  position: relative;
   text-align: center;
+  flex-direction: column; /* Stack items vertically */
 }
 
-.bg-image img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: -1;
-}
 
 .landing-link {
-  color: white;
+  position: relative;
+  display: block;
   text-decoration: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.landing-text {
-  font-size: 3rem; /* Increase font size */
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  bottom: 20%; /* Position text in the lower half of the screen */
-  transform: translateY(-50%);
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out; /* Smooth transition for visibility */
-}
-
-/* Only apply hover effects on screens wider than 768px */
-@media (min-width: 768px) {
-  .bg-image:hover .landing-text {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0s; /* Apply transition immediately on hover */
-  }
-}
-
-/* Styles for smaller screens */
-@media (max-width: 768px) {
-  .landing-text {
-    font-size: 2rem; /* Adjust font size for smaller devices */
-    bottom: 25%; /* Adjust position to ensure visibility on smaller screens */
-    visibility: visible;
-    opacity: 1; /* Always visible without hover on small devices */
-  }
+  color: whitesmoke;
+  cursor: pointer;
 }
 
 .landing-link:hover{
@@ -224,36 +188,3 @@ body {
   text-align: center;
 }
 
-
-/* Media Queries */
-@media (max-width: 991.98px) {
-  .nav {
-    flex-direction: column;
-  }
-
-  .nav-link {
-    padding: 10px;
-    margin: 5px 0;
-  }
-
-  .landing-text {
-    font-size: 1.5rem;
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .bg-image img {
-    width: auto;
-    max-width: 100%;
-  }
-
-  .landing-link {
-    font-size: 1.2rem;
-  }
-
-  #Footer {
-    position: relative;
-  }
-}
