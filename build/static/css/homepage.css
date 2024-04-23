@@ -75,35 +75,39 @@ html {
     color: var(--ethereal-gold);
     }
   
-  .nav {
-    padding-left: 0; /* Removes padding for list */
-    list-style: none; /* Removes list style */
-   
-  }
-  
-  .nav-link {
-    color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
-  }
-  
-  .nav-link:hover, .nav-link:focus {
-    color: darken(var(--ethereal-gold), 10%); /* Darken the color slightly on hover for contrast */
-    text-decoration: none; /* Optional: Removes the underline on hover */
-  }
-  
-  .nav-link:hover, .nav-link:focus {
-    color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
-    text-decoration: none; /* Optional: Removes the underline on hover */
-  }
-  
-  
-  
-  a, .nav-link {
-    color: var(--parchment-white);
-  }
-  a:hover, .nav-link:hover {
-    color: var(--parchment-white);
-  }
-  
+    .nav-item{
+      font-size: 30px;
+      color: var(--ethereal-gold);
+      }
+    
+    .nav {
+      padding-left: 0; /* Removes padding for list */
+      list-style: none; /* Removes list style */
+     
+    }
+    
+    .nav-link {
+      color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+    }
+    
+    .nav-link:hover, .nav-link:focus {
+      color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+      text-decoration: none; /* Optional: Removes the underline on hover */
+    }
+    
+    .nav-link:hover, .nav-link:focus {
+      color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
+      text-decoration: none; /* Optional: Removes the underline on hover */
+    }
+    
+    
+    
+    a, .nav-link {
+      color: var(--parchment-white);
+    }
+    a:hover, .nav-link:hover {
+      color: var(--parchment-white);
+    }  
   .list-inline-item + .list-inline-item {
     margin-left: 0; /* Removes default margin between inline items for custom spacing */
 }

@@ -4,9 +4,6 @@
   --ethereal-gold: #C9A678;
   --dusky-rose: #986C6A;
   --parchment-white: #F4EDE4;
-}
-
-:root {
   --deep-sapphire: #0A3A4A;
   --emerald-green: #087830;
   --antique-gold: #DAA520;
@@ -29,6 +26,29 @@ html, body {
   html, body {
       background-color: black !important; /* Ensures the background stays black */
       color: white; /* Keeps text visible */
+  }
+}
+
+
+/* Force a black background on small and medium screens */
+@media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
+  html, body {
+      background-color: black !important; /* Ensures the background stays black */
+      color: white; /* Keeps text visible */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { /* Covers medium to large devices */
+  html, body {
+    background-color: black !important; /* Ensures the background stays black */
+    color: var(--parchment-white); /* Ensures the color stays consistent */
+  }
+}
+
+@media (min-width: 1200px) { /* Covers extra large devices */
+  html, body {
+    background-color: black !important; /* Ensures the background stays black */
+    color: var(--parchment-white); /* Ensures the color stays consistent */
   }
 }
 

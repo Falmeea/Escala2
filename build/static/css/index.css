@@ -162,7 +162,7 @@ body {
     visibility: visible;
     opacity: 1;
     position: absolute;
-    bottom: 20%; /* Position above the image */
+    bottom: 100%; /* Position above the image */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
     font-size: 1.5rem; /* Smaller font size for smaller screens */

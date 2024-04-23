@@ -154,11 +154,6 @@ h5{
   color: #F4EDE4;
 }
   
-  .card:hover {
-    /* Slightly scale the card on hover for a subtle effect */
-    transform: scale(1.05);
-  }
-  
   .card-title {
     color: var(--parchment-white); /* A deep purple for the title for elegance */
     font-weight: bold;
