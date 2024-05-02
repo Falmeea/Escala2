@@ -130,7 +130,7 @@ html, body {
       /*nav*/
   
   body {
-        font-family: "Space Grotesk", sans-serif;
+      font-family: "Space Grotesk", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       background-color: black;
@@ -155,7 +155,6 @@ html, body {
 
   .card {
     /* Adds a smooth transition effect on hover */
-
     text-align: center;
     margin-bottom: 30%;
     background-color: black!important;
