@@ -119,13 +119,43 @@ body {
 .bg-image {
   min-height: 100vh; /* Full viewport height */
   position: relative; /* Needed for absolute positioning of children */
-  background-size: cover; /* Cover the entire container */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column; /* Stack items vertically */
+  overflow: hidden; /* Prevents any overflow from the image */
 }
+
+/* Image styling for responsiveness */
+.bg-image img.img-fluid {
+  max-width: 100%; /* Limits the width to the parent container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area without distorting the image */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .bg-image {
+    min-height: 50vh; /* Reduce the height on smaller screens */
+  }
+  .bg-image img.img-fluid {
+    width: 100%; /* Full width of the container */
+    object-position: center; /* Ensure the image is centered */
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 769px) and (max-width: 991px) {
+  .bg-image {
+    min-height: 75vh; /* Slightly taller than on smaller screens */
+  }
+  .bg-image img.img-fluid {
+    width: 100%; /* Full width of the container */
+    object-position: center; /* Ensure the image is centered */
+  }
+}
+
 
 /* Link container for the text */
 .landing-link {
