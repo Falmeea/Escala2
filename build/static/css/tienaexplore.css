@@ -165,6 +165,12 @@ html, body {
     }
   }
 
+  @media (max-width: 991.98px) {
+    body {
+      background-size: 100% auto; /* Adjust this as needed */
+    }
+  }
+
 h5{
   color: #F4EDE4;
 }
