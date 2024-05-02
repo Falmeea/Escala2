@@ -156,21 +156,25 @@ body {
   opacity: 1;
 }
 
-/* Styles for smaller screens */
-@media (max-width: 768px) { /* Adjust the max-width as needed */
+/@media (max-width: 768px) {
   .landing-text {
-    visibility: visible;
-    opacity: 1;
+    font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
     position: absolute;
-    bottom: 100%; /* Position above the image */
+    bottom: 20%; /* Ensure it stays at the bottom 20% of the screen */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
-    font-size: 1.5rem; /* Smaller font size for smaller screens */
-    white-space: nowrap;
-    /* Additional styling for mobile here */
+    visibility: visible; /* Always visible */
+    opacity: 1; /* Fully opaque */
   }
+}
 
+/* Ensure that hover effects are disabled on mobile to keep text visible */
+@media (hover: none) {
+  .bg-image:hover .landing-text {
+    visibility: visible;
+    opacity: 1;
   }
+}
 
 
 
