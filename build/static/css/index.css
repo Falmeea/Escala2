@@ -156,15 +156,25 @@ body {
   opacity: 1;
 }
 
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
-  .landing-text {
-    font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
-    position: absolute;
-    bottom: 20%; /* Ensure it stays at the bottom 20% of the screen */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    visibility: visible; /* Always visible */
-    opacity: 1; /* Fully opaque */
+  .bg-image {
+    min-height: 50vh; /* Reduce the height on smaller screens */
+  }
+  .bg-image img.img-fluid {
+    width: 100%; /* Full width of the container */
+    object-position: center; /* Ensure the image is centered */
+  }
+}
+
+/* Adjustments for medium screens */
+@media (min-width: 769px) and (max-width: 991px) {
+  .bg-image {
+    min-height: 75vh; /* Slightly taller than on smaller screens */
+  }
+  .bg-image img.img-fluid {
+    width: 100%; /* Full width of the container */
+    object-position: center; /* Ensure the image is centered */
   }
 }
 
