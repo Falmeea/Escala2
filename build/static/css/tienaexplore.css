@@ -152,9 +152,11 @@ html, body {
     background-color: black!important;
   }
 
-  .card:hover, .bg-image:hover {
-    transform: scale(1); /* Prevents scaling, maintaining original size */
-}
+  @media (max-width: 991.98px) { /* Adjust this value based on your design breakpoints */
+    .card, .bg-image {
+      transform: none !important; /* Overrides any other transform effects */
+    }
+  }
 
 h5{
   color: #F4EDE4;
