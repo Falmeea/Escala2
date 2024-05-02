@@ -113,11 +113,17 @@ html, body {
     color: var(--parchment-white);
   }
   
+  a, .nav-link {
+    color: var(--parchment-white);
+  }
+  a:hover, .nav-link:hover {
+    color: var(--parchment-white);
+  }
+
   .list-inline-item + .list-inline-item {
     margin-left: 0; /* Removes default margin between inline items for custom spacing */
     margin-top: 15px; /* Adds vertical spacing between items */
   }
-
   
   @media (min-width: 768px) {
     .list-inline-item + .list-inline-item {
@@ -125,18 +131,16 @@ html, body {
       margin-top: 0; /* Removes vertical spacing for larger screens */
     }
   }
-  
-  .list-inline-item a:hover {
-    transform: scale(1.2); /* Slightly enlarge on hover */
-    background-color: var(--ethereal-gold);
-  }
 
-  
   .highlight-link a {
     background-color: var(--mystic-purple); /* Light blue background */
     border: 2px solid var(--ethereal-gold) /* Light blue border */
   }
-  
+       
+  .list-inline-item a:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    background-color: var(--ethereal-gold);
+  }
       /*nav*/
   
       body {
