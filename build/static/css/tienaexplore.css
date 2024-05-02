@@ -99,6 +99,10 @@ html, body {
 h5{
   color: #F4EDE4;
 }
+
+.card{
+  margin-top: 50px;
+}
   
   .card-title {
     color: var(--parchment-white); /* A deep purple for the title for elegance */
