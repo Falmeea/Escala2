@@ -121,9 +121,6 @@ html, body {
 
   /*nav*/
 
- 
-
-      /*nav*/
   
   body {
       font-family: "Space Grotesk", sans-serif;
@@ -149,12 +146,6 @@ html, body {
       z-index: -1; /* Ensure the image stays in the background */
       }
 
-  .card {
-    /* Adds a smooth transition effect on hover */
-    text-align: center;
-    margin-bottom: 30%;
-    background-color: black!important;
-  }
 
 h5{
   color: #F4EDE4;
