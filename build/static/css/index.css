@@ -117,92 +117,61 @@ body {
 }
 /* Container for the background image */
 .bg-image {
-  min-height: 100vh; /* Full viewport height */
-  position: relative; /* Needed for absolute positioning of children */
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column; /* Stack items vertically */
-  overflow: hidden; /* Prevents any overflow from the image */
-}
-
-/* Image styling for responsiveness */
-.bg-image img.img-fluid {
-  max-width: 100%; /* Limits the width to the parent container */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the area without distorting the image */
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-  .bg-image {
-    min-height: 100vh; /* Reduce the height on smaller screens */
-  }
-  .bg-image img.img-fluid {
-    width: 100%; /* Full width of the container */
-    object-position: center; /* Ensure the image is centered */
-  }
-}
-
-/* Adjustments for medium screens */
-@media (min-width: 769px) and (max-width: 991px) {
-  .bg-image {
-    min-height: 100vh; /* Slightly taller than on smaller screens */
-  }
-  .bg-image img.img-fluid {
-    width: 100%; /* Full width of the container */
-    object-position: center; /* Ensure the image is centered */
-  }
 }
 
 
-/* Link container for the text */
 .landing-link {
-  position: absolute; /* Absolute positioning to place text over image */
-  bottom: 20%; /* Positioned in the bottom 20% of the screen */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, 0); /* Align center of element with bottom 20% line */
+  position: relative;
   display: block;
   text-decoration: none;
-  color: whitesmoke; /* Light color for text */
+  color: whitesmoke;
   cursor: pointer;
 }
 
-/* Text styling */
+.landing-link:hover{
+  color: var(--ethereal-gold);
+}
+
 .landing-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 6s linear;
   font-size: 3rem; /* Large font size */
-  font-family: 'Playfair Display', serif; /* Stylish serif font */
-  visibility: visible; /* Always visible */
- 
-  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
-  margin: 0; /* No margin to ensure it stays at specified position */
+  font-family: 'Playfair Display', serif;
+  margin: 20px 0;
+  /* Spacing between text and image */
+  /* Customize further as needed */
 }
 
-/* Hover effects */
-.bg-image:hover .landing-link {
-  color: var(--ethereal-gold); /* Change color on hover */
+.bg-image:hover .landing-text {
+  visibility: visible;
+  opacity: 1;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
+/* Styles for smaller screens */
+@media (max-width: 768px) { /* Adjust the max-width as needed */
   .landing-text {
-    font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
-    position: absolute;
-    bottom: 20%; /* Ensure it stays at the bottom 20% of the screen */
-    left: 50%;
-    visibility: visible; /* Always visible */
-    opacity: 1; /* Fully opaque */
-  }
-}
-
-/* Ensure that hover effects are disabled on mobile to keep text visible */
-@media (hover: none) {
-  .bg-image:hover .landing-text {
     visibility: visible;
     opacity: 1;
+    position: absolute;
+    bottom: 100%; /* Position above the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+    white-space: nowrap;
+    /* Additional styling for mobile here */
   }
-}
+
+  }
+
 
 
 
