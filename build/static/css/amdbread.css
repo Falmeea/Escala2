@@ -91,17 +91,6 @@ body::before {
     color: var(--parchment-white);
   }
 
-  .list-inline-item + .list-inline-item {
-    margin-left: 0; /* Removes default margin between inline items for custom spacing */
-    margin-top: 15px; /* Adds vertical spacing between items */
-  }
-  
-  @media (min-width: 768px) {
-    .list-inline-item + .list-inline-item {
-      margin-left: 15px; /* Restores horizontal spacing for larger screens */
-      margin-top: 0; /* Removes vertical spacing for larger screens */
-    }
-  }
 
   .highlight-link a {
     background-color: var(--mystic-purple); /* Light blue background */
@@ -112,6 +101,7 @@ body::before {
     transform: scale(1.2); /* Slightly enlarge on hover */
     background-color: var(--ethereal-gold);
   }
+
       /*nav*/
   
 
