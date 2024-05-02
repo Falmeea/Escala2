@@ -19,9 +19,29 @@ html, body {
   background-color: black; /* Sets the background of the entire page */
   color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
   font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
-  html, body {
-    background: black none !important; /* No image, just a color, with important */
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: black;
+  color: var(--parchment-white);
+  background-image: url('/static/dragonduck.png'); /* Adjust the path as necessary */
+  background-size: cover; /* Cover the entire page */
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
 }
+
+
+body::before {
+content: '';
+position: fixed; /* or absolute */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-size: cover;
+background-position: center;
+opacity: 0.5; /* Adjust the opacity as needed */
+z-index: -1; /* Ensure the image stays in the background */
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
@@ -121,33 +141,7 @@ html, body {
   }
 
       /*nav*/
-  
-  body {
-  
-      font-family: "Space Grotesk", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-      background-color: black;
-      color: var(--parchment-white);
-        background-image: url('/static/dragonduck.png'); /* Adjust the path as necessary */
-        background-size: cover; /* Cover the entire page */
-        background-repeat: no-repeat;
-        height: 100vh; /* Full viewport height */
-    }
-
-  
-body::before {
-    content: '';
-    position: fixed; /* or absolute */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5; /* Adjust the opacity as needed */
-    z-index: -1; /* Ensure the image stays in the background */
-  }
+ 
 
   .card {
     text-align: center;

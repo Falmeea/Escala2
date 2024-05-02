@@ -19,15 +19,15 @@ html, body {
   background-color: black; /* Sets the background of the entire page */
   color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
   font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
-      font-family: "Space Grotesk", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-      background-color: black;
-      color: var(--parchment-white);
-      background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
-      background-size: cover; /* Cover the entire page */
-      background-repeat: no-repeat;
-      height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: black;
+  color: var(--parchment-white);
+  background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
+  background-size: cover; /* Cover the entire page */
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
