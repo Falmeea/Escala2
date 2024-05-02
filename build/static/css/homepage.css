@@ -127,7 +127,6 @@ html {
     
     @media (min-width: 768px) {
       .list-inline-item + .list-inline-item {
-        margin-left: 15px; /* Restores horizontal spacing for larger screens */
         margin-top: 0; /* Removes vertical spacing for larger screens */
       }
     }
