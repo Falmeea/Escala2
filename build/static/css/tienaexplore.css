@@ -117,11 +117,7 @@ html, body {
     background-color: var(--mystic-purple); /* Light blue background */
     border: 2px solid var(--ethereal-gold) /* Light blue border */
   }
-       
-  .list-inline-item a:hover {
-    transform: scale(1.2); /* Slightly enlarge on hover */
-    background-color: var(--ethereal-gold);
-  }
+
 
   /*nav*/
 
