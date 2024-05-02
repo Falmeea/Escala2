@@ -31,6 +31,40 @@ html, body {
   }
 }
 
+
+  
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: black;
+  color: var(--parchment-white);
+  background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
+  background-size: cover; /* Cover the entire page */
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Ensuring no scaling on smaller devices */
+@media (max-width: 991.98px) {
+body {
+background-attachment: scroll; /* This might help if the image zooms on scroll */
+}
+}
+body::before {
+  content: '';
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure the image stays in the background */
+  }
+
+
     /*nav*/
   
     .breadcrumb {
@@ -121,37 +155,6 @@ html, body {
 
   /*nav*/
 
-  
-  body {
-      font-family: "Space Grotesk", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-      background-color: black;
-      color: var(--parchment-white);
-      background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
-      background-size: cover; /* Cover the entire page */
-      background-repeat: no-repeat;
-      height: 100vh; /* Full viewport height */
-    }
-
-    /* Ensuring no scaling on smaller devices */
-@media (max-width: 991.98px) {
-  body {
-    background-attachment: scroll; /* This might help if the image zooms on scroll */
-  }
-}
-    body::before {
-      content: '';
-      position: fixed; /* or absolute */
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      background-position: center;
-      opacity: 0.5; /* Adjust the opacity as needed */
-      z-index: -1; /* Ensure the image stays in the background */
-      }
 
   .card {
     text-align: center;
