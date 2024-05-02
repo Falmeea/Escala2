@@ -66,6 +66,29 @@ html {
     color: var(--parchment-white);
   }
   
+
+  /* Media Queries */
+@media (max-width: 768px) {
+  .author-name {
+    font-size: 2rem; /* Adjusted font size for readability */
+    padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .breadcrumb {
+    top: 0; /* Ensures the breadcrumb is at the very top on smaller screens */
+  }
+  .author-name {
+    text-align: center; /* Centers the author name on smaller screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .author-name {
+    font-size: 3rem; /* Larger font size for larger screens */
+  }
+}
   .navbar-nav .nav-item {
     margin-right: 30px; /* Increases space between nav items */
   }
