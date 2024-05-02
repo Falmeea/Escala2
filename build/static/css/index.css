@@ -137,7 +137,7 @@ body {
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .bg-image {
-    min-height: 50vh; /* Reduce the height on smaller screens */
+    min-height: 100vh; /* Reduce the height on smaller screens */
   }
   .bg-image img.img-fluid {
     width: 100%; /* Full width of the container */
@@ -148,7 +148,7 @@ body {
 /* Adjustments for medium screens */
 @media (min-width: 769px) and (max-width: 991px) {
   .bg-image {
-    min-height: 75vh; /* Slightly taller than on smaller screens */
+    min-height: 100vh; /* Slightly taller than on smaller screens */
   }
   .bg-image img.img-fluid {
     width: 100%; /* Full width of the container */
