@@ -44,82 +44,7 @@ html, body {
       .breadcrumb a {
         color: var(--ethereal-gold);
       }
-      
-  .author-name{
-    font-family: "Whisper", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size:90px;
-    z-index: 2;
-    color: var(--parchment-white);
-  }
-  
-
-  /* Media Queries */
-@media (max-width: 768px) {
-  .author-name {
-    padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
-  }
-}
-
-@media (max-width: 991.98px) {
-  .breadcrumb {
-    top: 0; /* Ensures the breadcrumb is at the very top on smaller screens */
-  }
-  .author-name {
-    text-align: center; /* Centers the author name on smaller screens */
-  }
-}
-.navbar-nav .nav-item {
-  margin-right: 30px; /* Increases space between nav items */
-}
-
-.nav-item{
-  font-size: 30px;
-  color: var(--ethereal-gold);
-  }
-
-  .nav-item{
-    font-size: 30px;
-    color: var(--ethereal-gold);
-    }
-  
-  .nav {
-    padding-left: 0; /* Removes padding for list */
-    list-style: none; /* Removes list style */
    
-  }
-  
-  .nav-link {
-    color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
-  }
-  
-  .nav-link:hover, .nav-link:focus {
-    color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
-    text-decoration: none; /* Optional: Removes the underline on hover */
-  }
-  
-  .nav-link:hover, .nav-link:focus {
-    color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
-    text-decoration: none; /* Optional: Removes the underline on hover */
-  }
-  
-  
-  a, .nav-link {
-    color: var(--parchment-white);
-  }
-  a:hover, .nav-link:hover {
-    color: var(--parchment-white);
-  }
-
-
-  .highlight-link a {
-    background-color: var(--mystic-purple); /* Light blue background */
-    border: 2px solid var(--ethereal-gold) /* Light blue border */
-  }
-
-
-  /*nav*/
 
   
   body {
@@ -195,6 +120,7 @@ h5{
 
   .btn{
     background-color: var(--mystic-purple);
+    margin-top: 50px;
   }
 
   .close{
