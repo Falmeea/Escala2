@@ -90,11 +90,6 @@ html {
     font-size: 30px;
     color: var(--ethereal-gold);
     }
-  
-    .nav-item{
-      font-size: 30px;
-      color: var(--ethereal-gold);
-      }
     
     .nav {
       padding-left: 0; /* Removes padding for list */
@@ -123,10 +118,7 @@ html {
     }
     a:hover, .nav-link:hover {
       color: var(--parchment-white);
-    }  
-  .list-inline-item + .list-inline-item {
-    margin-left: 0; /* Removes default margin between inline items for custom spacing */
-}
+    }
 
 @media (min-width: 768px) {
     .list-inline-item + .list-inline-item {

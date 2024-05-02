@@ -86,7 +86,6 @@ html, body {
   
 .navbar-nav .nav-item {
   margin-right: 30px; /* Increases space between nav items */
-  margin-bottom: 20px;
 }
 
 .nav-item{
@@ -97,7 +96,6 @@ html, body {
   .nav {
   padding-left: 0; /* Removes padding for list */
   list-style: none; /* Removes list style */
-  padding: 15px;
 }
 
 .nav-link {
