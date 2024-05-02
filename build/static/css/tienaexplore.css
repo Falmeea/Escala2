@@ -155,7 +155,7 @@ html, body {
 
   .card {
     /* Adds a smooth transition effect on hover */
-    transition: transform 0.2s ease-in-out;
+
     text-align: center;
     margin-bottom: 30%;
     background-color: black!important;
