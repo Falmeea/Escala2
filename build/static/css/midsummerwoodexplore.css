@@ -157,7 +157,6 @@ body::before {
 
   @media (max-width: 991.98px) {
     body {
-      background-size: 100% auto; /* Adjust this as needed */
       min-height: 100vh;
     }
   }
