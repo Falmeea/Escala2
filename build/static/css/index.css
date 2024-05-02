@@ -115,11 +115,11 @@ body {
 .content-wrapper {
   flex: 1;
 }
-
+/* Container for the background image */
 .bg-image {
-  min-height: 100vh;
-  position: relative;
-  background-size: cover;
+  min-height: 100vh; /* Full viewport height */
+  position: relative; /* Needed for absolute positioning of children */
+  background-size: cover; /* Cover the entire container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,50 +127,53 @@ body {
   flex-direction: column; /* Stack items vertically */
 }
 
-
+/* Link container for the text */
 .landing-link {
-  position: relative;
+  position: absolute; /* Absolute positioning to place text over image */
+  bottom: 20%; /* Positioned in the bottom 20% of the screen */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, 0); /* Align center of element with bottom 20% line */
   display: block;
   text-decoration: none;
-  color: whitesmoke;
+  color: whitesmoke; /* Light color for text */
   cursor: pointer;
 }
 
-.landing-link:hover{
-  color: var(--ethereal-gold);
-}
-
+/* Text styling */
 .landing-text {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 6s linear;
   font-size: 3rem; /* Large font size */
-  font-family: 'Playfair Display', serif;
-  margin: 20px 0;
-  /* Spacing between text and image */
-  /* Customize further as needed */
+  font-family: 'Playfair Display', serif; /* Stylish serif font */
+  visibility: visible; /* Always visible */
+  opacity: 1; /* Fully opaque */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  margin: 0; /* No margin to ensure it stays at specified position */
 }
 
-.bg-image:hover .landing-text {
-  visibility: visible;
-  opacity: 1;
+/* Hover effects */
+.bg-image:hover .landing-link {
+  color: var(--ethereal-gold); /* Change color on hover */
 }
 
-/* Styles for smaller screens */
-@media (max-width: 768px) { /* Adjust the max-width as needed */
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
   .landing-text {
-    visibility: visible;
-    opacity: 1;
+    font-size: 2.5rem; /* Slightly smaller font size for smaller screens */
     position: absolute;
-    bottom: 100%; /* Position above the image */
+    bottom: 20%; /* Ensure it stays at the bottom 20% of the screen */
     left: 50%;
     transform: translateX(-50%); /* Center horizontally */
-    font-size: 1.5rem; /* Smaller font size for smaller screens */
-    white-space: nowrap;
-    /* Additional styling for mobile here */
+    visibility: visible; /* Always visible */
+    opacity: 1; /* Fully opaque */
   }
+}
 
+/* Ensure that hover effects are disabled on mobile to keep text visible */
+@media (hover: none) {
+  .bg-image:hover .landing-text {
+    visibility: visible;
+    opacity: 1;
   }
+}
 
 
 
