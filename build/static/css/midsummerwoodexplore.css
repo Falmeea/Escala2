@@ -32,9 +32,9 @@ html, body {
 }
 
     /*nav*/
-  
+     
     .breadcrumb {
-      padding: 15px 20px; /* Adjust padding as needed */
+      padding: 10px 15px; /* Adjust padding as needed */
       border-radius: 5px; /* Rounded corners */
       position: fixed;
       width:100%;
@@ -70,15 +70,11 @@ html, body {
     text-align: center; /* Centers the author name on smaller screens */
   }
 }
-.navbar-nav .nav-item {
-  margin-right: 30px; /* Increases space between nav items */
-}
-
-.nav-item{
-  font-size: 30px;
-  color: var(--ethereal-gold);
+  
+  .navbar-nav .nav-item {
+    margin-right: 30px; /* Increases space between nav items */
   }
-
+  
   .nav-item{
     font-size: 30px;
     color: var(--ethereal-gold);
@@ -105,6 +101,7 @@ html, body {
   }
   
   
+  
   a, .nav-link {
     color: var(--parchment-white);
   }
@@ -123,47 +120,51 @@ html, body {
     background-color: var(--ethereal-gold);
   }
 
-  /*nav*/
-
- 
-
       /*nav*/
   
   body {
-        font-family: "Space Grotesk", sans-serif;
+  
+      font-family: "Space Grotesk", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       background-color: black;
       color: var(--parchment-white);
-      background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
-      background-size: cover; /* Cover the entire page */
-      background-repeat: no-repeat;
-      height: 100vh; /* Full viewport height */
+        background-image: url('/static/dragonduck.png'); /* Adjust the path as necessary */
+        background-size: cover; /* Cover the entire page */
+        background-repeat: no-repeat;
+        height: 100vh; /* Full viewport height */
     }
-    body::before {
-      content: '';
-      position: fixed; /* or absolute */
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-size: cover;
-      background-position: center;
-      opacity: 0.5; /* Adjust the opacity as needed */
-      z-index: -1; /* Ensure the image stays in the background */
-      }
+
+  
+body::before {
+    content: '';
+    position: fixed; /* or absolute */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure the image stays in the background */
+  }
 
   .card {
     /* Adds a smooth transition effect on hover */
-
+    transition: transform 0.2s ease-in-out;
     text-align: center;
     margin-bottom: 30%;
     background-color: black!important;
   }
 
-h5{
-  color: #F4EDE4;
-}
+  h5{
+    color: #F4EDE4;
+  }
+  
+  .card:hover {
+    /* Slightly scale the card on hover for a subtle effect */
+    transform: scale(1.05);
+  }
   
   .card-title {
     color: var(--parchment-white); /* A deep purple for the title for elegance */
@@ -253,5 +254,6 @@ h5{
   color: var(--parchment-white); /* Changes text color to Mystic Purple for contrast */
 }
 
-
+/* This will not make buttons return to Mystic Purple after being clicked since
+   that's
 
