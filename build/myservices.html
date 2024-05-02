@@ -71,6 +71,7 @@
     <button type="button" class="btn btn-primary git-button list-inline" data-bs-toggle="modal" data-bs-target="#timedModal">
       Get in Touch!
     </button>
+
     <ul class="nav justify-content-center list-inline">
       <li class="list-inline-item">
         <a class="nav-link" href="mailto:connordhanson@gmail.com">
@@ -273,7 +274,7 @@
         <div class="newsletter-subscribe">
           <p>Get in Touch - </p>
           <form id="newsletterForm" method = "post">
-            {% csrf_token %}
+      
             <!-- {{ form.as_p }} -->
             <div class="mb-3">
               <input type="name" class="form-control" id="nameInput" placeholder="Name" required>
