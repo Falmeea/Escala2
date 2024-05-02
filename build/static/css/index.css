@@ -174,7 +174,7 @@ body {
   font-size: 3rem; /* Large font size */
   font-family: 'Playfair Display', serif; /* Stylish serif font */
   visibility: visible; /* Always visible */
-  opacity: 1; /* Fully opaque */
+ 
   transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
   margin: 0; /* No margin to ensure it stays at specified position */
 }
@@ -191,7 +191,6 @@ body {
     position: absolute;
     bottom: 20%; /* Ensure it stays at the bottom 20% of the screen */
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
     visibility: visible; /* Always visible */
     opacity: 1; /* Fully opaque */
   }
