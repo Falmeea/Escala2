@@ -70,7 +70,6 @@ html {
   /* Media Queries */
 @media (max-width: 768px) {
   .author-name {
-    font-size: 2rem; /* Adjusted font size for readability */
     padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
   }
 }
@@ -81,12 +80,6 @@ html {
   }
   .author-name {
     text-align: center; /* Centers the author name on smaller screens */
-  }
-}
-
-@media (min-width: 992px) {
-  .author-name {
-    font-size: 3rem; /* Larger font size for larger screens */
   }
 }
   .navbar-nav .nav-item {
