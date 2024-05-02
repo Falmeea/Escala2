@@ -34,22 +34,44 @@ html, body {
 
     /*nav*/
 
+    
     .breadcrumb {
       padding: 10px 15px; /* Adjust padding as needed */
       border-radius: 5px; /* Rounded corners */
+      position: fixed;
+      width:100%;
+      z-index: 2;
       color: var(--parchment-white);
-  }
-    .breadcrumb a {
-      color: var(--ethereal-gold);
     }
-    
+      .breadcrumb a {
+        color: var(--ethereal-gold);
+      }
+      
   .author-name{
     font-family: "Whisper", cursive;
     font-weight: 400;
     font-style: normal;
     font-size:90px;
+    z-index: 2;
     color: var(--parchment-white);
   }
+  
+
+  /* Media Queries */
+@media (max-width: 768px) {
+  .author-name {
+    padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .breadcrumb {
+    top: 0; /* Ensures the breadcrumb is at the very top on smaller screens */
+  }
+  .author-name {
+    text-align: center; /* Centers the author name on smaller screens */
+  }
+}
 
   .git-button{
     background: var(--ethereal-gold) !important;

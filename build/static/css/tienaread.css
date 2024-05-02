@@ -37,6 +37,7 @@ html, body {
 
 
     /*nav*/
+   
     .breadcrumb {
       padding: 10px 15px; /* Adjust padding as needed */
       border-radius: 5px; /* Rounded corners */
@@ -57,6 +58,23 @@ html, body {
     z-index: 2;
     color: var(--parchment-white);
   }
+  
+
+  /* Media Queries */
+@media (max-width: 768px) {
+  .author-name {
+    padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .breadcrumb {
+    top: 0; /* Ensures the breadcrumb is at the very top on smaller screens */
+  }
+  .author-name {
+    text-align: center; /* Centers the author name on smaller screens */
+  }
+}
   
   .navbar-nav .nav-item {
     margin-right: 30px; /* Increases space between nav items */
