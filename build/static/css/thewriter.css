@@ -178,36 +178,29 @@ a:hover, .nav-link:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0; /* Adjust as needed */
+    padding: 0rem; /* Adjust as needed */
     width: 100%; /* Ensure it spans the full width */
-}
+    padding-left: 50px;
+   }
 
 .highlight-link a {
-    background-color: var(--mystic-purple);
-    border: 2px solid var(--ethereal-gold);
+  background-color: var(--mystic-purple); /* Light blue background */
+  border: 2px solid var(--ethereal-gold) /* Light blue border */
 }
 
 .list-inline-item a:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    background-color: var(--ethereal-gold);
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  background-color: var(--ethereal-gold);
 }
-
 .get-in-touch-button {
-    background-color: var(--mystic-purple);
-    border-color: var(--ethereal-gold);
-    color: var(--parchment-white);
+  background-color: var(--mystic-purple);
+  border-color: var(--ethereal-gold);
+  color: var(--parchment-white); 
+  
 }
 
 .get-in-touch-button:hover {
-    background-color: var(--ethereal-gold);
-}
-
-/* Ensuring responsiveness and alignment */
-@media (max-width: 991.98px) {
-    .footer, .nav {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        align-items: center; /* Center-align items */
-    }
+  background-color: var(--ethereal-gold);
 }
 
 .modal-content {
