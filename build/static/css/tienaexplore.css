@@ -35,19 +35,6 @@ html, body {
 }
 
 
-/* Ensuring no scaling on smaller devices */
-@media (max-width: 991.98px) {
-body {
-background-attachment: scroll; /* This might help if the image zooms on scroll */
-}
-}
-
-@media (max-width: 991.98px) {
-  body {
-    min-height: 100vh;
-  }
-}
-
 body::before {
   content: '';
   position: fixed; /* or absolute */
