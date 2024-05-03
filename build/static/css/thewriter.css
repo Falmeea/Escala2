@@ -135,17 +135,15 @@ a:hover, .nav-link:hover {
     .text-box {
       background-color: black;
       color: var(--ethereal-gold);
-      font-size: 16px; /* Adjusted for better readability */
-      padding: 15px; /* Add more padding */
+      font-size: 18px; /* Adjusted for better readability */
+      padding: 30px; /* Add more padding */
       text-align: center;
     }
     
     @media (max-width: 991.98px) {
       .col-md-6 {
         padding: 0; /* Remove padding to use space more efficiently */
-      }
-      
-      
+      }    
       .text-box {
         width: 100%; /* Use full width for text content */
         font-size: 14px; /* Slightly smaller font for small devices */
@@ -200,10 +198,13 @@ a:hover, .nav-link:hover {
 }
 
 /* Hides the button on screens smaller than 992px */
-@media (max-width: 991.98px) {
-  .get-in-touch-button {
-      display: hidden;
-  }
+/* Media query for smaller screens, typically phones */
+@media (ax-width: 991.98px) {
+  .highlight-link a svg, .nav-link svg {
+    width: 20px; /* Smaller width for mobile */
+    height: 20px; /* Smaller height for mobile */
+    fill: #ccc; /* Change color, if needed */
+}
 }
 
 .get-in-touch-button:hover {
