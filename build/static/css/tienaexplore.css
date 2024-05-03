@@ -26,7 +26,6 @@ html, body {
   background-repeat: no-repeat;
   background-position: center; /* Centers the image in the viewport */
   height: 100vh; /* Full height of the viewport */
-  width: 100vw; /* Full width of the viewport */
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
