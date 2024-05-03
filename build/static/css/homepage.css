@@ -219,6 +219,7 @@ body::before {
   .carousel-caption .btn {
     visibility: visible;
     margin: 5px 0; /* Adjust spacing around buttons */ 
+    background-color: var(--mystic-purple);
   }
   
   .carousel-caption .btn:hover {
