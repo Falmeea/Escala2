@@ -192,7 +192,23 @@ a:hover, .nav-link:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
   background-color: var(--ethereal-gold);
 }
+.get-in-touch-button {
+  background-color: var(--mystic-purple);
+  border-color: var(--ethereal-gold);
+  color: var(--parchment-white); 
+  
+}
 
+/* Hides the button on screens smaller than 992px */
+@media (max-width: 991.98px) {
+  .get-in-touch-button {
+      display: hidden;
+  }
+}
+
+.get-in-touch-button:hover {
+  background-color: var(--ethereal-gold);
+}
 
 .modal-content {
   background-size: cover; /* Cover the entire area of the modal content */
