@@ -198,6 +198,13 @@ a:hover, .nav-link:hover {
   color: var(--parchment-white); 
   
 }
+/* Media query for smaller screens, typically phones */
+@media (max-width: 576px) {
+  .highlight-link a, .nav-link {
+      font-size: 14px; /* Smaller font size for mobile */
+      padding: 5px 10px; /* Adjust padding to make links easier to tap */
+  }
+}
 
 .get-in-touch-button:hover {
   background-color: var(--ethereal-gold);
