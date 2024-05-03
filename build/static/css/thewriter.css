@@ -75,45 +75,50 @@ html, body {
     color: var(--parchment-white);
   }
   
-  
-.navbar-nav .nav-item {
-  margin-right: 30px; /* Increases space between nav items */
-  margin-bottom: 20px;
-}
-
-.nav-item{
-  font-size: 30px;
-  color: var(--ethereal-gold);
+  .navbar-nav .nav-item {
+    margin-right: 30px; /* Increases space between nav items */
   }
-
-.nav {
-  padding-left: 0; /* Removes padding for list */
-  list-style: none; /* Removes list style */
- 
-}
-
-.nav-link {
-  color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
-}
-
-.nav-link:hover, .nav-link:focus {
-  color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
-  text-decoration: none; /* Optional: Removes the underline on hover */
-}
-
-.nav-link:hover, .nav-link:focus {
-  color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
-  text-decoration: none; /* Optional: Removes the underline on hover */
-}
-
-
-
-a, .nav-link {
-  color: var(--parchment-white);
-}
-a:hover, .nav-link:hover {
-  color: var(--parchment-white);
-}
+  
+  .nav-item{
+    font-size: 30px;
+    color: var(--ethereal-gold);
+    }
+  
+    .nav {
+    padding-left: 0; /* Removes padding for list */
+    list-style: none; /* Removes list style */
+  }
+  
+  .nav-link {
+    color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+    text-decoration: none; /* Optional: Removes the underline on hover */
+  }
+  
+  .nav-link:hover, .nav-link:focus {
+    color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
+    text-decoration: none; /* Optional: Removes the underline on hover */
+  }
+  
+  
+  
+  a, .nav-link {
+    color: var(--parchment-white);
+  }
+  a:hover, .nav-link:hover {
+    color: var(--parchment-white);
+  }
+  
+  a, .nav-link {
+    color: var(--parchment-white);
+  }
+  a:hover, .nav-link:hover {
+    color: var(--parchment-white);
+  }
+  
 
 .gold{
   color: var(--ethereal-gold);
@@ -171,43 +176,6 @@ a:hover, .nav-link:hover {
     }
   }
 
-  .footer {
-    bottom: 0; /* Adjusted to stick to the bottom of the viewport */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem; /* Adjust as needed */
-    width: 90%; /* Ensure it spans the full width */
-    padding-left: 50px;
-   }
-
-.highlight-link a {
-  background-color: var(--mystic-purple); /* Light blue background */
-  border: 2px solid var(--ethereal-gold) /* Light blue border */
-}
-
-.list-inline-item a:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
-  background-color: var(--ethereal-gold);
-}
-.get-in-touch-button {
-  background-color: var(--mystic-purple);
-  border-color: var(--ethereal-gold);
-  color: var(--parchment-white); 
-}
-
-/* Hides the button on screens smaller than 992px */
-/* Media query for smaller screens, typically phones */
-@media (max-width: 991.98px) {
-  .highlight-link a svg, .nav-link svg {
-    width: 14px; /* Smaller width for mobile */
-    height: 14px; /* Smaller height for mobile */
-}
-}
-
-.get-in-touch-button:hover {
-  background-color: var(--ethereal-gold);
-}
 
 .modal-content {
   background-size: cover; /* Cover the entire area of the modal content */
