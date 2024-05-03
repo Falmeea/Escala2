@@ -201,8 +201,8 @@ a:hover, .nav-link:hover {
 /* Media query for smaller screens, typically phones */
 @media (max-width: 991.98px) {
   .highlight-link a svg, .nav-link svg {
-    width: 40px; /* Smaller width for mobile */
-    height: 40px; /* Smaller height for mobile */
+    width: 6px; /* Smaller width for mobile */
+    height: 6px; /* Smaller height for mobile */
 }
 }
 
