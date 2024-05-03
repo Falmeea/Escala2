@@ -199,11 +199,10 @@ a:hover, .nav-link:hover {
 
 /* Hides the button on screens smaller than 992px */
 /* Media query for smaller screens, typically phones */
-@media (ax-width: 991.98px) {
+@media (max-width: 991.98px) {
   .highlight-link a svg, .nav-link svg {
     width: 20px; /* Smaller width for mobile */
     height: 20px; /* Smaller height for mobile */
-    fill: #ccc; /* Change color, if needed */
 }
 }
 
