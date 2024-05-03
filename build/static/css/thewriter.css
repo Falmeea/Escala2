@@ -124,10 +124,12 @@ a:hover, .nav-link:hover {
     /*nav*/
 
     .title-box {
-      background-color: var(--mystic-purple);
+      width: 50%;
+      margin-bottom: 20px;
+      background-color: var(--mystic-purple); 
       color: var(--ethereal-gold);
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: adds a shadow for depth */
+      border-radius: 8px; /* Optional: rounds the corners */
     }
     
     .text-box {
