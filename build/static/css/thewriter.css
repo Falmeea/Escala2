@@ -143,9 +143,6 @@ a:hover, .nav-link:hover {
         padding: 0; /* Remove padding to use space more efficiently */
       }
       
-      .img-fluid.h-100 {
-        display: none; /* Optionally hide the image on smaller screens */
-      }
       
       .text-box {
         width: 100%; /* Use full width for text content */
