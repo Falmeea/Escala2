@@ -205,6 +205,12 @@ a:hover, .nav-link:hover {
   }
 }
 
+@media (max-width: 991.98px) {
+  .get-in-touch-button{
+  display: none;
+  }
+}
+
 .get-in-touch-button:hover {
   background-color: var(--ethereal-gold);
 }
