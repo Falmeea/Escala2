@@ -159,6 +159,12 @@ a:hover, .nav-link:hover {
       }
     }
 
+      /* Ensures the image covers the full half of the screen */
+  .img-fluid.h-100 {
+    object-fit: scale-down;
+    height: 100%;
+  }
+
   .footer {
     bottom: 0; /* Adjusted to stick to the bottom of the viewport */
     display: flex;
