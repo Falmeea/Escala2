@@ -200,9 +200,8 @@ a:hover, .nav-link:hover {
 }
 /* Media query for smaller screens, typically phones */
 @media (max-width: 576px) {
-  .highlight-link a, .nav-link {
-      font-size: 14px; /* Smaller font size for mobile */
-      padding: 5px 10px; /* Adjust padding to make links easier to tap */
+  .get-in-touch-button {
+      display: none; /* Hide the 'Get in Touch' button on smaller screens */
   }
 }
 
