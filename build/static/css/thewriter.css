@@ -177,7 +177,7 @@ a:hover, .nav-link:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0rem; /* Adjust as needed */
-    width: 100%; /* Ensure it spans the full width */
+    width: 90%; /* Ensure it spans the full width */
     padding-left: 50px;
    }
 
@@ -194,7 +194,6 @@ a:hover, .nav-link:hover {
   background-color: var(--mystic-purple);
   border-color: var(--ethereal-gold);
   color: var(--parchment-white); 
-  
 }
 
 /* Hides the button on screens smaller than 992px */
@@ -203,10 +202,6 @@ a:hover, .nav-link:hover {
   .highlight-link a svg, .nav-link svg {
     width: 14px; /* Smaller width for mobile */
     height: 14px; /* Smaller height for mobile */
-}
-.highlight-link a {
-  background-color: var(--mystic-purple); /* Light blue background */
-  
 }
 }
 
