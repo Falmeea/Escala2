@@ -17,10 +17,14 @@ html, body {
   background-color: black; /* Sets the background of the entire page */
   color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
   font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
-  html, body {
-    background: black none !important; /* No image, just a color, with important */
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: black none !important; /* No image, just a color, with important */
 }
-}
+
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
   html, body {
@@ -118,46 +122,43 @@ a:hover, .nav-link:hover {
 }
     
     /*nav*/
-  
-  body {
-  
-      font-family: "Space Grotesk", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+
+    .title-box {
+      background-color: var(--mystic-purple);
+      color: var(--ethereal-gold);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    
+    .text-box {
       background-color: black;
+      color: var(--ethereal-gold);
+      font-size: 16px; /* Adjusted for better readability */
+      padding: 15px; /* Add more padding */
+      text-align: center;
+    }
+    
+    @media (max-width: 991.98px) {
+      .col-md-6 {
+        padding: 0; /* Remove padding to use space more efficiently */
+      }
       
-  }
-  
-  .title-box {
-    width: 50%;
-    margin-bottom: 20px;
-    background-color: var(--mystic-purple); 
-    color: var(--ethereal-gold);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: adds a shadow for depth */
-    border-radius: 8px; /* Optional: rounds the corners */
-  }
-  
-  .text-box {
-    background-color: black;
-    color: var(--ethereal-gold);
-    font-size: 20px;
-    height: 100%; /* Full height of the parent element */
-    width: 85%; /* Full width of the parent element */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    text-align: center;
-    padding-top: 20px;
-  }
-  
-  /* Ensures the image covers the full half of the screen */
-  .img-fluid.h-100 {
-    object-fit: scale-down;
-    height: 100%;
-  }
+      .img-fluid.h-100 {
+        display: none; /* Optionally hide the image on smaller screens */
+      }
+      
+      .text-box {
+        width: 100%; /* Use full width for text content */
+        font-size: 14px; /* Slightly smaller font for small devices */
+        padding: 10px; /* Adjust padding */
+      }
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .text-box {
+        font-size: 18px; /* Increase font size for medium screens */
+      }
+    }
 
   .footer {
     bottom: 0; /* Adjusted to stick to the bottom of the viewport */
