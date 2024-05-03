@@ -25,6 +25,7 @@ html, body {
   background-size: cover; /* Cover the entire page */
   background-repeat: no-repeat;
   height: 100vh; /* Full height of the viewport */
+  width: 100vh;
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
