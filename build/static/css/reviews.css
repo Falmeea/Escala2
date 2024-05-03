@@ -14,6 +14,7 @@
   --twilight-mist: #8A9597;
 }
 
+
 html, body {
   scroll-behavior: smooth;
   background-color: black; /* Sets the background of the entire page */
@@ -24,7 +25,6 @@ html, body {
 }
 }
 
-
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
   html, body {
       background-color: black !important; /* Ensures the background stays black */
@@ -32,129 +32,33 @@ html, body {
   }
 }
 
-    /*nav*/
-    .breadcrumb {
-      padding: 10px 15px; /* Adjust padding as needed */
-      border-radius: 5px; /* Rounded corners */
-      position: fixed;
-      width:100%;
-      z-index: 2;
-      color: var(--parchment-white);
-    }
-      .breadcrumb a {
-        color: var(--ethereal-gold);
-      }
-      
-  .author-name{
-    font-family: "Whisper", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size:90px;
-    z-index: 2;
-    color: var(--parchment-white);
-  }
-  
-  .navbar-nav .nav-item {
-    margin-right: 30px; /* Increases space between nav items */
-  }
-  
-  .nav-item{
-    font-size: 30px;
-    color: var(--ethereal-gold);
-    }
-  
-  .nav {
-    padding-left: 0; /* Removes padding for list */
-    list-style: none; /* Removes list style */
-   
-  }
-  
-  .nav-link {
-    color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
-  }
-  
-  .nav-link:hover, .nav-link:focus {
-    color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
-    text-decoration: none; /* Optional: Removes the underline on hover */
-  }
-  
-  .nav-link:hover, .nav-link:focus {
-    color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
-    text-decoration: none; /* Optional: Removes the underline on hover */
-  }
-  
-  
-  
-  a, .nav-link {
-    color: var(--parchment-white);
-  }
-  a:hover, .nav-link:hover {
-    color: var(--parchment-white);
-  }
-  
-  .list-inline-item + .list-inline-item {
-    margin-left: 0; /* Removes default margin between inline items for custom spacing */
-    margin-top: 15px; /* Adds vertical spacing between items */
-  }
+.navbar {
+  background-color: var(--deep-sapphire);
+}
 
-  
-  @media (min-width: 768px) {
-    .list-inline-item + .list-inline-item {
-      margin-left: 15px; /* Restores horizontal spacing for larger screens */
-      margin-top: 0; /* Removes vertical spacing for larger screens */
-    }
-  }
-  
-  .list-inline-item a:hover {
-    transform: scale(1.2); /* Slightly enlarge on hover */
-    background-color: var(--ethereal-gold);
-  }
+.breadcrumb {
+  background-color: #e9ecef;
+}
 
-  
-  .highlight-link a {
-    background-color: var(--mystic-purple); /* Light blue background */
-    border: 2px solid var(--ethereal-gold) /* Light blue border */
-  }
-  
-      /*nav*/
-  
-  body {
-  
-      font-family: "Space Grotesk", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-    }
- 
-    .gold{
-      color: var(--ethereal-gold);
-      padding-left: 30%;
-      padding-right: 30%;
-    }
+.nav-link.active {
+  background-color: var(--mystic-purple);
+  color: var(--parchment-white);
+}
 
-    .container{
-      color: var(--parchment-white);
-    }
+.nav-pills .nav-link {
+  border-radius: 0.25rem;
+}
 
-    .review-navigation ul {
-        list-style: none;
-        display: flex;
-        justify-content: center; /* Center the navigation */
-        padding: 0;
-      }
-      
-      .review-navigation li {
-        margin: 0 10px; /* Spacing between links */
-      }
-      
-      .review-navigation a {
-        text-decoration: none;
-        color: #007bff; /* Bootstrap primary link color */
-        padding: 5px;
-        border-radius: 5px;
-      }
-      
-      .review-navigation a:hover {
-        background-color: #e7e7e7; /* Light grey background on hover */
-      }
-      
-      
+.nav-link:hover {
+  background-color: var(--ethereal-gold);
+}
+
+/* Styles specific to review sections */
+.review-navigation .nav-link {
+  margin: 0 5px; /* Small margin for spacing */
+}
+
+.tab-content {
+  border: 1px solid #dee2e6; /* Light border for tab content */
+  padding: 20px; /* Padding inside tab content */
+}
