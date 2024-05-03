@@ -4,9 +4,6 @@
   --ethereal-gold: #C9A678;
   --dusky-rose: #986C6A;
   --parchment-white: #F4EDE4;
-}
-
-:root {
   --deep-sapphire: #0A3A4A;
   --emerald-green: #087830;
   --antique-gold: #DAA520;
@@ -44,6 +41,19 @@ body {
 background-attachment: scroll; /* This might help if the image zooms on scroll */
 }
 }
+
+@media (max-width: 991.98px) { /* Adjust this value based on your design breakpoints */
+  .card, .bg-image {
+    transform: none !important; /* Overrides any other transform effects */
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    background-size: 100% auto; /* Adjust this as needed */
+  }
+}
+
 body::before {
   content: '';
   position: fixed; /* or absolute */
@@ -155,21 +165,13 @@ body::before {
     background-color: black!important;
   }
 
-  @media (max-width: 991.98px) { /* Adjust this value based on your design breakpoints */
-    .card, .bg-image {
-      transform: none !important; /* Overrides any other transform effects */
-    }
+  #textCard {
+    display: none; /* Initially hide the card */
   }
 
-  @media (max-width: 991.98px) {
-    body {
-      background-size: 100% auto; /* Adjust this as needed */
-    }
+  h5 {
+    color: #F4EDE4;
   }
-
-h5{
-  color: #F4EDE4;
-}
   
   .card-title {
     color: var(--parchment-white); /* A deep purple for the title for elegance */
@@ -189,11 +191,17 @@ h5{
     background-color: var(--emerald-green);
   }
 
-  .btn{
+  .btn-primary {
     background-color: var(--mystic-purple);
+    font-size: 1.25rem; /* Increase font size for better visibility */
+    padding: 1rem 1.5rem; /* Increase padding to make the button larger */
+    border: none; /* Remove any default border */
+    color: white; /* Ensure the text color contrasts well with the button */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Add a subtle shadow for 3D effect */
   }
 
-  .close{
+  .close {
     background-color: var(--emerald-green);
   }
   
