@@ -163,6 +163,14 @@ a:hover, .nav-link:hover {
   .img-fluid.h-100 {
     object-fit: scale-down;
     height: 100%;
+    width: 100%;
+  }
+
+  @media (max-width: 991.98px) {
+    .img-fluid.h-100 {
+      height: 50vh; /* Reduce height on smaller screens to minimize negative space */
+      object-fit: cover; /* Ensure the image covers the height and width without distortion */
+    }
   }
 
   .footer {
