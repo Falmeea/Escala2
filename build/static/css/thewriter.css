@@ -204,6 +204,10 @@ a:hover, .nav-link:hover {
     width: 14px; /* Smaller width for mobile */
     height: 14px; /* Smaller height for mobile */
 }
+.highlight-link a {
+  background-color: var(--mystic-purple); /* Light blue background */
+  
+}
 }
 
 .get-in-touch-button:hover {
