@@ -4,6 +4,9 @@
   --ethereal-gold: #C9A678;
   --dusky-rose: #986C6A;
   --parchment-white: #F4EDE4;
+}
+
+:root {
   --deep-sapphire: #0A3A4A;
   --emerald-green: #087830;
   --antique-gold: #DAA520;
@@ -21,10 +24,24 @@ html, body {
   font-style: normal;
   background-color: black;
   color: var(--parchment-white);
-  background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
+  background-image: url('/static/Elfbird.png'); /* Adjust the path as necessary */
   background-size: cover; /* Cover the entire page */
   background-repeat: no-repeat;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh; /* Full viewport height */
+}
+
+
+body::before {
+content: '';
+position: fixed; /* or absolute */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-size: cover;
+background-position: center;
+opacity: 0.5; /* Adjust the opacity as needed */
+z-index: -1; /* Ensure the image stays in the background */
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
@@ -34,25 +51,10 @@ html, body {
   }
 }
 
-
-body::before {
-  content: '';
-  position: fixed; /* or absolute */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5; /* Adjust the opacity as needed */
-  z-index: -1; /* Ensure the image stays in the background */
-  }
-
-
     /*nav*/
-  
+     
     .breadcrumb {
-      padding: 15px 20px; /* Adjust padding as needed */
+      padding: 10px 15px; /* Adjust padding as needed */
       border-radius: 5px; /* Rounded corners */
       position: fixed;
       width:100%;
@@ -88,15 +90,11 @@ body::before {
     text-align: center; /* Centers the author name on smaller screens */
   }
 }
-.navbar-nav .nav-item {
-  margin-right: 30px; /* Increases space between nav items */
-}
-
-.nav-item{
-  font-size: 30px;
-  color: var(--ethereal-gold);
+  
+  .navbar-nav .nav-item {
+    margin-right: 30px; /* Increases space between nav items */
   }
-
+  
   .nav-item{
     font-size: 30px;
     color: var(--ethereal-gold);
@@ -123,6 +121,7 @@ body::before {
   }
   
   
+  
   a, .nav-link {
     color: var(--parchment-white);
   }
@@ -135,10 +134,14 @@ body::before {
     background-color: var(--mystic-purple); /* Light blue background */
     border: 2px solid var(--ethereal-gold) /* Light blue border */
   }
+       
+  .list-inline-item a:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    background-color: var(--ethereal-gold);
+  }
 
-
-  /*nav*/
-
+      /*nav*/
+ 
 
   .card {
     text-align: center;
@@ -146,11 +149,13 @@ body::before {
     background-color: black!important;
   }
 
-  #textCard {
-    display: none; /* Initially hide the card */
+  @media (max-width: 991.98px) {
+    body {
+      min-height: 100vh;
+    }
   }
 
-  h5 {
+  h5{
     color: #F4EDE4;
   }
   
@@ -172,17 +177,11 @@ body::before {
     background-color: var(--emerald-green);
   }
 
-  .btn-primary {
+  .btn{
     background-color: var(--mystic-purple);
-    font-size: 1.25rem; /* Increase font size for better visibility */
-    padding: 1rem 1.5rem; /* Increase padding to make the button larger */
-    border: none; /* Remove any default border */
-    color: white; /* Ensure the text color contrasts well with the button */
-    border-radius: 8px; /* Optional: Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Add a subtle shadow for 3D effect */
   }
 
-  .close {
+  .close{
     background-color: var(--emerald-green);
   }
   
@@ -248,5 +247,6 @@ body::before {
   color: var(--parchment-white); /* Changes text color to Mystic Purple for contrast */
 }
 
-
+/* This will not make buttons return to Mystic Purple after being clicked since
+   that's
 
