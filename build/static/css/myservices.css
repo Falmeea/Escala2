@@ -215,7 +215,7 @@ a:hover, .nav-link:hover {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow on hover for a "lift" effect */
+  box-shadow: 0 8px 16px var(--ethereal-gold)
   transform: scale(1.05); /* Slightly scale up on hover */
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
@@ -291,7 +291,9 @@ a:hover, .nav-link:hover {
   background-color: black !important;
   box-shadow: var(--ethereal-gold);
   text-align: center;
+
 }
+
 .newsletter-subscribe form {
   margin-top: 20px;
 }
