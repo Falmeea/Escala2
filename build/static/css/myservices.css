@@ -293,11 +293,11 @@ a:hover, .nav-link:hover {
 
 .item {
   display: inline-block;
-  width: auto;  
+  width: 20%;  
   padding: 10px 20px; /* Smaller padding */
   font-size: 26px; /* Increased font size for readability */
   margin: 5px; /* Spacing between items */
-  border: 1px solid #ccc; /* Subtle border for each item */
+  border: 1px solid var(--ethereal-gold); /* Subtle border for each item */
   border-radius: 8px; /* Rounded corners for aesthetic */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Soft shadow for depth */
   white-space: normal; /* Ensure text wraps */
