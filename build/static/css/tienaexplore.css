@@ -169,10 +169,9 @@ body::before {
     right: 0;
     z-index: 2; /* Ensure it's clickable over the text */
     padding: 0.5rem; /* Make it a bit larger for easier clicking */
-    background-color: var(--emerald-green);
+    background-color: var(--ethereal-gold);
   }
-
-  .btn-primary {
+.btn-primary .button{
     background-color: var(--mystic-purple);
     font-size: 1.25rem; /* Increase font size for better visibility */
     padding: 1rem 1.5rem; /* Increase padding to make the button larger */
