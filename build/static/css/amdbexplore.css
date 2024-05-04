@@ -22,10 +22,10 @@ html, body {
   background-color: black;
   color: var(--parchment-white);
   background-image: url('/static/treeoflife.png'); /* Adjust the path as necessary */
-  background-size: cover; /* Ensures the entire image is visible */
+  background-size: contain; /* Ensures the entire image is visible */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
 }
 
 
