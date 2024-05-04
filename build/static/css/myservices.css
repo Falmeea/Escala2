@@ -271,14 +271,14 @@ a:hover, .nav-link:hover {
 
 
 .hidden-content a.btn-primary {
-  background-color: black; /* Ethereal Gold background for buttons */
-  border-color: #C9A678; /* Ethereal Gold border for buttons */
+  background-color: var(--mystic-purple); /* Ethereal Gold background for buttons */
+  border-color: var(--mystic-purple); /* Ethereal Gold border for buttons */
   margin-left: 20px;
   margin-top: 20px;
 }
 
 .hidden-content a.btn-primary:hover {
-  border-color: darken(#C9A678, 10%); /* Consistent with hover background */
+  border-color: var(--ethereal-gold) /* Consistent with hover background */
 }
 
 
