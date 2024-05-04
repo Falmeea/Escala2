@@ -284,7 +284,6 @@ a:hover, .nav-link:hover {
 
 .scrolling-wrapper {
   white-space: nowrap;
-  overflow: hidden;
   background: transparent; /* No background for the carousel */
   position: relative;
   width: 100%;
@@ -294,13 +293,18 @@ a:hover, .nav-link:hover {
 
 .item {
   display: inline-block;
+  width: auto;  
   padding: 10px 20px; /* Smaller padding */
-  font-size: 14px; /* Smaller font size */
+  font-size: 26px; /* Increased font size for readability */
   margin: 5px; /* Spacing between items */
   background-color: #f8f9fa; /* Light background color for each item */
   border: 1px solid #ccc; /* Subtle border for each item */
   border-radius: 8px; /* Rounded corners for aesthetic */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Soft shadow for depth */
+  white-space: normal; /* Ensure text wraps */
+  vertical-align: top; /* Aligns items when they wrap to the next line */
+  line-height: 1.4; /* Improves readability */
+  text-align: justify; /* Optional: Justifies the text for better alignment */
 }
 
 @keyframes scroll {
