@@ -24,7 +24,21 @@ html, body {
   background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
   background-size: cover; /* Cover the entire page */
   background-repeat: no-repeat;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh; /* Full viewport height */
+}
+
+
+body::before {
+content: '';
+position: fixed; /* or absolute */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-size: cover;
+background-position: center;
+opacity: 0.5; /* Adjust the opacity as needed */
+z-index: -1; /* Ensure the image stays in the background */
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
@@ -34,25 +48,10 @@ html, body {
   }
 }
 
-
-body::before {
-  content: '';
-  position: fixed; /* or absolute */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5; /* Adjust the opacity as needed */
-  z-index: -1; /* Ensure the image stays in the background */
-  }
-
-
     /*nav*/
-  
+     
     .breadcrumb {
-      padding: 15px 20px; /* Adjust padding as needed */
+      padding: 10px 15px; /* Adjust padding as needed */
       border-radius: 5px; /* Rounded corners */
       position: fixed;
       width:100%;
@@ -88,14 +87,15 @@ body::before {
     text-align: center; /* Centers the author name on smaller screens */
   }
 }
-.navbar-nav .nav-item {
-  margin-right: 30px; /* Increases space between nav items */
-}
-
-.nav-item{
-  font-size: 30px;
-  color: var(--ethereal-gold);
+  
+  .navbar-nav .nav-item {
+    margin-right: 30px; /* Increases space between nav items */
   }
+  
+  .nav-item{
+    font-size: 30px;
+    color: var(--ethereal-gold);
+    }
   
   .nav {
     padding-left: 0; /* Removes padding for list */
@@ -137,7 +137,8 @@ body::before {
     background-color: var(--ethereal-gold);
   }
 
-  /*nav*/
+      /*nav*/
+ 
 
   .card {
     text-align: center;
@@ -145,11 +146,18 @@ body::before {
     background-color: black!important;
   }
 
+  @media (max-width: 991.98px) {
+    body {
+      min-height: 100vh;
+    }
+  }
+
+  
   #textCard {
     display: none; /* Initially hide the card */
   }
 
-  h5 {
+  h5{
     color: #F4EDE4;
   }
   
@@ -246,5 +254,6 @@ body::before {
   color: var(--parchment-white); /* Changes text color to Mystic Purple for contrast */
 }
 
-
+/* This will not make buttons return to Mystic Purple after being clicked since
+   that's
 
