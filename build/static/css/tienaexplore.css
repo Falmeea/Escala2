@@ -24,21 +24,7 @@ html, body {
   background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
   background-size: cover; /* Cover the entire page */
   background-repeat: no-repeat;
-  height: 100vh; /* Full viewport height */
-}
-
-
-body::before {
-content: '';
-position: fixed; /* or absolute */
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-size: cover;
-background-position: center;
-opacity: 0.5; /* Adjust the opacity as needed */
-z-index: -1; /* Ensure the image stays in the background */
+  height: 100vh; /* Full height of the viewport */
 }
 
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
@@ -48,10 +34,25 @@ z-index: -1; /* Ensure the image stays in the background */
   }
 }
 
+
+body::before {
+  content: '';
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure the image stays in the background */
+  }
+
+
     /*nav*/
-     
+  
     .breadcrumb {
-      padding: 10px 15px; /* Adjust padding as needed */
+      padding: 15px 20px; /* Adjust padding as needed */
       border-radius: 5px; /* Rounded corners */
       position: fixed;
       width:100%;
@@ -87,15 +88,14 @@ z-index: -1; /* Ensure the image stays in the background */
     text-align: center; /* Centers the author name on smaller screens */
   }
 }
-  
-  .navbar-nav .nav-item {
-    margin-right: 30px; /* Increases space between nav items */
+.navbar-nav .nav-item {
+  margin-right: 30px; /* Increases space between nav items */
+}
+
+.nav-item{
+  font-size: 30px;
+  color: var(--ethereal-gold);
   }
-  
-  .nav-item{
-    font-size: 30px;
-    color: var(--ethereal-gold);
-    }
   
   .nav {
     padding-left: 0; /* Removes padding for list */
@@ -137,8 +137,7 @@ z-index: -1; /* Ensure the image stays in the background */
     background-color: var(--ethereal-gold);
   }
 
-      /*nav*/
- 
+  /*nav*/
 
   .card {
     text-align: center;
@@ -146,13 +145,11 @@ z-index: -1; /* Ensure the image stays in the background */
     background-color: black!important;
   }
 
-  @media (max-width: 991.98px) {
-    body {
-      min-height: 100vh;
-    }
+  #textCard {
+    display: none; /* Initially hide the card */
   }
 
-  h5{
+  h5 {
     color: #F4EDE4;
   }
   
@@ -173,9 +170,14 @@ z-index: -1; /* Ensure the image stays in the background */
     padding: 0.5rem; /* Make it a bit larger for easier clicking */
     background-color: var(--ethereal-gold);
   }
-
-  .btn{
+  .button .btn-primary {
     background-color: var(--mystic-purple);
+    font-size: 1.25rem; /* Increase font size for better visibility */
+    padding: 1rem 1.5rem; /* Increase padding to make the button larger */
+    border: none; /* Remove any default border */
+    color: white; /* Ensure the text color contrasts well with the button */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Add a subtle shadow for 3D effect */
   }
 
   .close {
@@ -244,6 +246,5 @@ z-index: -1; /* Ensure the image stays in the background */
   color: var(--parchment-white); /* Changes text color to Mystic Purple for contrast */
 }
 
-/* This will not make buttons return to Mystic Purple after being clicked since
-   that's
+
 
