@@ -282,20 +282,33 @@ a:hover, .nav-link:hover {
   border-color: var(--ethereal-gold) /* Consistent with hover background */
 }
 
-.carousel{
-  background: none;
-}
-.carousel-item {
-  transition: transform 2s ease, opacity 2s ease; /* Slows down the sliding transition */
-}
-.review {
-  padding: 40px;
-  background-color: #f8f9fa;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-  text-align: center;
+.scrolling-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  background: transparent; /* Ensures no background for the carousel */
+  position: relative;
+  width: 100%;
+  height: 100px;
+  animation: scroll 20s linear infinite;
 }
 
+.item {
+  display: inline-block;
+  padding: 20px;
+  font-size: 16px;
+  white-space: normal;
+  background-color: transparent; /* No background for individual items */
+  box-shadow: none;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
 .newsletter-subscribe form {
   margin-top: 20px;
 }
