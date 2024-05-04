@@ -287,9 +287,9 @@ a:hover, .nav-link:hover {
 }
 .review {
   padding: 40px;
-  background-color: #f8f9fa;
+  background-color: black !important;
   border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: var(--ethereal-gold);
   text-align: center;
 }
 .newsletter-subscribe form {
