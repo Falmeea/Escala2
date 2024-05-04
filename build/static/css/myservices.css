@@ -282,6 +282,9 @@ a:hover, .nav-link:hover {
   border-color: var(--ethereal-gold) /* Consistent with hover background */
 }
 
+.carousel{
+  background: none;
+}
 .carousel-item {
   transition: transform 2s ease, opacity 2s ease; /* Slows down the sliding transition */
 }
