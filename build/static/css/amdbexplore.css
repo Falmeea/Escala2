@@ -4,9 +4,6 @@
   --ethereal-gold: #C9A678;
   --dusky-rose: #986C6A;
   --parchment-white: #F4EDE4;
-}
-
-:root {
   --deep-sapphire: #0A3A4A;
   --emerald-green: #087830;
   --antique-gold: #DAA520;
@@ -24,10 +21,11 @@ html, body {
   font-style: normal;
   background-color: black;
   color: var(--parchment-white);
-  background-image: url('/static/amdbbackground.png'); /* Adjust the path as necessary */
-  background-size: cover; /* Cover the entire page */
+  background-image: url('/static/treeoflife.png'); /* Adjust the path as necessary */
+  background-size: cover; /* Ensures the entire image is visible */
+  background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
 }
 
 
@@ -38,8 +36,6 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background-size: cover;
-background-position: center;
 opacity: 0.5; /* Adjust the opacity as needed */
 z-index: -1; /* Ensure the image stays in the background */
 }
@@ -52,9 +48,9 @@ z-index: -1; /* Ensure the image stays in the background */
 }
 
     /*nav*/
-   
+     
     .breadcrumb {
-      padding: 15px 20px; /* Adjust padding as needed */
+      padding: 10px 15px; /* Adjust padding as needed */
       border-radius: 5px; /* Rounded corners */
       position: fixed;
       width:100%;
@@ -120,10 +116,6 @@ z-index: -1; /* Ensure the image stays in the background */
     text-decoration: none; /* Optional: Removes the underline on hover */
   }
   
-  .toggler-close-icon {
-    font-size: 1.5rem; /* Adjust the size as needed */
-    color: white; /* Adjust color to match your design */
-  }
   
   
   a, .nav-link {
@@ -145,8 +137,7 @@ z-index: -1; /* Ensure the image stays in the background */
   }
 
       /*nav*/
-  
-
+ 
 
   .card {
     text-align: center;
@@ -156,9 +147,13 @@ z-index: -1; /* Ensure the image stays in the background */
 
   @media (max-width: 991.98px) {
     body {
-      background-size: 100% auto; /* Adjust this as needed */
-      
+      min-height: 100vh;
     }
+  }
+
+  
+  #textCard {
+    display: none; /* Initially hide the card */
   }
 
   h5{
@@ -180,16 +175,22 @@ z-index: -1; /* Ensure the image stays in the background */
     right: 0;
     z-index: 2; /* Ensure it's clickable over the text */
     padding: 0.5rem; /* Make it a bit larger for easier clicking */
-    background-color:var(--ethereal-gold);
+    background-color: var(--ethereal-gold);
   }
-
-  .btn{
+  .button .btn-primary {
     background-color: var(--mystic-purple);
+    font-size: 1.25rem; /* Increase font size for better visibility */
+    padding: 1rem 1.5rem; /* Increase padding to make the button larger */
+    border: none; /* Remove any default border */
+    color: white; /* Ensure the text color contrasts well with the button */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: Add a subtle shadow for 3D effect */
   }
 
   .close {
     background-color: var(--ethereal-gold);
   }
+  
   .patreon-promotion-box {
     position: fixed; /* Stick the box to the bottom */
     bottom: 0; /* Align to the bottom of the viewport */
@@ -252,4 +253,6 @@ z-index: -1; /* Ensure the image stays in the background */
   color: var(--parchment-white); /* Changes text color to Mystic Purple for contrast */
 }
 
+/* This will not make buttons return to Mystic Purple after being clicked since
+   that's
 
