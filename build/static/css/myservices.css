@@ -288,7 +288,7 @@ a:hover, .nav-link:hover {
   position: relative;
   width: 100%;
   height: auto; /* Height auto to accommodate content */
-  animation: scroll 40s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 .item {
