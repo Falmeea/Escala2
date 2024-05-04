@@ -74,13 +74,15 @@ html, body {
 }
 
   .git-button{
-    background: var(--ethereal-gold) !important;
+    background: var(--mystic-purple) !important;
     display: flex;
     margin-bottom: 20px;
+    padding: 12px 24px; /* Increase padding to make the button larger */
+    font-size: 18px; /* Increase font size for larger text */
   }
 
   .git-button:hover{
-    background-color: var(--mystic-purple) !important;
+    background-color: var(--ethereal-gold) !important;
    
   }
   
