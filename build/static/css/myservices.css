@@ -76,6 +76,8 @@ html, body {
   .git-button{
     background: var(--ethereal-gold) !important;
     display: flex;
+    padding-bottom: 20px;
+    size: large;
   }
 
   .git-button:hover{
