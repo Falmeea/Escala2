@@ -23,8 +23,32 @@
     <title>Escala</title>
 <!-- Mailchimp -->
 <style type="text/css">
-  #mc_embed_signup {background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:500px;}
-</style>
+  /* Container to hold the modal, centering it */
+  #mc_embed_signup {
+    background: #fff; /* White background */
+    font: 16px Helvetica, Arial, sans-serif; /* Slightly larger font for readability */
+    width: auto; /* Automatic width based on content */
+    max-width: 500px; /* Maximum width so it doesn’t get too large */
+    margin: 0 auto; /* Centering horizontally */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    position: fixed; /* Fixed position to stay in view */
+    top: 50%; /* Position at half the height of the viewport */
+    left: 50%; /* Position at half the width of the viewport */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    z-index: 1050; /* High z-index to stay on top of other content */
+    overflow: hidden; /* Ensures no content spills outside */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 576px) {
+    #mc_embed_signup {
+      width: 90%; /* More width on smaller screens for better visibility */
+      max-width: none; /* Remove max-width restriction on small screens */
+    }
+  }
 </head>
 <body>
     <!-- Navigation Bar simplified without Django tags -->
