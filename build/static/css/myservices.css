@@ -215,7 +215,7 @@ a:hover, .nav-link:hover {
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px var(--ethereal-gold)
+  box-shadow: 0 8px 16px var(--ethereal-gold);
   transform: scale(1.05); /* Slightly scale up on hover */
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
 }
