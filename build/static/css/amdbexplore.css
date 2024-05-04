@@ -180,17 +180,16 @@ z-index: -1; /* Ensure the image stays in the background */
     right: 0;
     z-index: 2; /* Ensure it's clickable over the text */
     padding: 0.5rem; /* Make it a bit larger for easier clicking */
-    background-color: var(--emerald-green);
+    background-color:var(--ethereal-gold);
   }
 
   .btn{
     background-color: var(--mystic-purple);
   }
 
-  .close{
-    background-color: var(--emerald-green);
+  .close {
+    background-color: var(--ethereal-gold);
   }
-  
   .patreon-promotion-box {
     position: fixed; /* Stick the box to the bottom */
     bottom: 0; /* Align to the bottom of the viewport */
