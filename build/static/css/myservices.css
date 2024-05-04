@@ -285,28 +285,28 @@ a:hover, .nav-link:hover {
 .scrolling-wrapper {
   white-space: nowrap;
   overflow: hidden;
+  background: transparent; /* Ensures no background for the carousel */
   position: relative;
   width: 100%;
-  height: 100px; /* Adjust height as needed */
-  animation: scroll linear infinite;
-  animation-duration: calc(7s * var(--items)); /* Dynamic duration based on content */
+  height: 100px;
+  animation: scroll 20s linear infinite;
 }
 
 .item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   padding: 20px;
   font-size: 16px;
-  background-color: transparent;
+  white-space: normal;
+  background-color: transparent; /* No background for individual items */
+  box-shadow: none;
 }
 
 @keyframes scroll {
   0% {
-      transform: translateX(0);
+      transform: translateX(100%);
   }
   100% {
-      transform: translateX(-50%);
+      transform: translateX(-100%);
   }
 }
 .newsletter-subscribe form {
