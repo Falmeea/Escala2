@@ -16,16 +16,14 @@ html, body {
   background-color: black; /* Sets the background of the entire page */
   color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
   font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
-  font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: black;
   color: var(--parchment-white);
-  background-image: url('/static/spirit.png'); /* Adjust the path as necessary */
-  background-size: 80% 80%;  /* You can adjust these percentages to zoom out */
-  background-position: center;
+  background-image: url('/static/Elfbird.png'); /* Adjust the path as necessary */
+  background-size: cover; /* Cover the entire page */
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
 }
 
 
