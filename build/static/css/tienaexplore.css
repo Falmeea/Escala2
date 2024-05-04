@@ -96,11 +96,6 @@ body::before {
   font-size: 30px;
   color: var(--ethereal-gold);
   }
-
-  .nav-item{
-    font-size: 30px;
-    color: var(--ethereal-gold);
-    }
   
   .nav {
     padding-left: 0; /* Removes padding for list */
@@ -123,6 +118,7 @@ body::before {
   }
   
   
+  
   a, .nav-link {
     color: var(--parchment-white);
   }
@@ -135,10 +131,13 @@ body::before {
     background-color: var(--mystic-purple); /* Light blue background */
     border: 2px solid var(--ethereal-gold) /* Light blue border */
   }
-
+       
+  .list-inline-item a:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    background-color: var(--ethereal-gold);
+  }
 
   /*nav*/
-
 
   .card {
     text-align: center;
@@ -182,7 +181,7 @@ body::before {
   }
 
   .close {
-    background-color: var(--emerald-green);
+    background-color: var(--ethereal-gold);
   }
   
   .patreon-promotion-box {
