@@ -17,10 +17,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Whisper&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Escala</title>
+<!-- Mailchimp -->
+<style type="text/css">
+  #mc_embed_signup {background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:500px;}
+</style>
 </head>
 <body>
     <!-- Navigation Bar simplified without Django tags -->
@@ -246,11 +250,11 @@
   </div>
   
   <!-- Timed modal for encouraging newsletter subscription -->
-  <div class="modal fade" id="timedModal" tabindex="-1" aria-labelledby="timedModalLabel" aria-hidden="true">
+  <div class="modal fade" id="mc_embed_signup" tabindex="-1" aria-labelledby="mc_embed_signup" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="timedModalLabel">Support & Subscribe</h5>
+          <h5 class="modal-title" id="mc_embed_signup">Support & Subscribe</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -281,34 +285,50 @@
       </div>
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+     var carouselLarge = document.querySelector('#carouselLarge');
+     var carouselSmall = document.querySelector('#carouselSmall');
+   
+     if (window.innerWidth >= 768) {
+       // For larger screens
+       var carouselLargeInstance = new bootstrap.Carousel(carouselLarge, {
+         interval: 30000, // Longer interval for larger screens
+       });
+     } else {
+       // For smaller screens
+       var carouselSmallInstance = new bootstrap.Carousel(carouselSmall, {
+         interval: 15000, // Shorter interval for smaller screens
+       });
+     }
+   });
+   </script>
   
+
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  <script type="text/javascript">
+      (function($) {
+          window.fnames = new Array(); window.ftypes = new Array();
+          fnames[0]='EMAIL'; ftypes[0]='email';
+          fnames[1]='FNAME'; ftypes[1]='text';
+          fnames[2]='LNAME'; ftypes[2]='text';
+          fnames[5]='BIRTHDAY'; ftypes[5]='birthday';
+          fnames[3]='ADDRESS'; ftypes[3]='address';
+          fnames[4]='PHONE'; ftypes[4]='phone';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+  </script>
   <script>
   document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
-      var timedModal = new bootstrap.Modal(document.getElementById('timedModal'));
+      var timedModal = new bootstrap.Modal(document.getElementById('mc_embed_signup'));
       timedModal.show();
     }, 20000); // 20000 milliseconds = 20 seconds
   });
   </script>
   
-   <script>
-     document.addEventListener("DOMContentLoaded", function() {
-      var carouselLarge = document.querySelector('#carouselLarge');
-      var carouselSmall = document.querySelector('#carouselSmall');
-    
-      if (window.innerWidth >= 768) {
-        // For larger screens
-        var carouselLargeInstance = new bootstrap.Carousel(carouselLarge, {
-          interval: 30000, // Longer interval for larger screens
-        });
-      } else {
-        // For smaller screens
-        var carouselSmallInstance = new bootstrap.Carousel(carouselSmall, {
-          interval: 15000, // Shorter interval for smaller screens
-        });
-      }
-    });
-    </script>
+
     
     
 </body>
