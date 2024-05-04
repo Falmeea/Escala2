@@ -45,7 +45,7 @@ html, body {
         color: var(--ethereal-gold);
       }
       
-.pills-bar{
+.navbar .pills-bar{
   margin-top: 40px;
 }
   
