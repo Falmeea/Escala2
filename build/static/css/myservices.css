@@ -75,7 +75,6 @@ html, body {
 
   .git-button{
     background: var(--mystic-purple) !important;
-    border-color: var(--ethereal-gold);
     display: flex;
     margin-bottom: 20px;
     padding: 12px 24px; /* Increase padding to make the button larger */
@@ -103,11 +102,11 @@ html, body {
 }
 
 .nav-link {
-  background-color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+  color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
 }
 
 .nav-link:hover, .nav-link:focus {
-  background-color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+  color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
   text-decoration: none; /* Optional: Removes the underline on hover */
 }
 
@@ -272,7 +271,7 @@ a:hover, .nav-link:hover {
 
 
 .hidden-content a.btn-primary {
-  background-color: var(--ethereal-gold); /* Ethereal Gold background for buttons */
+  background-color: black; /* Ethereal Gold background for buttons */
   border-color: #C9A678; /* Ethereal Gold border for buttons */
   margin-left: 20px;
   margin-top: 20px;
