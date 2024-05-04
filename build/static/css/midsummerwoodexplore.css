@@ -248,7 +248,7 @@ z-index: -1; /* Ensure the image stays in the background */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
 }
 
-.wattpad-promotion-box .btn:hover, .card-text .btn:hover,
+.wattpad-promotion-box .card-text
 .wattpad-promotion-box .btn:focus, .card-text .btn:focus {
   background-color: var(--ethereal-gold); /* Ethereal Gold background on hover/focus */
   color: var(--parchment-white); /* Changes text color to Mystic Purple for contrast */
