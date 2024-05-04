@@ -27,6 +27,21 @@ html, body {
 }
 
 
+@media (max-width: 768px) {
+  html, body {
+    background-size: contain; /* Makes the entire image fit within the viewport without cropping */
+    background-position: top center; /* Adjust if you need to focus on a specific part of the image */
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    background-size: 100% 100%; /* Stretches the image to fully cover the area */
+    background-position: center; /* Keeps the image centered */
+  }
+}
+
+
 body::before {
 content: '';
 position: fixed; /* or absolute */
