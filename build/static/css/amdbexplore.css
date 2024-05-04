@@ -22,8 +22,8 @@ html, body {
   background-color: black;
   color: var(--parchment-white);
   background-image: url('/static/treeoflife.png'); /* Adjust the path as necessary */
-  background-size: contain; /* Ensures the entire image is visible */
-  background-position: center; /* Centers the background image */
+  background-size: 80% 80%;  /* You can adjust these percentages to zoom out */
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
 }
