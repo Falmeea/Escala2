@@ -75,6 +75,7 @@ html, body {
 
   .git-button{
     background: var(--mystic-purple) !important;
+    border: none;
     display: flex;
     margin-bottom: 20px;
     padding: 12px 24px; /* Increase padding to make the button larger */
@@ -252,12 +253,12 @@ a:hover, .nav-link:hover {
 
     
 /* Styling for buttons */
-.btn-primary {
+.card .btn-primary {
   background-color: var(--mystic-purple); /* Indigo background color */
   border: none; /* Remove default border */
 }
 
-.btn-primary:hover {
+.card .btn-primary:hover {
   background-color: var(--mystic-purple); /* Lighter purple on hover */
 }
 
@@ -296,13 +297,11 @@ a:hover, .nav-link:hover {
  }
  
 .modal-content .btn-primary {
-    background-color: var(--mystic-purple); /* Ethereal Gold background */
-    border-color: var(--ethereal-gold); /* Ethereal Gold border */
-    color: var(--etheral-gold); /* Dark Forest Green text */
+   background-color: var(--mystic-purple);
   }
     
 .modal-content .btn-primary:hover {
-      background-color: darken(var(--ethereal-gold), 10%); /* Darken on hover */
+      background-color: var(--ethereal-gold);
     }
 .modal-content a {
       color: var(--ethereal-gold); /* Ethereal Gold links */
