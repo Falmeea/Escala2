@@ -45,14 +45,9 @@ html, body {
         color: var(--ethereal-gold);
       }
       
-  .author-name{
-    font-family: "Whisper", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size:90px;
-    z-index: 2;
-    color: var(--parchment-white);
-  }
+.navbar{
+  margin-top: 40px;
+}
   
   .navbar-nav .nav-item {
     margin-right: 30px; /* Increases space between nav items */
