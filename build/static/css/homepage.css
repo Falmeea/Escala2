@@ -225,7 +225,7 @@ body::before {
   
   .carousel-caption .btn:hover {
    background-color: var(--ethereal-gold);
-    
+   border-color: var(--mystic-purple);
   }
   .btn-primary {
     background-color: var(--mystic-purple);
