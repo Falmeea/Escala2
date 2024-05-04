@@ -282,48 +282,16 @@ a:hover, .nav-link:hover {
   border-color: var(--ethereal-gold) /* Consistent with hover background */
 }
 
-.scrolling-wrapper {
-  white-space: nowrap;
-  background: transparent; /* No background for the carousel */
-  position: relative;
-  width: 100%;
-  height: auto; /* Height auto to accommodate content */
-  animation: scroll 35s linear infinite;
+.carousel-item {
+  transition: transform 2s ease, opacity 2s ease; /* Slows down the sliding transition */
 }
-
-.item {
-  display: inline-block;
-  width: 35%;  
-  padding: 20px 40px; /* Smaller padding */
-  margin: 30px;
-  font-size: 26px; /* Increased font size for readability */
-  border: 1px solid var(--ethereal-gold); /* Subtle border for each item */
-  border-radius: 8px; /* Rounded corners for aesthetic */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Soft shadow for depth */
-  white-space: normal; /* Ensure text wraps */
-  vertical-align: top; /* Aligns items when they wrap to the next line */
-  line-height: 1.4; /* Improves readability */
-  text-align: justify; /* Optional: Justifies the text for better alignment */
+.review {
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  text-align: center;
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 768px) {
-  .item {
-    color: var(--parchment-white);
-    font-size: 14px;
-    width: 50%; 
-    margin: 10px; /* Smaller margin on smaller screens */
-    padding: 20px; /* Smaller padding on smaller screens */
-  }
-}
-
 .newsletter-subscribe form {
   margin-top: 20px;
 }
