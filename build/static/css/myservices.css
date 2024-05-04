@@ -285,20 +285,22 @@ a:hover, .nav-link:hover {
 .scrolling-wrapper {
   white-space: nowrap;
   overflow: hidden;
-  background: transparent; /* Ensures no background for the carousel */
+  background: transparent; /* No background for the carousel */
   position: relative;
   width: 100%;
-  height: 100px;
+  height: auto; /* Height auto to accommodate content */
   animation: scroll 40s linear infinite;
 }
 
 .item {
   display: inline-block;
-  padding: 20px;
-  font-size: 26px;
-  white-space: normal;
-  background-color: transparent; /* No background for individual items */
-  box-shadow: none;
+  padding: 10px 20px; /* Smaller padding */
+  font-size: 14px; /* Smaller font size */
+  margin: 5px; /* Spacing between items */
+  background-color: #f8f9fa; /* Light background color for each item */
+  border: 1px solid #ccc; /* Subtle border for each item */
+  border-radius: 8px; /* Rounded corners for aesthetic */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Soft shadow for depth */
 }
 
 @keyframes scroll {
