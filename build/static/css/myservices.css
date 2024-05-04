@@ -293,8 +293,8 @@ a:hover, .nav-link:hover {
 
 .item {
   display: inline-block;
-  width: 20%;  
-  padding: 10px 20px; /* Smaller padding */
+  width: 35%;  
+  padding: 20px 40px; /* Smaller padding */
   font-size: 26px; /* Increased font size for readability */
   margin: 5px; /* Spacing between items */
   border: 1px solid var(--ethereal-gold); /* Subtle border for each item */
