@@ -317,7 +317,7 @@ a:hover, .nav-link:hover {
 @media (max-width: 768px) {
   .item {
     font-size: 14px;
-    width: 20%; 
+    width: 50%; 
     margin: 10px; /* Smaller margin on smaller screens */
     padding: 20px; /* Smaller padding on smaller screens */
   }
