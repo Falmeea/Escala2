@@ -289,7 +289,7 @@ a:hover, .nav-link:hover {
   position: relative;
   width: 100%;
   height: 100px;
-  animation: scroll 90s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 .item {
