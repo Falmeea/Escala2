@@ -21,7 +21,7 @@ html, body {
   font-style: normal;
   background-color: black;
   color: var(--parchment-white);
-  background-image: url('/static/treeoflife.png'); /* Adjust the path as necessary */
+  background-image: url('/static/spirit.png'); /* Adjust the path as necessary */
   background-size: 80% 80%;  /* You can adjust these percentages to zoom out */
   background-position: center;
   background-repeat: no-repeat;
