@@ -295,9 +295,8 @@ a:hover, .nav-link:hover {
   display: inline-block;
   width: 35%;  
   padding: 20px 40px; /* Smaller padding */
-  margin-right: 20px;
+  margin: 20px;
   font-size: 26px; /* Increased font size for readability */
-  margin: 5px; /* Spacing between items */
   border: 1px solid var(--ethereal-gold); /* Subtle border for each item */
   border-radius: 8px; /* Rounded corners for aesthetic */
   box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Soft shadow for depth */
@@ -312,6 +311,14 @@ a:hover, .nav-link:hover {
   }
   to {
       transform: translateX(-100%); 
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    width: 50%; /* Larger width on smaller screens */
+    margin: 10px; /* Smaller margin on smaller screens */
+    padding: 10px 20px; /* Smaller padding on smaller screens */
   }
 }
 
