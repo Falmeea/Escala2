@@ -305,15 +305,15 @@ a:hover, .nav-link:hover {
   line-height: 1.4; /* Improves readability */
   text-align: justify; /* Optional: Justifies the text for better alignment */
 }
-
 @keyframes scroll {
   from {
-      transform: translateX(-150%);
+      transform: translateX(100%);  // Start off-screen to the right
   }
   to {
-      transform: translateX(100%);
+      transform: translateX(-100%); // End off-screen to the left
   }
 }
+
 .newsletter-subscribe form {
   margin-top: 20px;
 }
