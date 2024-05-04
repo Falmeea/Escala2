@@ -133,6 +133,7 @@ html, body {
 
     .container{
       color: var(--parchment-white);
+      padding-top: 30px;
     }
 
     .review-navigation ul {
