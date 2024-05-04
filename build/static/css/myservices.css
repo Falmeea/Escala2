@@ -295,6 +295,7 @@ a:hover, .nav-link:hover {
   display: inline-block;
   width: 35%;  
   padding: 20px 40px; /* Smaller padding */
+  margin-right: 20px;
   font-size: 26px; /* Increased font size for readability */
   margin: 5px; /* Spacing between items */
   border: 1px solid var(--ethereal-gold); /* Subtle border for each item */
