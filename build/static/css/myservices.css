@@ -308,7 +308,7 @@ a:hover, .nav-link:hover {
 
 @keyframes scroll {
   from {
-      transform: translateX(0%);
+      transform: translateX(-150%);
   }
   to {
       transform: translateX(100%);
