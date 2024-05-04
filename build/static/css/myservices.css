@@ -286,9 +286,8 @@ a:hover, .nav-link:hover {
   transition: transform 2s ease, opacity 2s ease; /* Slows down the sliding transition */
 }
 .review {
-  padding: 40px;
+  padding: 20px;
   background-color: black !important;
-  border-radius: 15px;
   box-shadow: var(--ethereal-gold);
   text-align: center;
 }
