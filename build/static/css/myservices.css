@@ -288,7 +288,7 @@ a:hover, .nav-link:hover {
   position: relative;
   width: 100%;
   height: auto; /* Height auto to accommodate content */
-  animation: scroll 30s linear infinite;
+  animation: scroll 35s linear infinite;
 }
 
 .item {
@@ -307,10 +307,10 @@ a:hover, .nav-link:hover {
 }
 @keyframes scroll {
   from {
-      transform: translateX(100%);  // Start off-screen to the right
+      transform: translateX(100%);  
   }
   to {
-      transform: translateX(-100%); // End off-screen to the left
+      transform: translateX(-100%); 
   }
 }
 
