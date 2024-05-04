@@ -262,26 +262,6 @@ a:hover, .nav-link:hover {
   background-color: var(--mystic-purple); /* Lighter purple on hover */
 }
 
-/* Hidden content styling */
-.hidden-content {
-  display: none; /* Hide content by default */
-  padding: 20px; /* Padding for content */
-  background-color: black; /* Background color matching the button */
-  color: #E6E6FA; /* Text color for hidden content */
-}
-
-
-.hidden-content a.btn-primary {
-  background-color: var(--mystic-purple); /* Ethereal Gold background for buttons */
-  border-color: var(--mystic-purple); /* Ethereal Gold border for buttons */
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-.hidden-content a.btn-primary:hover {
-  border-color: var(--ethereal-gold) /* Consistent with hover background */
-}
-
 .carousel-item {
   transition: transform 2s ease, opacity 2s ease; /* Slows down the sliding transition */
 }
