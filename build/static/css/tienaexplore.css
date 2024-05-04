@@ -22,9 +22,10 @@ html, body {
   background-color: black;
   color: var(--parchment-white);
   background-image: url('/static/TienaDeTolyver.png'); /* Adjust the path as necessary */
-  background-size: contain; /* Cover the entire page */
+  background-size: contain; /* Ensures the entire image is visible */
+  background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
 }
 
 
