@@ -25,7 +25,7 @@ html, body {
   background-size: cover; /* Ensures the entire image is visible */
   background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 }
 
 
