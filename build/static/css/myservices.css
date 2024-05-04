@@ -316,6 +316,7 @@ a:hover, .nav-link:hover {
 
 @media (max-width: 768px) {
   .item {
+    color: var(--parchment-white);
     font-size: 14px;
     width: 50%; 
     margin: 10px; /* Smaller margin on smaller screens */
