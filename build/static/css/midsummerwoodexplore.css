@@ -16,7 +16,6 @@ html, body {
   background-color: black; /* Sets the background of the entire page */
   color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
   font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
-  font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   background-color: black;
@@ -245,7 +244,7 @@ z-index: -1; /* Ensure the image stays in the background */
   background-color: var(--mystic-purple);
   border-color: var(--ethereal-gold);
   color: white; /* Ensures text color is white for contrast */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+  transition: color 0.3s, color 0.3s; /* Smooth transition for color changes */
 }
 
 .wattpad-promotion-box .card-text
