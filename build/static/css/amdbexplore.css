@@ -20,7 +20,7 @@ html, body {
   font-style: normal;
   background-color: black;
   color: var(--parchment-white);
-  background-image: url('/static/Elfbird.png'); /* Adjust the path as necessary */
+  background-image: url('/static/spirit.png'); /* Adjust the path as necessary */
   background-size: cover; /* Cover the entire page */
   background-repeat: no-repeat;
   height: 100vh; /* Full viewport height */
