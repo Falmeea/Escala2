@@ -450,7 +450,14 @@ body::before {
   
   .modal-title {
     color: var(--parchment-white); /* Parchment White for the title */
+    margin-bottom: 0; /* Removes any default margin to align title properly */
+    font-size: 1.25rem; /* Slightly larger font for the title */
   }
+
+  .modal-body {
+    position: relative; /* Ensures the body does not overlap header */
+    padding-top: 20px; /* Adds space between the header and the form */
+}
   
   .btn-close {
      color: var(--parchment-white);
