@@ -317,7 +317,7 @@
      if (window.innerWidth >= 768) {
        // For larger screens
        var carouselLargeInstance = new bootstrap.Carousel(carouselLarge, {
-         interval: 1000, // Longer interval for larger screens
+         interval: 30000, // Longer interval for larger screens
        });
      } else {
        // For smaller screens
@@ -348,7 +348,7 @@
     setTimeout(function() {
       var timedModal = new bootstrap.Modal(document.getElementById('mc_embed_signup'));
       timedModal.show();
-    }, 20000); // 20000 milliseconds = 20 seconds
+    }, 2000); // 20000 milliseconds = 20 seconds
   });
   </script>
   
