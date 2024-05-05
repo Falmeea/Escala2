@@ -48,6 +48,9 @@
     }
   }
   </style>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName
+      (h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script",
+      "https://chimpstatic.com/mcjs-connected/js/users/13cf59cd8615fb425666fca1e/a00e55b4f63f832b567161dc9.js");</script>
 </head>
 <body>
     <!-- Navigation Bar simplified without Django tags -->
@@ -290,8 +293,6 @@
           <div class="newsletter-subscribe">
             <p>Subscribe to the Newsletter!</p>
             <form id="newsletterForm" method="post">
-              <!-- Flask CSRF token for form security -->
-              <!--{{ form.hidden_tag() }} -->
               <div class="mb-3">
                 <input type="name" class="form-control" id="nameInput" placeholder="Name" required>
               </div>
@@ -332,6 +333,7 @@
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   <script type="text/javascript">
     
+    
       (function($) {
           window.fnames = new Array(); window.ftypes = new Array();
           fnames[0]='EMAIL'; ftypes[0]='email';
@@ -351,9 +353,6 @@
     }, 2000); // 20000 milliseconds = 20 seconds
   });
   </script>
-  
 
-    
-    
 </body>
 </html>
