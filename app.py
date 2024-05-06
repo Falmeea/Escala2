@@ -1,10 +1,18 @@
 from flask import Flask, render_template, redirect, url_for
 from views import landing
 import mailchimp_marketing as MailchimpMarketing
+from mailchimp_marketing.api_client import ApiClientError
 from flask_frozen import Freezer
 
 app = Flask(__name__)
 app.register_blueprint(landing, url_prefix="/")
+
+app = Flask(__name__)
+mailchimp = MailchimpMarketing.Client()
+mailchimp.set_config({
+    "api_key": "c9b7cef64f1dcdf312c9f401e9518313-us18",
+    "server": "-us18"  # e.g., "us5" if your server is us5.api.mailchimp.com
+})
 
 app.config['FREEZER_RELATIVE_URLS'] = True
 
@@ -39,27 +47,6 @@ def tienaread():
 def tienaexplore():
     return render_template('tienaexplore.html')
 
-app = Flask(__name__)
-mailchimp = MailchimpMarketing.Client()
-mailchimp.set_config({
-    "api_key": "c9b7cef64f1dcdf312c9f401e9518313-us18",
-    "server": "-us18"  # e.g., "us5" if your server is us5.api.mailchimp.com
-})
-
-@app.route('/subscribe', methods=['POST'])
-def subscribe():
-    email = request.form.get('email')
-    # Add subscriber to your audience
-    try:
-        response = mailchimp.lists.add_list_member("0dba0d5c1b", {
-            "email_address": email,
-            "status": "subscribed"  # or "pending" if you want to send a confirmation email
-        })
-        # Successful subscription
-        return render_template('success.html')
-    except MailchimpMarketing.ApiException as e:
-        # Handle API errors
-        return render_template('error.html', error=str(e))
 
 
 # Create an instance of Freezer
