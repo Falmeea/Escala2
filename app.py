@@ -49,6 +49,22 @@ def tienaexplore():
 
 
 
+@app.route('/subscribe', methods=['POST'])
+def subscribe():
+    email = request.form.get('email')
+    # Add subscriber to your audience
+    try:
+        response = mailchimp.lists.add_list_member("0dba0d5c1b", {
+            "email_address": email,
+            "status": "subscribed"  # or "pending" if you want to send a confirmation email
+        })
+        # Successful subscription
+        return render_template('success.html')
+    except MailchimpMarketing.ApiException as e:
+        # Handle API errors
+        return render_template('error.html', error=str(e))
+
+
 # Create an instance of Freezer
 freezer = Freezer(app)
 
