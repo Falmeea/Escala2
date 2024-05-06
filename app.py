@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect, url_for
 from views import landing
-from forms import NewsletterForm
+import mailchimp_marketing as MailchimpMarketing
 from flask_frozen import Freezer
 
 app = Flask(__name__)
@@ -39,13 +39,27 @@ def tienaread():
 def tienaexplore():
     return render_template('tienaexplore.html')
 
-@app.route('/subscribe', methods=['GET', 'POST'])
+app = Flask(__name__)
+mailchimp = MailchimpMarketing.Client()
+mailchimp.set_config({
+    "api_key": "c9b7cef64f1dcdf312c9f401e9518313-us18",
+    "server": "-us18"  # e.g., "us5" if your server is us5.api.mailchimp.com
+})
+
+@app.route('/subscribe', methods=['POST'])
 def subscribe():
-    form = NewsletterForm()
-    if form.validate_on_submit():
-        # Process the form data, e.g., save to database or send email
-        return redirect(url_for('success'))  # Redirect to a success page if form validation passes
-    return render_template('subscribe.html', form=form)
+    email = request.form.get('email')
+    # Add subscriber to your audience
+    try:
+        response = mailchimp.lists.add_list_member("0dba0d5c1b", {
+            "email_address": email,
+            "status": "subscribed"  # or "pending" if you want to send a confirmation email
+        })
+        # Successful subscription
+        return render_template('success.html')
+    except MailchimpMarketing.ApiException as e:
+        # Handle API errors
+        return render_template('error.html', error=str(e))
 
 
 # Create an instance of Freezer
