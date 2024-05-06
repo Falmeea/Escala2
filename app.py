@@ -47,10 +47,6 @@ def subscribe():
         return redirect(url_for('success'))  # Redirect to a success page if form validation passes
     return render_template('subscribe.html', form=form)
 
-@app.route('/')
-def index():
-    # Your other route logic here
-    return render_template('index.html', mailchimp_script='<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/13cf59cd8615fb425666fca1e/47a22c8619a40ef167606f94d.js");</script>')
 
 # Create an instance of Freezer
 freezer = Freezer(app)
