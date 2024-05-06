@@ -1,5 +1,3 @@
-/*  */
-
 :root {
   --dark-forest-green: #0B3D20;
   --mystic-purple: #473854;
@@ -9,27 +7,21 @@
   --deep-sapphire: #0A3A4A;
   --emerald-green: #087830;
   --antique-gold: #DAA520;
-  --burgundy-: #800020;
+  --burgundy: #800020;
   --twilight-mist: #8A9597;
 }
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-    font-family: 'Playfair Display', serif;
-    
-  }
-}
-html, body {
-  scroll-padding-top: calc(4.5rem - 1px);
-  height: 100%;
-  margin: 0;
-  font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  background-color: black;
+  
+html {
   scroll-behavior: smooth;
 }
+ 
+.body {
+  background-color: black !important; /* Sets the background of the entire page */
+  color: var(--parchment-white); /* Sets the default text color to a light shade for contrast */
+  font-family: "Space Grotesk", sans-serif; /* Example of setting a default font */
+}
 
+/* Force a black background on small and medium screens */
 @media (max-width: 991.98px) { /* Covers extra small and small devices up to medium devices */
   html, body {
       background-color: black !important; /* Ensures the background stays black */
@@ -37,165 +29,445 @@ html, body {
   }
 }
 
-
-/* Nav */ 
-.social-nav {
-  position: fixed; /* This ensures the nav is stuck at the top */
-  top: 0;          /* Align top edge to the top of the viewport */
-  left: 0;         /* Align left edge to the left of the viewport */
-  width: 100%;     /* Full width to stretch across the screen */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  z-index: 1000;   /* High z-index to keep it above other content */
-  padding: 10px 0; /* Padding for aesthetic spacing */
+@media (min-width: 992px) and (max-width: 1199.98px) { /* Covers medium to large devices */
+  html, body {
+    background-color: black !important; /* Ensures the background stays black */
+    color: var(--parchment-white); /* Ensures the color stays consistent */
+  }
 }
 
-.social-links {
-  list-style: none;
-  display: flex;
-  margin-left: 25px;
-  padding: 0;
+@media (min-width: 1200px) { /* Covers extra large devices */
+  html, body {
+    background-color: black !important; /* Ensures the background stays black */
+    color: var(--parchment-white); /* Ensures the color stays consistent */
+  }
 }
 
-.list-inline-item {
-  margin-right: 30px; /* Space between items */
-}
+    /*nav*/
+  
+    .breadcrumb {
+      padding: 10px 15px; /* Adjust padding as needed */
+      border-radius: 5px; /* Rounded corners */
+      position: fixed;
+      width:100%;
+      z-index: 2;
+      color: var(--parchment-white);
+    }
+      .breadcrumb a {
+        color: var(--ethereal-gold);
+      }
+      
+  .author-name{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:90px;
+    z-index: 2;
+    color: var(--parchment-white);
+  }
+  
 
-.list-inline-item:last-child {
-  margin-right: 0;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  transition: all 0.3s ease; /* Transition for size and background */
-}
-
-.nav-link:hover {
-  background-color: var(--ethereal-gold); /* Change background on hover */
-  padding: 10px;
-}
-
-/* Media Queries for Responsive Adjustments */
+  /* Media Queries */
 @media (max-width: 768px) {
-  .social-links {
-    justify-content: center; /* Center social links on smaller screens */
-  }
-
-  .list-inline-item {
-    margin-right: 10px; /* Smaller margin on smaller screens */
+  .author-name {
+    padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
   }
 }
 
-.list-inline-item a {
-  margin-right: 15px;
-}
-
-.list-inline-item:last-child a {
-  margin-right: 0;
-}
-
-@media (max-width: 768px) {
-  .list-inline-item a {
-    margin-right: 10px; /* Smaller margin on smaller screens */
+@media (max-width: 991.98px) {
+  .breadcrumb {
+    top: 0; /* Ensures the breadcrumb is at the very top on smaller screens */
+  }
+  .author-name {
+    text-align: center; /* Centers the author name on smaller screens */
   }
 }
-/* Nav */ 
-
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background-color: black;
-}
-
-.content-wrapper {
-  flex: 1;
-}
-/* Container for the background image */
-.bg-image {
-  min-height: 100vh;
-  position: relative;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column; /* Stack items vertically */
-}
-
-
-.landing-link {
-  position: relative;
-  display: block;
-  text-decoration: none;
-  color: whitesmoke;
-  cursor: pointer;
-}
-
-.landing-link:hover{
-  color: var(--ethereal-gold);
-}
-
-.landing-text {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 6s linear;
-  font-size: 3rem; /* Large font size */
-  font-family: 'Playfair Display', serif;
-  margin: 20px 0;
-  /* Spacing between text and image */
-  /* Customize further as needed */
-}
-
-.bg-image:hover .landing-text {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-  .bg-image {
-    min-height: 100vh; /* Reduce the height on smaller screens */
+  .navbar-nav .nav-item {
+    margin-right: 30px; /* Increases space between nav items */
   }
-  .bg-image img.img-fluid {
-    width: 100%; /* Full width of the container */
-    object-position: center; /* Ensure the image is centered */
-  }
-}
+  
+  .nav-item{
+    font-size: 30px;
+    color: var(--ethereal-gold);
+    }
+    
+    .nav {
+      padding-left: 0; /* Removes padding for list */
+      list-style: none; /* Removes list style */
+     
+    }
+    
+    .nav-link {
+      color: var(--ethereal-gold) !important; /* Apply ethereal gold color to nav links */
+    }
+    
+    .nav-link:hover, .nav-link:focus {
+      color: darken(var(--ethereal-gold), 10%) !important; /* Darken the color slightly on hover for contrast */
+      text-decoration: none; /* Optional: Removes the underline on hover */
+    }
+    
+    .nav-link:hover, .nav-link:focus {
+      color: var(--parchment-white) !important; /* Manually specified darker shade of gold */
+      text-decoration: none; /* Optional: Removes the underline on hover */
+    }
+    
+    
+    
+    a, .nav-link {
+      color: var(--parchment-white);
+    }
+    a:hover, .nav-link:hover {
+      color: var(--parchment-white);
+    }
 
-/* Adjustments for medium screens */
-@media (min-width: 769px) and (max-width: 991px) {
-  .bg-image {
-    min-height: 100vh; /* Slightly taller than on smaller screens */
-  }
-  .bg-image img.img-fluid {
-    width: 100%; /* Full width of the container */
-    object-position: center; /* Ensure the image is centered */
-  }
-}
 
-/* Ensure that hover effects are disabled on mobile to keep text visible */
-@media (hover: none) {
-  .bg-image:hover .landing-text {
-    visibility: visible;
-    opacity: 1;
-  }
-}
-
-
-
-
-#Footer { /* Make sure the ID matches your HTML */
-  position: relative;
+    .highlight-link a {
+      background-color: var(--mystic-purple); /* Light blue background */
+      border: 2px solid var(--ethereal-gold) /* Light blue border */
+    }
+         
+    .list-inline-item a:hover {
+      transform: scale(1.2); /* Slightly enlarge on hover */
+      background-color: var(--ethereal-gold);
+    }
+  
+    /*nav*/
+ 
+   
+body::before {
+  content: '';
+  position: fixed; /* or absolute */
+  top: 0;
   left: 0;
+  right: 0;
   bottom: 0;
-  width: 100%;
-  background-color: #333; /* Adjust the background color as needed */
-  color: white; /* Adjust the text color as needed */
-  text-align: center;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1; /* Ensure the image stays in the background */
 }
 
+@media (max-width: 768px) {
+  .carousel-item img {
+      height: 80%; /* Smaller height on smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-caption {
+      display: block; /* Ensures the content is displayed on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .Maps, .ExploreEscala {
+      max-width: 100%; /* Ensures full width on smaller screens */
+  }
+}
+  
+  /* Adjust the carousel container */
+  .carousel-container-large {
+    max-width: 80%; /* Adjust based on your preference */
+    margin: auto; /* Center the carousel */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+  /* Adjust the carousel images */
+  .carousel-item img {
+    margin-top: 50px;
+    height: 1000px; /* Set a fixed height or use a percentage */
+    object-fit: contain; /* Cover the area without losing aspect ratio */
+    width: 80%; /* Ensure it spans the width of the container */
+    }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+      
+    .carousel-item img {
+      height: 80%; /* Smaller height on smaller screens */
+    }
+  }
+
+  .carousel-item {
+    position: relative;  /* This makes sure that caption is positioned relative to item */
+    height: 100%;        /* Ensure this is set so the caption can be properly centered */
+}
+
+  
+.carousel-caption {
+  position: absolute;
+  width: 70%;  /* Consider setting max-width if it appears too large */
+  text-align: center;
+  background-color: rgba(71, 56, 84, 0.75);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--parchment-white);
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    display: block;
+    width: auto;
+    margin: 10px auto;  /* Ensures the button remains centered on smaller screens */
+    padding: 8px 16px;  /* Adjust padding to better fit smaller screens */
+  }
+}
+
+
+  .carousel-caption .btn {
+    visibility: visible;
+    margin: 5px 0; /* Adjust spacing around buttons */ 
+    background-color: var(--mystic-purple);
+    border-color: var(--ethereal-gold);
+  }
+  
+  .carousel-caption .btn:hover {
+   background-color: var(--ethereal-gold);
+   border-color: var(--mystic-purple);
+  }
+  .btn-primary {
+    background-color: var(--mystic-purple);
+    border-color: var(--ethereal-gold);
+    font-size: 25px;
+  }
+  .btn-primary:hover {
+    border-color: darken(var(--ethereal-gold), 10%);
+    
+  }
+  
+  /* Ensure the carousel-caption content is visible and not hidden on larger screens */
+  .carousel-caption.d-none.d-md-block {
+    display: block !important; /* Override Bootstrap's hiding behavior at medium breakpoint */
+  }
+  
+  
+  /* Ensure arrows are visible with reasonable default sizes */
+  .carousel-control-prev, .carousel-control-next {
+    width: auto; /* Allow the width to adjust based on content */
+    height: auto; /* Allow the height to adjust based on content */
+  }
+  
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 2rem; /* Example size, adjust as needed */
+    height: 2rem; /* Example size, adjust as needed */
+  }
+  
+  /* Adjusting the clickable area without overly shrinking or hiding elements */
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    margin: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+  
+  .carousel-control-prev {
+    left: 10px; /* Adjust based on your design needs */
+  }
+  
+  .carousel-control-next {
+    right: 10px; /* Adjust based on your design needs */
+  }
+  
+  .gold{
+    color: var(--ethereal-gold);
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  
+  .Escala_Section {
+    flex-direction: column; /* Stack title above content initially */
+    align-items: center; /* Center-align children */
+    text-align: center; /* Center text */
+    gap: 20px; /* Space between title and content */
+  }
+  
+  .title h1 {
+    margin: 80px;
+    padding: 10px 20px;
+    background-color: rgba(71, 56, 84, 0.8); /* Semi-transparent background */
+    color: #F4EDE4; /* Parchment White */
+    border-radius: 5px;
+  }
+  
+  .content {
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between map and text-box */
+  }
+  
+  .Maps {
+    width: 50%; /* Adjust based on your preference */
+    height: auto;
+  }
+  
+  .ExploreEscala {
+    width: 40%; /* Adjust based on your preference */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black for contrast */
+    color: #F4EDE4; /* Parchment White */
+    border-radius: 5px;
+  }
+  
+  @media (min-width: 992px) { /* Adjust breakpoint as needed */
+    .Escala_Section {
+      flex-direction: row; /* Side by side for larger screens */
+    }
+  }
+    
+  
+  
+  .fantasy-divider {
+    position: relative;
+    margin: 20px 100px; /* Adjust spacing around the divider as needed */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text alignment */
+    height: auto; /* Adjust based on content size */
+   background-color: var(--mystic-purple);
+    }
+  
+  .fantasy-divider a {
+    text-decoration: underline; /* Optional: if you want the underline to remain */
+  }
+  
+  .fantasy-divider::before,
+  .fantasy-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 5px; /* Thickness of the actual divider line */
+    transform: translateY(-50%);
+  }
+  
+  .fantasy-divider::after {
+    transform: translateY(-50%) rotate(180deg); /* Mirrors the pattern */
+  }
+  
+  @media (min-width: 768px) {
+    #textSmall {
+      display: none; /* Ensures text for small screens is hidden on larger screens */
+    }
+  }
+  
+  /* Optional: If for some reason the large screen text still shows on smaller screens */
+  @media (max-width: 767.98px) {
+    #textLarge {
+      display: none; /* Ensures text for large screens doesn't appear on small screens */
+    }
+  }
+  
+  
+  
+  #TargetSection {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    cursor: zoom-in; /* To indicate the text is clickable */
+    justify-content: center; /* Centers the children horizontally */
+    align-items: center; /* Centers the children vertically */
+  }
+  
+  .Maps {
+    max-width: 100%; /* Allows the map to be responsive within its container */
+    flex-basis: 100%; /* On smaller screens, take full width */
+    order: 1; /* Ensure the map is always at the top */
+  }
+  
+  .ExploreEscala {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: var(--ethereal-gold); /* Text color */
+    padding: 20px; /* Adjust based on your needs */
+    width: 100%; /* Takes full width on smaller screens */
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+    border-radius: 8px;
+    margin: 20px 0; /* Adds vertical space between items */
+    order: 2; /* Ensure the text box is always below the map */
+    text-align: center; /* Centers the text for smaller screens */
+  }
+  
+  /* Further adjustments for large screens */
+  @media (min-width: 992px) {
+    .Maps, .ExploreEscala {
+      max-width: 45%; /* Slightly reduce the max width for larger elements */
+    }
+  
+    .ExploreEscala {
+      padding: 20px;
+      margin-left: 30px; /* Increase spacing for larger screens */
+    }
+  }
+  
+  /* Additional adjustments for extra large screens */
+  @media (min-width: 1200px) {
+    .Maps, .ExploreEscala {
+      max-width: 40%; /* Further reduce the max width for very large elements */
+    }
+  }
+  
+  /* Adjusts text size for smaller screens */
+  @media (max-width: 767px) {
+    .ExploreEscala h3, .ExploreEscala h4 {
+      font-size: smaller; /* Adjusts the font size of headers to be smaller */
+    }
+  }
+  
+  .patreon-support a {
+    color: var(--ethereal-gold); /* Example pastel color for links */
+  }
+  
+  .newsletter-subscribe form {
+    margin-top: 20px;
+  }
+  
+  .modal-content {
+      background-size: cover; /* Cover the entire area of the modal content */
+      background-position: center; /* Center the background image */
+      background-color: black !important;
+      color: var(--parchment-white); /* Parchment White text */
+      }
+  .modal-content .btn-primary {
+      background-color: var(--mystic-purple); /* Ethereal Gold background */
+      border-color: var(--ethereal-gold); /* Ethereal Gold border */
+      color: var(--etheral-gold); /* Dark Forest Green text */
+    }
+      
+  .modal-content .btn-primary:hover {
+        background-color: darken(var(--ethereal-gold), 10%); /* Darken on hover */
+      }
+  .modal-content a {
+        color: var(--ethereal-gold); /* Ethereal Gold links */
+        text-decoration: underline; /* Underline for emphasis */
+      }
+  
+  .modal-header {
+    background-color: black;
+    border-bottom: 1px solid var(--ethereal-gold); /* Ethereal Gold border for a subtle contrast */
+  }
+  
+  .modal-title {
+    color: var(--parchment-white); /* Parchment White for the title */
+    margin-bottom: 0; /* Removes any default margin to align title properly */
+    font-size: 1.25rem; /* Slightly larger font for the title */
+  }
+
+  .modal-body {
+    position: relative; /* Ensures the body does not overlap header */
+    padding-top: 20px; /* Adds space between the header and the form */
+}
+  
+  .btn-close {
+     color: var(--parchment-white);
+  }
+  
+  .modal-dialog {
+    display: flex;
+    align-items: center; /* Vertically center the modal */
+    justify-content: center;
+    min-height: calc(100% - (.5rem * 2)); /* Adjust based on your modal's margin */
+  }
+  
+  
