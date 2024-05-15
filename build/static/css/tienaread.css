@@ -63,7 +63,7 @@ html, body {
   /* Media Queries */
 @media (max-width: 768px) {
   .author-name {
-    padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
+    padding-top: 90px; /* Increased padding for mobile to separate from breadcrumb */
   }
 }
 
