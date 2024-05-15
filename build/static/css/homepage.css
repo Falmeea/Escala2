@@ -418,6 +418,16 @@ body::before {
   .patreon-support a {
     color: var(--ethereal-gold); /* Example pastel color for links */
   }
+
+  .iframe-container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+  }
+  .iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
   
   .newsletter-subscribe form {
     margin-top: 20px;
