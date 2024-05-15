@@ -43,7 +43,7 @@ html, body {
       border-radius: 5px; /* Rounded corners */
       position: fixed;
       width:100%;
-      z-index: 2;
+      z-index: 3;
       color: var(--parchment-white);
     }
       .breadcrumb a {
@@ -63,7 +63,7 @@ html, body {
   /* Media Queries */
 @media (max-width: 768px) {
   .author-name {
-    padding-top: 100px; /* Increased padding for mobile to separate from breadcrumb */
+    padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
   }
 }
 
