@@ -56,7 +56,6 @@ html, body {
     font-style: normal;
     font-size:90px;
     z-index: 2;
-    margin-top: auto;
     color: var(--parchment-white);
   }
   
@@ -64,7 +63,7 @@ html, body {
   /* Media Queries */
 @media (max-width: 768px) {
   .author-name {
-    padding-top: 60px; /* Increased padding for mobile to separate from breadcrumb */
+    padding-top: 100px; /* Increased padding for mobile to separate from breadcrumb */
   }
 }
 
