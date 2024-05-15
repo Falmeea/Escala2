@@ -274,37 +274,6 @@
     </div>
   </div>
   
-  <!-- Timed modal for encouraging newsletter subscription -->
-  <div class="modal fade" id="mc_embed_signup" tabindex="-1" aria-labelledby="mc_embed_signup" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Support & Subscribe</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Top half for Patreon -->
-          <div class="patreon-support">
-            <p>Support my work and the continued existence of Escala on <a href="https://www.patreon.com/Escala" target="_blank">Patreon</a></p>
-          </div>
-          <hr> <!-- Break line between two halves -->
-          <!-- Bottom half for Newsletter Subscription -->
-          <div class="newsletter-subscribe">
-            <p>Subscribe to the Newsletter!</p>
-            <form id="newsletterForm" method="post">
-              <div class="mb-3">
-                <input type="name" class="form-control" id="nameInput" placeholder="Name" required>
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="emailInput" placeholder="Email Address" required>
-              </div>
-              <button type="submit" class="btn btn-primary">Sign Up</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -326,21 +295,11 @@
    </script>
   
 
-  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-  <script type="text/javascript">
-    
-    
-      (function($) {
-          window.fnames = new Array(); window.ftypes = new Array();
-          fnames[0]='EMAIL'; ftypes[0]='email';
-          fnames[1]='FNAME'; ftypes[1]='text';
-          fnames[2]='LNAME'; ftypes[2]='text';
-          fnames[5]='BIRTHDAY'; ftypes[5]='birthday';
-          fnames[3]='ADDRESS'; ftypes[3]='address';
-          fnames[4]='PHONE'; ftypes[4]='phone';
-      }(jQuery));
-      var $mcj = jQuery.noConflict(true);
-  </script>
-
+  <script type="text/javascript" id="mcjs">
+    !function(c,h,i,m,p){
+        m=c.createElement(h),p=c.getElementsByTagName(h)[0],
+        m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
+    }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/your-user-id/your-popup-id.js");
+</script>
 </body>
 </html>
