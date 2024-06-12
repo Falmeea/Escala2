@@ -118,15 +118,8 @@ html, body {
   height: 100%;
   border: 0;
 }
-.modal-content {
-  background-color: black;
-  color: white;
-}
-.modal-header, .modal-body {
-  background-color: black;
-}
 .modal-header .close {
-  color: white;
+  color: var(--ethereal-gold);
 }
 @media (max-width: 576px) {
   .modal-dialog {
