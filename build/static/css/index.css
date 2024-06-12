@@ -118,7 +118,7 @@ html, body {
   height: 100%;
   border: 0;
 }
-.modal-header .close {
+.modal-header {
   color: var(--ethereal-gold);
 }
 @media (max-width: 576px) {
